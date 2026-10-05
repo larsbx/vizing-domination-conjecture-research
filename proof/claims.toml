@@ -1,0 +1,63 @@
+# Claim registry for Vizing domination conjecture research.
+# This file is intentionally conservative. Thread-derived results begin as
+# `working` until they are reproduced by checked-in code, data, and receipts.
+
+[meta]
+namespace = "VDC"
+status_values = ["conjectural", "working", "computed", "proved", "retracted"]
+
+[[claim]]
+id = "VDC-MAIN"
+title = "Vizing domination conjecture"
+status = "conjectural"
+statement = "For finite graphs G and H, gamma(G square H) >= gamma(G) gamma(H)."
+authority = "external/open_problem"
+notes = "This repository studies computational and structural fragments; it does not claim the conjecture."
+
+[[claim]]
+id = "VDC-G4-SQUARE-STRICT-N10"
+title = "Strict square surplus for the n=10, gamma=4 census"
+status = "working"
+statement = "For every n=10 graph G in the gamma(G)=4 census, gamma(G square G) > 16."
+authority = "thread_record_pending_reproduction"
+notes = "Thread audit reports 491 graph6 entries collapsing to 470 isomorphism classes. Needs checked-in census, deduplication code, and replayable audit receipts."
+
+[[claim]]
+id = "VDC-ROW-CSP"
+title = "Row-state CSP formulation for domination in Cartesian products"
+status = "working"
+statement = "A product dominating set in G square H can be represented by row states S_h with residual constraints R_G(S_h) subset union_{h'~h} S_{h'}."
+authority = "mathematical_argument_pending_formal_writeup"
+notes = "This is the core finite CSP representation used by the audit framework."
+
+[[claim]]
+id = "VDC-WING-PAIR"
+title = "Wing-pair structural lemma"
+status = "working"
+statement = "Adjacent degree-2 wing rows impose local residual-capacity inequalities that can certify size-pattern infeasibility."
+authority = "thread_record_pending_repository_proof"
+notes = "Patch 90 in the working thread identified this as the first proof-safe structural obstruction. Needs proof note and regression tests."
+
+[[claim]]
+id = "VDC-CASEBASE-3"
+title = "Corrected case base has three isomorphism classes"
+status = "working"
+statement = "The prior 16 graph6-entry case base collapses to three isomorphism classes: A, one A-class representative, and B."
+authority = "thread_record_pending_reproduction"
+notes = "Requires canonical isomorphism-dedup script and fixture data."
+
+[[claim]]
+id = "VDC-OPERATOR-NEGATIVE"
+title = "Four simple reverse operators do not cover the census"
+status = "working"
+statement = "Reverse pendant, subdivision, true-twin, and false-twin moves at depth <= 4 reduce only the case-base entries to the case base, not the rest of the census."
+authority = "thread_record_pending_reproduction"
+notes = "This downgrades the PSC-style operator-closure path to a diagnostic and lemma-mining branch."
+
+[[claim]]
+id = "VDC-GOLD-AUDIT-ARCH"
+title = "Three-mechanism gold audit architecture"
+status = "working"
+statement = "The audit stack lambda-bound -> structural lemmas -> row-CSP residue is the current main executable proof architecture."
+authority = "research_program_design"
+notes = "Needs canonical implementation and explicit receipt format before it can support computed claims."
