@@ -11,7 +11,7 @@ Rules:
 
 Current priority experiments:
 
-1. reconstruct the 491-entry / 470-isomorphism-class census;
+1. recover the authoritative 491-entry census and replay its reported 470 classes; do not synthesize missing entries;
 2. replay the four-operator reachability negative result;
 3. mine structural buckets for the full census;
 4. identify which buckets need new structural lemmas.

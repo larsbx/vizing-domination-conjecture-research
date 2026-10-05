@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "kind": "historical_casebase_only",
+  "recovered_on": "2026-10-05",
+  "sources": [
+    {
+      "path": "conformance/provenance/casebase/PATCH_43_B_star_4_falsified.md",
+      "original_filename": "PATCH_43_B_star_4_falsified.md",
+      "role": "named_graphs",
+      "size_bytes": 6864,
+      "sha256": "b7406113c5677af72b33005dd052cd232c2e8275e24c7f8eea1771489b241866",
+      "origin": "Retained user research artifact; original generator/commit not available."
+    },
+    {
+      "path": "conformance/provenance/casebase/patch91_full-1.log",
+      "original_filename": "patch91_full-1.log",
+      "role": "aclass_log",
+      "size_bytes": 2623,
+      "sha256": "fbab712a12dd27ab1a5ff6461f242e419dc46f2cf124dc981c4e0201c68bcfd7",
+      "origin": "Retained user research artifact; original generator/commit not available."
+    },
+    {
+      "path": "conformance/provenance/casebase/STRATEGIC_SYNTHESIS_89_93-1.md",
+      "original_filename": "STRATEGIC_SYNTHESIS_89_93-1.md",
+      "role": "historical_census_reference",
+      "size_bytes": 5851,
+      "sha256": "3e9a28891ffba0b534fac40f535b1cd34406a86561c28ddf791a20a3275a35d4",
+      "origin": "Retained user research artifact; original generator/commit not available."
+    }
+  ],
+  "named_labels": {
+    "A": "I?r@`aii_",
+    "B": "I?r@`bgIo"
+  },
+  "extraction_order": [
+    "A heading from Patch 43",
+    "14 literal graph6 labels from numbered Patch 91 log rows, in order",
+    "B heading from Patch 43"
+  ],
+  "limitations": [
+    "No authoritative 491-entry corpus recovered.",
+    "Original case-base source file and generator metadata have not been recovered.",
+    "This is a literal recovery of the reported case-base labels, not an import of the census.",
+    "Historical product/audit claims in these files are not replayed or promoted by the identity checker."
+  ]
+}

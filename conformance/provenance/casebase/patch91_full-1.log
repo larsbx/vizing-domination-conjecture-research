@@ -1,0 +1,71 @@
+=== Patch 91: COMPLETE closing audit on the A-class ===
+λ-bound + wing-pair lemma + M1(30s) — three-mechanism redundancy
+
+[1/14] I?r@`_iy_
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:23.9s, lemma:0.0s, M1:50s)
+  cumulative: 84s
+
+[2/14] I?r@`biI_
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:11.4s, lemma:0.0s, M1:32s)
+  cumulative: 133s
+
+[3/14] I?r@`aIm_
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:11.6s, lemma:0.0s, M1:35s)
+  cumulative: 185s
+
+[4/14] I?r@`aya_
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:10.8s, lemma:0.0s, M1:35s)
+  cumulative: 236s
+
+[5/14] I?r@`aaj_
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:11.4s, lemma:0.0s, M1:34s)
+  cumulative: 286s
+
+[6/14] I?r@`amg_
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:10.5s, lemma:0.0s, M1:32s)
+  cumulative: 333s
+
+[7/14] I?r@`agio
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:10.2s, lemma:0.0s, M1:36s)
+  cumulative: 384s
+
+[8/14] I?r@`aji?
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:10.0s, lemma:0.0s, M1:36s)
+  cumulative: 435s
+
+[9/14] I?r?`rgIo
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:9.6s, lemma:0.0s, M1:26s)
+  cumulative: 474s
+
+[10/14] I?r@``gYo
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:10.0s, lemma:0.0s, M1:33s)
+  cumulative: 522s
+
+[11/14] I?r@`bhIO
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:9.5s, lemma:0.0s, M1:28s)
+  cumulative: 564s
+
+[12/14] I?r@obgIo
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:9.5s, lemma:0.0s, M1:24s)
+  cumulative: 601s
+
+[13/14] IGR@`bgIo
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:9.7s, lemma:0.0s, M1:23s)
+  cumulative: 638s
+
+[14/14] IOb@`bgIo
+  patterns=1311, after λ=528, after lemma=365, orbits=135, M1: SAT=0, UNSAT=135, TO=0 (λ:9.2s, lemma:0.0s, M1:23s)
+  cumulative: 674s
+
+=== FINAL ===
+Graphs: 14/14
+Patterns: 18354
+After λ: 7392 (kills 59.7%)
+After lemma: 5110 (kills 30.9% of survivors)
+Orbits: 1890
+M1: SAT=0, UNSAT=1890, TIMEOUT=0
+Total time: 674s
+
+*** AUDIT PASSED: γ(G²) ≥ 17 verified for all 14 A-class graphs ***
+Three-mechanism redundancy: 0 conflicts.
+Audit closed. Ready for write-up.

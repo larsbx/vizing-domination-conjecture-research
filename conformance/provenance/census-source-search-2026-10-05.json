@@ -1,0 +1,3727 @@
+{
+  "compressed_blob_checks": [
+    {
+      "matched_members": [],
+      "member_count": 1,
+      "path": "data/n2/h3-conditioned-certificates-v1.json.gz",
+      "repository": "larsbx/novelty-lab",
+      "sha": "6e29dabbc9cef852cc4e0e44530e80fa728b61ba"
+    },
+    {
+      "matched_members": [],
+      "member_count": 2,
+      "path": "archive/2026-10-02/separation-radius-total-length/evidence.zip",
+      "repository": "larsbx/pisot-substitution-conjecture-research",
+      "sha": "fbb16b53a7288bdf397afa8786d6d166b6a99f70"
+    },
+    {
+      "matched_members": [],
+      "member_count": 64,
+      "path": "archive/2026-10-04/session-probes/evidence.zip",
+      "repository": "larsbx/pisot-substitution-conjecture-research",
+      "sha": "a2b9101e719831ae70e34f819942be185590ec86"
+    },
+    {
+      "matched_members": [],
+      "member_count": 1,
+      "path": "evidence/catch-up-hits-2026-10-04/len4-first1000-failures.jsonl.gz",
+      "repository": "larsbx/pisot-substitution-conjecture-research",
+      "sha": "42829ef1e1d8e58890f678596f4454f91fe7957a"
+    },
+    {
+      "matched_members": [],
+      "member_count": 1,
+      "path": "evidence/catch-up-hits-2026-10-04/replay-total.txt.gz",
+      "repository": "larsbx/pisot-substitution-conjecture-research",
+      "sha": "90f883d4ad03d24912d877006ff2a541d991c60c"
+    },
+    {
+      "matched_members": [],
+      "member_count": 1,
+      "path": "evidence/catch-up-hits-2026-10-04/standing-failures.jsonl.gz",
+      "repository": "larsbx/pisot-substitution-conjecture-research",
+      "sha": "3c6e84f60ce780183ba944a6d6f702cbf9115990"
+    },
+    {
+      "matched_members": [],
+      "member_count": 1,
+      "path": "evidence/catch-up-hits-2026-10-04/total8-first1000-failures.jsonl.gz",
+      "repository": "larsbx/pisot-substitution-conjecture-research",
+      "sha": "375e175ddb15e97308c9c72b02a6aea9c3530e51"
+    }
+  ],
+  "date_in_user_timezone": "2026-10-05",
+  "false_positive_dispositions": [
+    "Count-only matches in modular arithmetic data and compiled Haskell artifacts are unrelated numeric co-occurrences.",
+    "The apparent nine-character graph6 record in generated C was the module name ImageModL.",
+    "Target-repository hits contain bootstrap claims, source placeholders and A/B labels, not corpus entries."
+  ],
+  "github_searches": [
+    {
+      "kind": "commit",
+      "query": "user:larsbx Vizing",
+      "result_count": 0
+    },
+    {
+      "kind": "commit",
+      "query": "user:larsbx g4_n10",
+      "result_count": 0
+    },
+    {
+      "kind": "commit",
+      "query": "user:larsbx graph_ring",
+      "result_count": 0
+    },
+    {
+      "kind": "default-branch-code",
+      "org": "larsbx",
+      "query": "graph_ring",
+      "result_count": 0
+    }
+  ],
+  "initial_refs": [
+    {
+      "ref": "refs/heads/bootstrap/estate-research-program",
+      "sha": "44990a294dfa39067d54d3915ba7735eba6422fd"
+    },
+    {
+      "ref": "refs/heads/main",
+      "sha": "c6e88d9fd5068832f85fbe708f9cbab6004e5721"
+    },
+    {
+      "ref": "refs/pull/1/head",
+      "sha": "44990a294dfa39067d54d3915ba7735eba6422fd"
+    },
+    {
+      "ref": "refs/pull/1/merge",
+      "sha": "f175d0a7ef846ec01154a6501b0d9e7d051404dd"
+    }
+  ],
+  "outcome": "authoritative_491_entry_corpus_not_located; historical_casebase_labels_recovered",
+  "private_candidate_path_matches": 0,
+  "private_repository_count": 4,
+  "private_repository_scope": "ref and tree filename metadata only; private full clones failed because shell credentials were unavailable",
+  "private_tree_check_count": 29,
+  "public_git_scope": {
+    "patterns": {
+      "A_label": "I?r@`aii_",
+      "B_label": "I?r@`bgIo",
+      "count_phrase_regex": "491[^\\n]{0,160}470|470[^\\n]{0,160}491",
+      "graph6_record_regex": "(?m)^I[?-~]{8}\\r?$|[\"']I[?-~]{8}[\"']",
+      "terms": [
+        "vizing",
+        "graph6",
+        "g4_n10",
+        "aclass_target",
+        "graph_ring",
+        "patch91",
+        "patch94",
+        "em_g4_n10"
+      ]
+    },
+    "reachable_blobs": 9264,
+    "reachable_commits": 3097,
+    "repositories": 13,
+    "repositories_checked": [
+      {
+        "blobs_scanned": 559,
+        "candidate_paths": [],
+        "commits": 91,
+        "hits": [],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/claude/d-patch-continuation-rkqpx1",
+            "sha": "63c915faeceed504cf6d434df4c9a7ba005405b7"
+          },
+          {
+            "ref": "refs/heads/claude/new-session-ygkbja",
+            "sha": "31578adacbe155f82e9ab66d04efcea7cd46d0e3"
+          },
+          {
+            "ref": "refs/heads/claude/slice-1-http-auth",
+            "sha": "28d4b4a33557f1bf5f06c3d178612d45f2e26862"
+          },
+          {
+            "ref": "refs/heads/claude/slice-1-status-audit",
+            "sha": "f5cae589a2450516e0eb467d33aefd786494fcc5"
+          },
+          {
+            "ref": "refs/heads/claude/slice-1d-review-followup",
+            "sha": "5de023e9ff2ff67d4eddc88a8ca90c94283b26de"
+          },
+          {
+            "ref": "refs/heads/claude/slice-1e-portal",
+            "sha": "d10095391ac81ea0094ae4da1a9ea0cf9722abd2"
+          },
+          {
+            "ref": "refs/heads/codex/slice-1-android-offline-status",
+            "sha": "8dbf2af4d6fba566d5af347bbf6fe3ffa3740299"
+          },
+          {
+            "ref": "refs/heads/codex/slice-1g-android-offline-status",
+            "sha": "b6ad539456efa9c5f8b8ef1ca1c5aad570360041"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "6e43f8f21195fed9fd7c11d8fd7739840fffe047"
+          },
+          {
+            "ref": "refs/heads/polyglot/migration-v1",
+            "sha": "0b1fdeaa37c5b4270a2def297df917efd4ee6f6a"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "5758db19d0d0d371e7433b1009e896608e6862df"
+          },
+          {
+            "ref": "refs/pull/10/head",
+            "sha": "b6ad539456efa9c5f8b8ef1ca1c5aad570360041"
+          },
+          {
+            "ref": "refs/pull/10/merge",
+            "sha": "637a12cd2f3ab037efe558018dda7f17f553f50e"
+          },
+          {
+            "ref": "refs/pull/11/head",
+            "sha": "0b1fdeaa37c5b4270a2def297df917efd4ee6f6a"
+          },
+          {
+            "ref": "refs/pull/11/merge",
+            "sha": "07235a917f2d98ad0ca7e24dfe00f6448edac552"
+          },
+          {
+            "ref": "refs/pull/12/head",
+            "sha": "63c915faeceed504cf6d434df4c9a7ba005405b7"
+          },
+          {
+            "ref": "refs/pull/12/merge",
+            "sha": "c6963362878f1ab82eba5aaade5e1c05d2bed972"
+          },
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "ad2205aea1ee1c4d4265ab4a5d095edb865b12a4"
+          },
+          {
+            "ref": "refs/pull/3/head",
+            "sha": "17c87337ec84e24b9d90a3b495b46ee3d85bd5e0"
+          },
+          {
+            "ref": "refs/pull/4/head",
+            "sha": "f5cae589a2450516e0eb467d33aefd786494fcc5"
+          },
+          {
+            "ref": "refs/pull/5/head",
+            "sha": "28d4b4a33557f1bf5f06c3d178612d45f2e26862"
+          },
+          {
+            "ref": "refs/pull/6/head",
+            "sha": "5de023e9ff2ff67d4eddc88a8ca90c94283b26de"
+          },
+          {
+            "ref": "refs/pull/7/head",
+            "sha": "d10095391ac81ea0094ae4da1a9ea0cf9722abd2"
+          },
+          {
+            "ref": "refs/pull/8/head",
+            "sha": "f97c5ff4d2f5d6e700a7dbd0ba2cb76ffd6cfefc"
+          },
+          {
+            "ref": "refs/pull/9/head",
+            "sha": "8dbf2af4d6fba566d5af347bbf6fe3ffa3740299"
+          },
+          {
+            "ref": "refs/pull/9/merge",
+            "sha": "150167537bdcb43c5ca2a0fd3e47947738256017"
+          }
+        ],
+        "repository": "larsbx/d-patch"
+      },
+      {
+        "blobs_scanned": 98,
+        "candidate_paths": [],
+        "commits": 83,
+        "hits": [],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/codex/inventory-source-authority",
+            "sha": "3651fbe5ae3a488119ac19a05bc7c7d6eb8cd6a0"
+          },
+          {
+            "ref": "refs/heads/codex/scaffold-multi-program-pilot",
+            "sha": "fae1af3c7ef349c71f2990dc73e2e52d3b790285"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "dc57267cdf1332bc6cfd23a420a224aad238ef48"
+          },
+          {
+            "ref": "refs/heads/migration/julia-oracle-history",
+            "sha": "54b7d9d5df3a3126c0417d7895377ab9c82fbca0"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "fae1af3c7ef349c71f2990dc73e2e52d3b790285"
+          },
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "3651fbe5ae3a488119ac19a05bc7c7d6eb8cd6a0"
+          },
+          {
+            "ref": "refs/pull/3/head",
+            "sha": "54b7d9d5df3a3126c0417d7895377ab9c82fbca0"
+          }
+        ],
+        "repository": "larsbx/finite-dynamics"
+      },
+      {
+        "blobs_scanned": 1571,
+        "candidate_paths": [],
+        "commits": 729,
+        "hits": [],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/architecture/c1-declarative-proof-records",
+            "sha": "603f337eaca6150702699b834ee74b94c4e782f2"
+          },
+          {
+            "ref": "refs/heads/architecture/ci-authority-lanes",
+            "sha": "4d69bbcd3a091e3a0386dcd0a02b1af0ddcd31af"
+          },
+          {
+            "ref": "refs/heads/architecture/reference-python-boundary",
+            "sha": "4d69bbcd3a091e3a0386dcd0a02b1af0ddcd31af"
+          },
+          {
+            "ref": "refs/heads/architecture/shared-estate-audit-v1",
+            "sha": "45672f187b4543994ee4b7c03482e068ce5bb8e5"
+          },
+          {
+            "ref": "refs/heads/c1/proof-grade-landing-target-association",
+            "sha": "e3ef70b0f2fefd1a316a3ac6141514069f6189ab"
+          },
+          {
+            "ref": "refs/heads/c1/rational-landing-payload-source-checks",
+            "sha": "345878cf9b588e8cb148662cc92624e06cd4877b"
+          },
+          {
+            "ref": "refs/heads/claude/b6-misiurewicz-catalogue",
+            "sha": "899962ab5464f587792b0ca1d8b15ec4ffa2cc27"
+          },
+          {
+            "ref": "refs/heads/claude/cross-pollination-audit-fix-ju4cfl",
+            "sha": "c0ac0ac611b88fdc92e27445dac2e35ac61e2935"
+          },
+          {
+            "ref": "refs/heads/claude/estate-template-scaffolding-nxpvm2",
+            "sha": "606767e4ead2fc7410800d099fd7d2faf32946a4"
+          },
+          {
+            "ref": "refs/heads/claude/julia-set-research-h65zm2",
+            "sha": "659d67a1bdd88da1917cea562a9fb111f45d9459"
+          },
+          {
+            "ref": "refs/heads/claude/mojo-census-catalogue-optimization-x5sfc1",
+            "sha": "f4639dc1a3ec8ea4b2a1284f7adefb763e728ca3"
+          },
+          {
+            "ref": "refs/heads/claude/move-visualizations-vizops-xaqnje",
+            "sha": "ef8cfa2cf4b839e7c28172f68c5d00fda6ded06b"
+          },
+          {
+            "ref": "refs/heads/claude/nlapjt-remaining-tasks-g6p7w7",
+            "sha": "b47ae3a406f2c8fa564d77d28a7e1bd34d2178c1"
+          },
+          {
+            "ref": "refs/heads/claude/r3-harmonic-measure-density",
+            "sha": "75c4ac0ca0f05b4e7dfbd4b7c16afbb51c19b19b"
+          },
+          {
+            "ref": "refs/heads/claude/r5-obstruction-extractor",
+            "sha": "c78ffab6d3bbf0014cbf3a765269aaafe9b6853f"
+          },
+          {
+            "ref": "refs/heads/claude/round-two-delivery-ledger",
+            "sha": "3d5b8b286102cd4567d23e150b5dd57078301a9b"
+          },
+          {
+            "ref": "refs/heads/claude/vendor-finite-math-kernels-umyo7r",
+            "sha": "c63c9805cb149321682ca8a8693a81687a52fe87"
+          },
+          {
+            "ref": "refs/heads/codex/pr41-prime-sweep-interpretation",
+            "sha": "252bcda22779253ac18a52ed9684a2732d08c2f4"
+          },
+          {
+            "ref": "refs/heads/codex/projective-multiset",
+            "sha": "975e7eba653c2bbc9944c5816820564a4f273e21"
+          },
+          {
+            "ref": "refs/heads/docs/canonical-incidence-replay-next-obligation",
+            "sha": "83e2f5929366ae6958a58c09bc618951be3f528c"
+          },
+          {
+            "ref": "refs/heads/docs/readme-r41-algebraic-roots",
+            "sha": "d7a2f0cd29e801e618edfaf1515cb30478a22cef"
+          },
+          {
+            "ref": "refs/heads/fix/canonical-carrier-density-import",
+            "sha": "09677f33c890a58e85e01f73c9702e412129bda1"
+          },
+          {
+            "ref": "refs/heads/fix/reconcile-nlapjt-cutover",
+            "sha": "8c44760bf6b25a27f0ed1d155f65d0551617302a"
+          },
+          {
+            "ref": "refs/heads/integration/rational-dynamics-r1",
+            "sha": "9b835226ed8cf4c7d339116a50e616a3d0f90c07"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "e4ef6646bac8813f39a418d3e8f3d1d0bdbd017d"
+          },
+          {
+            "ref": "refs/heads/migration/nlap-jt-foundation",
+            "sha": "8d9a1bea240416bb26090a19cff59faaa4dbd7bb"
+          },
+          {
+            "ref": "refs/heads/research/critical-relation-divisor-multiset",
+            "sha": "989a37ac29014f8cfb92c970ebbabf69873b4197"
+          },
+          {
+            "ref": "refs/heads/research/r41-algebraic-root-certificate",
+            "sha": "cf74d1be8f513b9b71df423a67b503c5eaae0a5c"
+          },
+          {
+            "ref": "refs/heads/research/r41-residual-divisor-multiset",
+            "sha": "b721dff665d8f8e8664c75f53720956e14d009cb"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "5821b16327affa3b9b2b8a5523de26dd4d133dbd"
+          },
+          {
+            "ref": "refs/pull/10/head",
+            "sha": "c7653e41daa6e89b3374829d9a8fb0f7dd453bb6"
+          },
+          {
+            "ref": "refs/pull/11/head",
+            "sha": "466bd5537bc98bbb62e143f9387ab201abc1586a"
+          },
+          {
+            "ref": "refs/pull/12/head",
+            "sha": "935cacb9061c99a8fa7541fef8fb8b5a6518d70a"
+          },
+          {
+            "ref": "refs/pull/13/head",
+            "sha": "f4639dc1a3ec8ea4b2a1284f7adefb763e728ca3"
+          },
+          {
+            "ref": "refs/pull/14/head",
+            "sha": "8d3d5fe12c58f0f9f9592b02cf057e18fb45b86c"
+          },
+          {
+            "ref": "refs/pull/15/head",
+            "sha": "8c44760bf6b25a27f0ed1d155f65d0551617302a"
+          },
+          {
+            "ref": "refs/pull/16/head",
+            "sha": "a1307303b31b11838ad7e7236a4c576189dd59c5"
+          },
+          {
+            "ref": "refs/pull/17/head",
+            "sha": "c0ac0ac611b88fdc92e27445dac2e35ac61e2935"
+          },
+          {
+            "ref": "refs/pull/18/head",
+            "sha": "975e7eba653c2bbc9944c5816820564a4f273e21"
+          },
+          {
+            "ref": "refs/pull/19/head",
+            "sha": "c8a654b4d49b6435553078bf6ddb799194e6e29e"
+          },
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "c8004f53fadeac8976b01183518f3d9863237c65"
+          },
+          {
+            "ref": "refs/pull/20/head",
+            "sha": "27dd29b2cb9d3590d6ebba3315caed06b4713dfb"
+          },
+          {
+            "ref": "refs/pull/21/head",
+            "sha": "bbde3f59ade3bd8ba8d6e8d604d2f1562f14efda"
+          },
+          {
+            "ref": "refs/pull/22/head",
+            "sha": "83e2f5929366ae6958a58c09bc618951be3f528c"
+          },
+          {
+            "ref": "refs/pull/23/head",
+            "sha": "6c2f7536f1a0744485f25188cd091c19830a73a5"
+          },
+          {
+            "ref": "refs/pull/24/head",
+            "sha": "1d124075c6c7aa0c95f732737fd5e857be7c2aea"
+          },
+          {
+            "ref": "refs/pull/25/head",
+            "sha": "fa34288d81c9690080bc7d7fc03451c6818d3176"
+          },
+          {
+            "ref": "refs/pull/26/head",
+            "sha": "603f337eaca6150702699b834ee74b94c4e782f2"
+          },
+          {
+            "ref": "refs/pull/27/head",
+            "sha": "4d69bbcd3a091e3a0386dcd0a02b1af0ddcd31af"
+          },
+          {
+            "ref": "refs/pull/28/head",
+            "sha": "09677f33c890a58e85e01f73c9702e412129bda1"
+          },
+          {
+            "ref": "refs/pull/29/head",
+            "sha": "7f1c1f6f37a8cd4879da873168c91618a379dfc1"
+          },
+          {
+            "ref": "refs/pull/3/head",
+            "sha": "75c4ac0ca0f05b4e7dfbd4b7c16afbb51c19b19b"
+          },
+          {
+            "ref": "refs/pull/30/head",
+            "sha": "989a37ac29014f8cfb92c970ebbabf69873b4197"
+          },
+          {
+            "ref": "refs/pull/31/head",
+            "sha": "4f2b505f1520dcd85b70fdd66f196afb8c334604"
+          },
+          {
+            "ref": "refs/pull/32/head",
+            "sha": "ec0ea563a5410736b58ab3dbdb1d41b44a7ca7d7"
+          },
+          {
+            "ref": "refs/pull/33/head",
+            "sha": "d61b8720ed6f27717d6e6baa87ef02c0f3fbda92"
+          },
+          {
+            "ref": "refs/pull/34/head",
+            "sha": "9dffddf14b0ccbb44f6b51e673f817f19afdf985"
+          },
+          {
+            "ref": "refs/pull/35/head",
+            "sha": "cf74d1be8f513b9b71df423a67b503c5eaae0a5c"
+          },
+          {
+            "ref": "refs/pull/36/head",
+            "sha": "ef8cfa2cf4b839e7c28172f68c5d00fda6ded06b"
+          },
+          {
+            "ref": "refs/pull/37/head",
+            "sha": "d7a2f0cd29e801e618edfaf1515cb30478a22cef"
+          },
+          {
+            "ref": "refs/pull/38/head",
+            "sha": "606767e4ead2fc7410800d099fd7d2faf32946a4"
+          },
+          {
+            "ref": "refs/pull/39/head",
+            "sha": "9a8ae8b2758a6f344e7b3b28a4a00b0dd1cd2f67"
+          },
+          {
+            "ref": "refs/pull/4/head",
+            "sha": "899962ab5464f587792b0ca1d8b15ec4ffa2cc27"
+          },
+          {
+            "ref": "refs/pull/40/head",
+            "sha": "a2485a66f78c06b86f71ef996cd16c9f62f77685"
+          },
+          {
+            "ref": "refs/pull/41/head",
+            "sha": "d0e87f3f65a9f918d596ba18229e26fd456dd1e6"
+          },
+          {
+            "ref": "refs/pull/42/head",
+            "sha": "f6d829006006696a0ec9313232edab1071185732"
+          },
+          {
+            "ref": "refs/pull/43/head",
+            "sha": "74d56a67d653a373f7e9ac5428eb6d527de9dc74"
+          },
+          {
+            "ref": "refs/pull/44/head",
+            "sha": "233ddfec295df78d1dfcf97018f1bfea310a59d5"
+          },
+          {
+            "ref": "refs/pull/45/head",
+            "sha": "c63c9805cb149321682ca8a8693a81687a52fe87"
+          },
+          {
+            "ref": "refs/pull/45/merge",
+            "sha": "a390ee7a0ba8d5824f4103a37c82ff9cf327dd87"
+          },
+          {
+            "ref": "refs/pull/46/head",
+            "sha": "252bcda22779253ac18a52ed9684a2732d08c2f4"
+          },
+          {
+            "ref": "refs/pull/5/head",
+            "sha": "3d5b8b286102cd4567d23e150b5dd57078301a9b"
+          },
+          {
+            "ref": "refs/pull/6/head",
+            "sha": "c78ffab6d3bbf0014cbf3a765269aaafe9b6853f"
+          },
+          {
+            "ref": "refs/pull/7/head",
+            "sha": "b7379e8ad1fccd00f76306469b89ac2ac9912ccd"
+          },
+          {
+            "ref": "refs/pull/8/head",
+            "sha": "ace3435b499ec4775c4669e140a74b9c7f9e2aa1"
+          },
+          {
+            "ref": "refs/pull/9/head",
+            "sha": "9c7d8950946afab189166ed11a92aa339d99d492"
+          }
+        ],
+        "repository": "larsbx/finite-mandelbrot-research"
+      },
+      {
+        "blobs_scanned": 1177,
+        "candidate_paths": [],
+        "commits": 337,
+        "hits": [],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/architecture/standalone-julia-oracle-lab",
+            "sha": "4a958e57bf80cf5dcf2e00cff34afde67ad4a559"
+          },
+          {
+            "ref": "refs/heads/audit/estate-repository-v1",
+            "sha": "7543130ccfa05a88b5ddbacb46d4371ac99c21f9"
+          },
+          {
+            "ref": "refs/heads/claude/benchmark-comparison-candidates-e0o23y",
+            "sha": "d23ce29063d612d3d42516de989860f08621acaf"
+          },
+          {
+            "ref": "refs/heads/claude/continuation-twist",
+            "sha": "0f2d0fe7ca1555fd6bf57f1683e77da31077c48e"
+          },
+          {
+            "ref": "refs/heads/claude/cross-pollination-audit-fix-ju4cfl",
+            "sha": "675e1729fd65a3da53e86b5501d39b783de0182d"
+          },
+          {
+            "ref": "refs/heads/claude/elixir-bend-mojo-wyzer-yhmijw",
+            "sha": "10a0aa9981d2504c57cd40f9c30b9352421ee336"
+          },
+          {
+            "ref": "refs/heads/claude/estate-template-scaffolding-nxpvm2",
+            "sha": "0bc90dc4e58a52ae7647ff0e17a471522f61cbea"
+          },
+          {
+            "ref": "refs/heads/claude/estate-templates-documents-nmcjdp",
+            "sha": "b6adf6dd8201be8ff156a08ba925e9555caed156"
+          },
+          {
+            "ref": "refs/heads/claude/generator-row-column-contract-i47aew",
+            "sha": "f927b8a22d3a42cb0b462842fba4c1a07a34ae7b"
+          },
+          {
+            "ref": "refs/heads/claude/generator-row-column-contract-lcyg9m",
+            "sha": "5d18d4785e22bfacb0650ae86bff9508b5ed5207"
+          },
+          {
+            "ref": "refs/heads/claude/julia-set-research-h65zm2",
+            "sha": "f3c1a1dce276d63b4356b5f115ed174ac4f7ee3b"
+          },
+          {
+            "ref": "refs/heads/claude/langlands-lab-structure-r8inbv",
+            "sha": "2d186bfeb87b0c64da326d8da7fbdd2a9765c451"
+          },
+          {
+            "ref": "refs/heads/claude/latest-pr-audit-8q9kl3",
+            "sha": "07f3db759139bc7e126a8a86d9302adf779f462a"
+          },
+          {
+            "ref": "refs/heads/claude/limits-projective-geometry-1xbm42",
+            "sha": "a78a84939680b06ef1296253f951311a6db2dcd6"
+          },
+          {
+            "ref": "refs/heads/claude/literature-gate-diagnostic-acw8d5",
+            "sha": "ea2384284c738c3ed4603e4cfa431d4795c7dfbc"
+          },
+          {
+            "ref": "refs/heads/claude/madic-ball-carrier",
+            "sha": "41a2fec7482536379b5a31bae61b5c9819a5e00f"
+          },
+          {
+            "ref": "refs/heads/claude/mandelbrot-certificates-bulb-ford-a7is19",
+            "sha": "5e58cfcbe6dc2835cf081df044354c480d8a9511"
+          },
+          {
+            "ref": "refs/heads/claude/mojo-census-catalogue-optimization-x5sfc1",
+            "sha": "ac0460d40cec4dc8359d140407a9eed30611071b"
+          },
+          {
+            "ref": "refs/heads/claude/nlapjt-remaining-tasks-g6p7w7",
+            "sha": "b6b193619a782fbd11b3b5d8167b4622de4d9358"
+          },
+          {
+            "ref": "refs/heads/claude/novelty-lab-kernel-vendor-69cjqu",
+            "sha": "be003a4ef643deeeff414a3a02ca2350b0569215"
+          },
+          {
+            "ref": "refs/heads/claude/pi-algebraic-rational-trig-1m75i8",
+            "sha": "59e4130ade61581340b5caba74d3e10a3fecf2f0"
+          },
+          {
+            "ref": "refs/heads/claude/repository-theorem-kind",
+            "sha": "ccc9b0f3ac9a455d19aee8c97d8a084bc3e56949"
+          },
+          {
+            "ref": "refs/heads/claude/vendor-finite-math-kernels-umyo7r",
+            "sha": "da41c27d547857f543b21898ac891ae531f6944a"
+          },
+          {
+            "ref": "refs/heads/codex/discrepancy-hot-loop",
+            "sha": "a04e5a1bab9b854b2a659bc18201fa9992c1d0ac"
+          },
+          {
+            "ref": "refs/heads/codex/fail-closed-numerics-policy",
+            "sha": "60e0de7e0637e50bffe780398c31855f6d66222f"
+          },
+          {
+            "ref": "refs/heads/codex/fix-vendoring-semantic-defects",
+            "sha": "54e851a03981cd40a6d832299dad693f292d76b0"
+          },
+          {
+            "ref": "refs/heads/codex/mirror-multi-program-estate-audit",
+            "sha": "32220f4b5285820a96372d37b1a98f396c7a3045"
+          },
+          {
+            "ref": "refs/heads/contract/typed-proof-graph-normalization-v1",
+            "sha": "02fb73e3a291fa71d9e0938d122d2a96b981c405"
+          },
+          {
+            "ref": "refs/heads/fix/alternative-proof-dependencies",
+            "sha": "fb52a2e0727013749631e5beb5031ffe8d0dc8c5"
+          },
+          {
+            "ref": "refs/heads/fix/proof-alternatives-pinned-release",
+            "sha": "0ff79ccaa3d71491d5eb9a8ed5a7e01c0c3e855a"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "5a0e694c69f73771335a88e0d75746d98fe22cce"
+          },
+          {
+            "ref": "refs/heads/oracle/julia-bigint-known-answer-v1",
+            "sha": "2840d2576e7de3edb57136e622ed8c762453a4fb"
+          },
+          {
+            "ref": "refs/heads/polyglot/migration-v1",
+            "sha": "4df761babc0ddc9d6b2b53be486ef481c7737be8"
+          },
+          {
+            "ref": "refs/heads/repair/projective-limits-fail-closed",
+            "sha": "71e842ce17f34bba81aa605f5dc08aa0bfe9839d"
+          },
+          {
+            "ref": "refs/heads/research/cyclotomic-polynomial-foundation",
+            "sha": "c2e474d0732b6fc10c2d6ab09ec969aa26534e5a"
+          },
+          {
+            "ref": "refs/heads/research/cyclotomic-polynomial-foundation-v2",
+            "sha": "f084e69a8723af393c390880fcf301021e71b469"
+          },
+          {
+            "ref": "refs/heads/research/cyclotomic-quotient-v1",
+            "sha": "8ace60130060f6b0f0330ef3a6457163fb496fae"
+          },
+          {
+            "ref": "refs/heads/research/quadratic-germ-index-v1",
+            "sha": "6e2cdea1c9be52e745c9070aeda10bc222d9cff3"
+          },
+          {
+            "ref": "refs/heads/tier2/embedded-module-normal-form",
+            "sha": "1166376413bde7d375a8717ac59a1ea7f9f6c486"
+          },
+          {
+            "ref": "refs/heads/tier2/weighted-cycle-gain",
+            "sha": "e7fe9d7a87c20bf9648d0e789828c8e4ca3de86d"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "93ee98ce340bf9a4807aea7e18453e5b37658b3b"
+          },
+          {
+            "ref": "refs/pull/10/head",
+            "sha": "41a2fec7482536379b5a31bae61b5c9819a5e00f"
+          },
+          {
+            "ref": "refs/pull/11/head",
+            "sha": "a7a3998d838c42a2632b455037b7217f3718bd1b"
+          },
+          {
+            "ref": "refs/pull/12/head",
+            "sha": "ac0460d40cec4dc8359d140407a9eed30611071b"
+          },
+          {
+            "ref": "refs/pull/13/head",
+            "sha": "4ad47562e46ef2d0bb0beb2ee02f5544108da1f4"
+          },
+          {
+            "ref": "refs/pull/14/head",
+            "sha": "b4821d39cfc624134326c2f082208cddcc67a9e6"
+          },
+          {
+            "ref": "refs/pull/15/head",
+            "sha": "675e1729fd65a3da53e86b5501d39b783de0182d"
+          },
+          {
+            "ref": "refs/pull/16/head",
+            "sha": "9c9d67e039988b1c73ee8f35c039f7dc405d0c2e"
+          },
+          {
+            "ref": "refs/pull/17/head",
+            "sha": "56ac8bc6e2fe47aae32f74fc392819d334ffecba"
+          },
+          {
+            "ref": "refs/pull/18/head",
+            "sha": "4df761babc0ddc9d6b2b53be486ef481c7737be8"
+          },
+          {
+            "ref": "refs/pull/19/head",
+            "sha": "2840d2576e7de3edb57136e622ed8c762453a4fb"
+          },
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "60e0de7e0637e50bffe780398c31855f6d66222f"
+          },
+          {
+            "ref": "refs/pull/20/head",
+            "sha": "52a65947aa6cca61029d80e5cb579f959db4452c"
+          },
+          {
+            "ref": "refs/pull/21/head",
+            "sha": "02fb73e3a291fa71d9e0938d122d2a96b981c405"
+          },
+          {
+            "ref": "refs/pull/22/head",
+            "sha": "30b563fca4866fcf4c402d4e215b56eefc80e655"
+          },
+          {
+            "ref": "refs/pull/24/head",
+            "sha": "ce722c209ef3da7b465ba2ffd1a4efaf83cc590b"
+          },
+          {
+            "ref": "refs/pull/25/head",
+            "sha": "56a00055d4eb372a09251886f64c0483b775f1a4"
+          },
+          {
+            "ref": "refs/pull/26/head",
+            "sha": "0b23ef36a238b5d9c3e1c6a710a27cc4307123a3"
+          },
+          {
+            "ref": "refs/pull/27/head",
+            "sha": "8a1bee07f452a108a71d3a6e19a15ee8b223778f"
+          },
+          {
+            "ref": "refs/pull/3/head",
+            "sha": "8168ed1b3b974767cfcaf3c41a7099319a525983"
+          },
+          {
+            "ref": "refs/pull/30/head",
+            "sha": "e7fe9d7a87c20bf9648d0e789828c8e4ca3de86d"
+          },
+          {
+            "ref": "refs/pull/31/head",
+            "sha": "f69559300f3ce371b368a03be4a84179c0d1462a"
+          },
+          {
+            "ref": "refs/pull/32/head",
+            "sha": "e612338803cc6b4971da9b63e363a04f9e8587ea"
+          },
+          {
+            "ref": "refs/pull/33/head",
+            "sha": "dfe9e6f627690f2ca72a38150f32de7bea461494"
+          },
+          {
+            "ref": "refs/pull/34/head",
+            "sha": "f084e69a8723af393c390880fcf301021e71b469"
+          },
+          {
+            "ref": "refs/pull/35/head",
+            "sha": "8ace60130060f6b0f0330ef3a6457163fb496fae"
+          },
+          {
+            "ref": "refs/pull/36/head",
+            "sha": "6e2cdea1c9be52e745c9070aeda10bc222d9cff3"
+          },
+          {
+            "ref": "refs/pull/37/head",
+            "sha": "7543130ccfa05a88b5ddbacb46d4371ac99c21f9"
+          },
+          {
+            "ref": "refs/pull/38/head",
+            "sha": "5e801385b9547b0bfa057c2ffa21b57519cfc51c"
+          },
+          {
+            "ref": "refs/pull/39/head",
+            "sha": "71e842ce17f34bba81aa605f5dc08aa0bfe9839d"
+          },
+          {
+            "ref": "refs/pull/4/head",
+            "sha": "07f3db759139bc7e126a8a86d9302adf779f462a"
+          },
+          {
+            "ref": "refs/pull/40/head",
+            "sha": "2b04ba8fa84e61fb5d4e29b0660860292a0b7539"
+          },
+          {
+            "ref": "refs/pull/42/head",
+            "sha": "1166376413bde7d375a8717ac59a1ea7f9f6c486"
+          },
+          {
+            "ref": "refs/pull/43/head",
+            "sha": "5e58cfcbe6dc2835cf081df044354c480d8a9511"
+          },
+          {
+            "ref": "refs/pull/44/head",
+            "sha": "5d18d4785e22bfacb0650ae86bff9508b5ed5207"
+          },
+          {
+            "ref": "refs/pull/45/head",
+            "sha": "c9ff7300b53c422e4adf6bc08bc8fd36c9d8d26e"
+          },
+          {
+            "ref": "refs/pull/46/head",
+            "sha": "3251f90ac7581a4e1d7a48c8a59814368b77c813"
+          },
+          {
+            "ref": "refs/pull/47/head",
+            "sha": "ea2384284c738c3ed4603e4cfa431d4795c7dfbc"
+          },
+          {
+            "ref": "refs/pull/48/head",
+            "sha": "0bc90dc4e58a52ae7647ff0e17a471522f61cbea"
+          },
+          {
+            "ref": "refs/pull/49/head",
+            "sha": "a04e5a1bab9b854b2a659bc18201fa9992c1d0ac"
+          },
+          {
+            "ref": "refs/pull/5/head",
+            "sha": "1084cc1d232f96b6422ea5b1284ba338e96c131a"
+          },
+          {
+            "ref": "refs/pull/50/head",
+            "sha": "32220f4b5285820a96372d37b1a98f396c7a3045"
+          },
+          {
+            "ref": "refs/pull/51/head",
+            "sha": "be003a4ef643deeeff414a3a02ca2350b0569215"
+          },
+          {
+            "ref": "refs/pull/52/head",
+            "sha": "fb52a2e0727013749631e5beb5031ffe8d0dc8c5"
+          },
+          {
+            "ref": "refs/pull/53/head",
+            "sha": "38b098c5839ea3a7825550935959dc1e05713b67"
+          },
+          {
+            "ref": "refs/pull/54/head",
+            "sha": "2d186bfeb87b0c64da326d8da7fbdd2a9765c451"
+          },
+          {
+            "ref": "refs/pull/55/head",
+            "sha": "1cd28af1c6cbdb83303563d25a1023247b880773"
+          },
+          {
+            "ref": "refs/pull/56/head",
+            "sha": "7f9e3841b09f9fbf4fcb6a1ebde5a86463d0a14a"
+          },
+          {
+            "ref": "refs/pull/57/head",
+            "sha": "f927b8a22d3a42cb0b462842fba4c1a07a34ae7b"
+          },
+          {
+            "ref": "refs/pull/58/head",
+            "sha": "eb83bb7749ea0267cce9c56d70180fe169fc7be6"
+          },
+          {
+            "ref": "refs/pull/59/head",
+            "sha": "da41c27d547857f543b21898ac891ae531f6944a"
+          },
+          {
+            "ref": "refs/pull/6/head",
+            "sha": "a2cc4cea522021daf37825315e9650ae091ad6e9"
+          },
+          {
+            "ref": "refs/pull/60/head",
+            "sha": "10a0aa9981d2504c57cd40f9c30b9352421ee336"
+          },
+          {
+            "ref": "refs/pull/62/head",
+            "sha": "59e4130ade61581340b5caba74d3e10a3fecf2f0"
+          },
+          {
+            "ref": "refs/pull/63/head",
+            "sha": "54e851a03981cd40a6d832299dad693f292d76b0"
+          },
+          {
+            "ref": "refs/pull/7/head",
+            "sha": "0f2d0fe7ca1555fd6bf57f1683e77da31077c48e"
+          },
+          {
+            "ref": "refs/pull/8/head",
+            "sha": "ccc9b0f3ac9a455d19aee8c97d8a084bc3e56949"
+          },
+          {
+            "ref": "refs/pull/9/head",
+            "sha": "d94ca067f6cfacfa2e3438cc55da8b96beec62fa"
+          }
+        ],
+        "repository": "larsbx/finite-math-kernels"
+      },
+      {
+        "blobs_scanned": 77,
+        "candidate_paths": [],
+        "commits": 68,
+        "hits": [],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/claude/estate-template-scaffolding-nxpvm2",
+            "sha": "07eec8e93ba0104feb1805dede212e193b4edb01"
+          },
+          {
+            "ref": "refs/heads/docs/package-availability-v0.1.0",
+            "sha": "c994155fc399e990377df03609b35949fde888b2"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "4eac858ef90da435df620c413ec88df4ebb0c6a5"
+          },
+          {
+            "ref": "refs/heads/migration/python-oracles-v1",
+            "sha": "d694949a5076cb7ffbd663baac4f536d3afa065e"
+          },
+          {
+            "ref": "refs/heads/scaffold/oracle-lab-v1",
+            "sha": "92c79cc464678677ef4a2cd7bc4e79a356cd532f"
+          },
+          {
+            "ref": "refs/heads/tier2/loop-gain-oracle-v1",
+            "sha": "0808836f234c2978ee93f8462fb2eb09ed8ca8e5"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "0843796102cb959da18f8c086e9f920019943955"
+          },
+          {
+            "ref": "refs/pull/10/head",
+            "sha": "a490f399ea51b1e2cb8cb38393de011e8eb54a80"
+          },
+          {
+            "ref": "refs/pull/11/head",
+            "sha": "0808836f234c2978ee93f8462fb2eb09ed8ca8e5"
+          },
+          {
+            "ref": "refs/pull/12/head",
+            "sha": "4f75bc9e99ea6c5fc10081be98bd667bc25d9a58"
+          },
+          {
+            "ref": "refs/pull/13/head",
+            "sha": "07eec8e93ba0104feb1805dede212e193b4edb01"
+          },
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "92c79cc464678677ef4a2cd7bc4e79a356cd532f"
+          },
+          {
+            "ref": "refs/pull/3/head",
+            "sha": "fb351ff24e9ec4a2c2303e915188966b4d422386"
+          },
+          {
+            "ref": "refs/pull/4/head",
+            "sha": "c994155fc399e990377df03609b35949fde888b2"
+          },
+          {
+            "ref": "refs/pull/5/head",
+            "sha": "4d59f814c9890c567717f15f05bb9f39b3d28e7f"
+          },
+          {
+            "ref": "refs/pull/6/head",
+            "sha": "d694949a5076cb7ffbd663baac4f536d3afa065e"
+          },
+          {
+            "ref": "refs/pull/9/head",
+            "sha": "a124922bcdab720cb62922b207197f4d5be03d49"
+          }
+        ],
+        "repository": "larsbx/julia-oracle-lab"
+      },
+      {
+        "blobs_scanned": 704,
+        "candidate_paths": [],
+        "commits": 86,
+        "hits": [
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "proof/langlands/LanglandsOracles/DataModL13.lean",
+            "sha": "f3216e8778e3f0c7badf45f416cd72e068c6e9c6",
+            "sha256": "9ed02c39a6821d1512f62d42165bcd8b9823b2bbc6bb652b3484b499b45e654e",
+            "size": 108352
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "proof/langlands/LanglandsOracles/DataModL17.lean",
+            "sha": "e04fd079df3146195badf1e1b9558544e6bb1c0c",
+            "sha256": "c408ec56d99ad906396e1482aaacf15884059a42fd1717507ebde7f69994661f",
+            "size": 187043
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "proof/langlands/LanglandsOracles/DataModL19.lean",
+            "sha": "a701a3a71d7b06b697dbba8759e73c119b17c6d8",
+            "sha256": "a86af9497de2121fe12fc41acbf917cc3206257706b89aa2d89cb9d2d872032d",
+            "size": 268874
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "proof/langlands/LanglandsOracles/DataModL23.lean",
+            "sha": "0ae659c1d286fff322a891e359eac7bcad5e7725",
+            "sha256": "e3d908d8d9d909af669b2387b055aa7dbf23fd2bdf3c0a8bc14e5fff517ea916",
+            "size": 460622
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "proof/langlands/LanglandsOracles/DataModL29.lean",
+            "sha": "bd3949b9405cf7ec0760b9ca154d896b5b8dfaae",
+            "sha256": "b2822871e44b2066d1342ee342a0accacb9034f4ccaf63461a51e9ecb8abe693",
+            "size": 603984
+          },
+          {
+            "matched_patterns": [
+              "graph6_record"
+            ],
+            "path": "lean/.lake/build/ir/LanglandsOracles/ImageModL.c",
+            "sha": "6860290e4767a146a760db05640e439bb1fca0b4",
+            "sha256": "7772286aefd75e4d01fb8ef9d4dcf40c628b52a8715e01e306b8899d884e44fd",
+            "size": 282921
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "lean/.lake/build/lib/lean/LanglandsOracles/Data.ilean",
+            "sha": "7199cda8a8e4bdd92c37edf9fef35c10816fa134",
+            "sha256": "91459d7a7335b7bae46bcddfbbce43fdeac85bbe7138a30d916d43d71e20d489",
+            "size": 54674
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "proof/langlands/LanglandsOracles/Data.lean",
+            "sha": "008baea3712987c9481c4dea8c9fe231ac3e93ef",
+            "sha256": "42dafa4e3cf980668da41dd4bc10185617afb32084f0b3a32dcc00a352732b81",
+            "size": 1123321
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "lean/LanglandsOracles/Data.lean",
+            "sha": "5ec2ef56144354bdd1e8017df208d400c030ba74",
+            "sha256": "889b723c50e72edbf54d20cd97e57afba652b20a95cea8d9b9195fe30af7a040",
+            "size": 662603
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "proof/langlands/LanglandsOracles/Data.lean",
+            "sha": "382715f68ca60a50d7a07708da688c69595cab3e",
+            "sha256": "fff1368dcfe4e76b6703f3f2000f9cdc45c183b5a91442960a07610fb5ee22a1",
+            "size": 1194526
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "lean/LanglandsOracles/Data.lean",
+            "sha": "bff98ca74552d9a3beebdf39191342988500b6a4",
+            "sha256": "006edcf7ae68f778a777a9bc576ca80c538c72ff6164542ddfb13bf53b6b9680",
+            "size": 826794
+          }
+        ],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/claude/langlands-lab-18-merge-dylv67",
+            "sha": "fa30b0901eac93744ed9fa7b29da432d805ebd5a"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "1fa8ff029031b0ae952eaa7d7c386a5b5d08ae1b"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "145084333e473aa98b85b8f7816e9278536e9c2f"
+          },
+          {
+            "ref": "refs/pull/10/head",
+            "sha": "2dc4c7bf8fdd19caff27d8c3c7e7802d35f10ce2"
+          },
+          {
+            "ref": "refs/pull/11/head",
+            "sha": "86561c5b1bd2a3c3644120ca55689cbce05148ca"
+          },
+          {
+            "ref": "refs/pull/12/head",
+            "sha": "9dc9c37dffd2a2094090bcdeeb4bde602edcf181"
+          },
+          {
+            "ref": "refs/pull/13/head",
+            "sha": "e363ac9f17d680ccf8f0d3b0a39ff74152ee931b"
+          },
+          {
+            "ref": "refs/pull/14/head",
+            "sha": "9ee45a441766870fd1300e23d419d9be296dda6e"
+          },
+          {
+            "ref": "refs/pull/15/head",
+            "sha": "985dd2c60ab9619d1126bfebcad06fe29c5d5edc"
+          },
+          {
+            "ref": "refs/pull/16/head",
+            "sha": "c8000609b1515b303ac3c445269fca3ea02d9192"
+          },
+          {
+            "ref": "refs/pull/17/head",
+            "sha": "3dbbf2b6d25cd4ad60bf793e40b7f5d0420c3224"
+          },
+          {
+            "ref": "refs/pull/18/head",
+            "sha": "fa30b0901eac93744ed9fa7b29da432d805ebd5a"
+          },
+          {
+            "ref": "refs/pull/19/head",
+            "sha": "626b324b49f3303d8685cd6e9bdb0032ce8e885a"
+          },
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "d1210d10dc6948e3e189b4026462d4d68097ca94"
+          },
+          {
+            "ref": "refs/pull/20/head",
+            "sha": "3e9a3df2f95fb8b2e5e6e75b55a1597cb105e6ed"
+          },
+          {
+            "ref": "refs/pull/21/head",
+            "sha": "5d61f24c22a70927415f3347a7d825c127006371"
+          },
+          {
+            "ref": "refs/pull/22/head",
+            "sha": "f92384701b4910fb1729770c997ca3610752d4c1"
+          },
+          {
+            "ref": "refs/pull/3/head",
+            "sha": "0a667fd7e75e514b47d2f118a80561e1b60b2b21"
+          },
+          {
+            "ref": "refs/pull/4/head",
+            "sha": "f55723c647b8c9a5f360684136c19438697ce2cb"
+          },
+          {
+            "ref": "refs/pull/5/head",
+            "sha": "f62403edc5ebf00e46ea2c183a14624fafd8b46f"
+          },
+          {
+            "ref": "refs/pull/6/head",
+            "sha": "0b1ff953aa885e06392fb31e04946c13f1bd0358"
+          },
+          {
+            "ref": "refs/pull/7/head",
+            "sha": "3e9bd9c19cbcd65d80cd32c44dc92d7b3e5ae610"
+          },
+          {
+            "ref": "refs/pull/8/head",
+            "sha": "9b088781484643afca19632aaf3e886b4f7a2b5b"
+          },
+          {
+            "ref": "refs/pull/9/head",
+            "sha": "221377b3e48a3085e57cfaa5f547d949742b89a6"
+          }
+        ],
+        "repository": "larsbx/langlands-lab"
+      },
+      {
+        "blobs_scanned": 790,
+        "candidate_paths": [],
+        "commits": 185,
+        "hits": [
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/antipode_certificates.json",
+            "sha": "bb05e22d5e5344bc00bbd0c13d79e471c545c555",
+            "sha256": "ec6761d10051feb08578304019e8ce2954ffb5712f0f13202dd885c77d2545f6",
+            "size": 74644
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/antipode_certificates_v14.json",
+            "sha": "de477f326267d6a05ea91ddac87d953d31d100bc",
+            "sha256": "f5b7555146411fcfe082c1428398109e987a9f96132d87c3938045ef294c3795",
+            "size": 277858
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/exact_index.txt",
+            "sha": "66b8537d047e4bcb81ed2b4dab8c8f39d24aad9a",
+            "sha256": "e54c61ff88eed0f84d308304bca9e4972b60370c7d467a1267739c77ffc5c8bd",
+            "size": 6963
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/index_q251.json",
+            "sha": "b550dd71099148aef68c6b9cadb9a77363795f43",
+            "sha256": "7bdf953f212a5b45f34eef58f517d1a975794cc5962d5370627737492faaa4a6",
+            "size": 16135
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/kappa_q1009.json",
+            "sha": "157c699deee2af5da3086f3d79543fc8452bd9d5",
+            "sha256": "65b57d54d089f0979f3d0d3e9723c6f527d01d40705419cd6d2059b9f23b6e30",
+            "size": 93075
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/kappa_q2003.json",
+            "sha": "a8efd7f9eb495f29a8ea1a1374387ed928f997fb",
+            "sha256": "b7dcd38c22cda3e5b56dc5da9c3196eb6df656ef6eda69b7c6eca655ad419fd3",
+            "size": 184928
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/kappa_q4001.json",
+            "sha": "d51593fdf68488e8c7e8db1033fbc73786251160",
+            "sha256": "75384c989c0a270c94607f88df9dc021b26369a7d46221da34f3069b3938dce1",
+            "size": 370575
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/sequences.json",
+            "sha": "05e6680985be136a261a982126d6d802d68b54ad",
+            "sha256": "a38329e132d79cc1e459676db56ec058a4618c71912444994de002b9a71cb452",
+            "size": 25127
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/taylor_q127.json",
+            "sha": "d6ab0cb389f92b8d8d4482fccb6c83f326ba5b0a",
+            "sha256": "2a45a2bcce5d2818cdb4f25bda226140bfbc8b7c3ff8279dc75ef8326b2aac7f",
+            "size": 70859
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/taylor_q251.json",
+            "sha": "5c02297ae23618d53fd8b24b388ea9e05199923b",
+            "sha256": "dab0c5f6342142479500f56665d14b391ee370b01118514333287f78bf655c5b",
+            "size": 140811
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/taylor_q59.json",
+            "sha": "a8f3b07eee061f2d2a1037003c2abcd2c5e7af33",
+            "sha256": "54bd8de12a30fe29924b7c429881102ef89c1804691998a9cdbbd4d4d10f5216",
+            "size": 32530
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/v14_certified.json",
+            "sha": "42cb0540ff329859d8fbce116139e18806a9ec10",
+            "sha256": "02491ed3605d756cdce3c491ad4179a8f247463af7e0fee7952f79716bcebc07",
+            "size": 196433
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "data/kappa_q2003_chunk0.json",
+            "sha": "a3a862df58f6748de97004d632d1a5cbea59b7e5",
+            "sha256": "f5688325ba348ba42b4b22879ac098f670473f9cccfd397b9c1c01cfc3dc8305",
+            "size": 46195
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "data/kappa_q2003_chunk1.json",
+            "sha": "bbd46acdd848441ed95b6d5574d53e2705971cd3",
+            "sha256": "4bc7ceb6a47160d155a1f9b6ce94144f39c5255367fcc7ec1711b50e8db54ac3",
+            "size": 46361
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "data/kappa_q2003_chunk2.json",
+            "sha": "900165ceb620ce08ecd1e6fbde4e67bcea2ec069",
+            "sha256": "06985550af60f7caef4929e26e471bfa08546abe394336d78634f9f015ba7ca2",
+            "size": 46188
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "data/kappa_q2003_chunk3.json",
+            "sha": "cf57fbdf73f71db11de65a4c4e0cc9e4f4958c0d",
+            "sha256": "5eaa1874482d9014c8a8752f7ca20bb7d69e514b496e8fa3cd02976512ef2d07",
+            "size": 46184
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "data/leading_coeff_q251.json",
+            "sha": "e9297e3c00972e4f2d9da1df29afa95ab835be37",
+            "sha256": "6a309f17b21b8e7b8adc654cab14b68f6e23312ade6351cd1ed607934d878de6",
+            "size": 19928
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "data/leading_coeff_q59.json",
+            "sha": "c6070dcca07379dd9d130434152279ee7ed1118a",
+            "sha256": "b1fcfe787a3cf69d2b02a37c218b6bab95907b9f183ef37867b87a2b22b34a95",
+            "size": 4566
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "data/tip_map_A.json",
+            "sha": "14c1e33a7aa5e945c117045ed06a79af9e17f714",
+            "sha256": "947efecd9cb18e70fc47d4d9e01ac8f109793c0a6f3fda28fb076543ce0547f0",
+            "size": 19759
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "data/tip_map_B.json",
+            "sha": "5dccb22e6e7b5b8909f70eb8c7a8f3362cbc36dc",
+            "sha256": "c8aa30a24350d6179d39c7b3a8d81d7a8b2bbfa114e9689f8d8984566bdff6b1",
+            "size": 19393
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/antipode_certificates.json",
+            "sha": "de673940145a2cf5aa04db847852fde9e8d59b4e",
+            "sha256": "ae91947703996dd9685e69357a08985f7029b2d028b9160994ee44a652c30849",
+            "size": 74646
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/antipode_certificates_v14.json",
+            "sha": "0c56dddce50e9c48f5e19380b6dbdf9836c56d00",
+            "sha256": "ebd6e0cf75d6c77c4506acec826000e3e4b2a4fa04aa4286a1b861da8c9255db",
+            "size": 277862
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/data/v14_certified.json",
+            "sha": "fe3bb8927d91848a2ff7513517c11f94a9969b28",
+            "sha256": "ea85c10333ffe9efd045c4471e3219898c7b062ae8e553db1dc26f17f8a57548",
+            "size": 196442
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "data/antipode_certificates.json",
+            "sha": "1b4f25a79b46d44dbf325ec890489d9f7dc646d3",
+            "sha256": "db22af4944e54563e1c5dc63fe18b550d1b540c87ad585b26511c190378df8d5",
+            "size": 74638
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "data/antipode_certificates_v14.json",
+            "sha": "7699b0b77b95d4140cfba5b9c7e4894c889766ce",
+            "sha256": "58cbc7459793ceedba895a295afc9df551a3f3547f16276ec2132a5dc7c4a49c",
+            "size": 99463
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "data/leading_coeff_q127.json",
+            "sha": "c5c05c9d1a3dccf3cf7a57b320e9685cee60e841",
+            "sha256": "b241654d545a8159c1330708904813aa18a7c3d85a4000d23c6bd34953bf1c2b",
+            "size": 9978
+          }
+        ],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/claude/bulbford-study-contributions-z2321j",
+            "sha": "590bd380faae64c1de41cff7a35ad40ca1a6140b"
+          },
+          {
+            "ref": "refs/heads/claude/continue-appropriate-repo-mhphk6",
+            "sha": "5b1cae395f28abe2ebe68b8de9a71a24dd045255"
+          },
+          {
+            "ref": "refs/heads/claude/estate-template-scaffolding-nxpvm2",
+            "sha": "0f55877b2ac5d161c17d6a878ee29a6036efafbc"
+          },
+          {
+            "ref": "refs/heads/claude/move-visualizations-vizops-xaqnje",
+            "sha": "c794da55aa1432ab9a1df807c633501dfb965fca"
+          },
+          {
+            "ref": "refs/heads/docs/wake-cycle-mandelbrot-visual",
+            "sha": "4e7dcbff1b7eb58b8c5c2ca805ea4d248ebf72bd"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "65ba5688ebb78119c4331e9d5f7c14701b8b55ed"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "d37a1a46000b14c1a760387e85e4db84436f7d6f"
+          },
+          {
+            "ref": "refs/pull/10/head",
+            "sha": "1ab6c666386d2e2201072ae4ceabf1bc6268f0d1"
+          },
+          {
+            "ref": "refs/pull/11/head",
+            "sha": "0db81188e25cf7073ebd0d6bd4a37a47e0029cbd"
+          },
+          {
+            "ref": "refs/pull/12/head",
+            "sha": "ca10de49bb564d668bdf8c51dc2b8406c075be15"
+          },
+          {
+            "ref": "refs/pull/13/head",
+            "sha": "f6158dd6d0c40740749343893067e1aa9d91a977"
+          },
+          {
+            "ref": "refs/pull/14/head",
+            "sha": "b9a72b68f9b8ee78d9b972e6ebf185a23bac7c8f"
+          },
+          {
+            "ref": "refs/pull/15/head",
+            "sha": "9b14449ee42ebcf1df3758447994456f258e24e2"
+          },
+          {
+            "ref": "refs/pull/16/head",
+            "sha": "6beace24272bd5fa44a296fbd862c1f972a2b054"
+          },
+          {
+            "ref": "refs/pull/17/head",
+            "sha": "791a2a2569049a16518459033dbf66540a952f07"
+          },
+          {
+            "ref": "refs/pull/18/head",
+            "sha": "c5b2c1c2c059b77cd912999b1a2ad4992be5e2b0"
+          },
+          {
+            "ref": "refs/pull/19/head",
+            "sha": "cf050ad7eebd6811eef3c69d857677f9fdb74213"
+          },
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "deeaa6ca502ae5cb0f92b3468fba452d0cba6c58"
+          },
+          {
+            "ref": "refs/pull/20/head",
+            "sha": "4e7dcbff1b7eb58b8c5c2ca805ea4d248ebf72bd"
+          },
+          {
+            "ref": "refs/pull/21/head",
+            "sha": "f1091987bad6c709e35ecaba24a02619698c8b76"
+          },
+          {
+            "ref": "refs/pull/22/head",
+            "sha": "c794da55aa1432ab9a1df807c633501dfb965fca"
+          },
+          {
+            "ref": "refs/pull/23/head",
+            "sha": "5fc55ea9d2892b8c704c68488fb61996cc890a42"
+          },
+          {
+            "ref": "refs/pull/24/head",
+            "sha": "d4f48d0b1e25068be3902863390db8c594990bd0"
+          },
+          {
+            "ref": "refs/pull/25/head",
+            "sha": "184acd50dcce90b0e3d2f96c0fd3e7fdacefa81e"
+          },
+          {
+            "ref": "refs/pull/26/head",
+            "sha": "0f55877b2ac5d161c17d6a878ee29a6036efafbc"
+          },
+          {
+            "ref": "refs/pull/27/head",
+            "sha": "92615a90bbf486a4fcddd91dddc6f24563ae29c0"
+          },
+          {
+            "ref": "refs/pull/28/head",
+            "sha": "6ba3f366e7316e4673766f1293b0cf22d765fb29"
+          },
+          {
+            "ref": "refs/pull/29/head",
+            "sha": "909c4c74825bc0b7f69ee5889fb45508716687ff"
+          },
+          {
+            "ref": "refs/pull/3/head",
+            "sha": "8642fc88f405432faa3ac5568fbe1d540e718f7e"
+          },
+          {
+            "ref": "refs/pull/30/head",
+            "sha": "e071c1685e617cdfa33573484541a2fe7adbcf2e"
+          },
+          {
+            "ref": "refs/pull/4/head",
+            "sha": "c53953ff3aefc26a21a4530288c46506d95429b9"
+          },
+          {
+            "ref": "refs/pull/5/head",
+            "sha": "b53f3244108a8d1d66aa15507b56c948b3463627"
+          },
+          {
+            "ref": "refs/pull/6/head",
+            "sha": "0f4a304c6058f08de26a767cfa37e8a95fc0d51c"
+          },
+          {
+            "ref": "refs/pull/7/head",
+            "sha": "e1db83217fa4ef830b19078bd28f97820ea636e8"
+          },
+          {
+            "ref": "refs/pull/8/head",
+            "sha": "d59c4a5d32669e8b384e87560ee6e9a0c4b4dc44"
+          },
+          {
+            "ref": "refs/pull/9/head",
+            "sha": "b52876c0e8c854dfbf458ca5bd72755a61a63ef3"
+          }
+        ],
+        "repository": "larsbx/mandelbrot-bulbs-and-ford-circles-research"
+      },
+      {
+        "blobs_scanned": 176,
+        "candidate_paths": [],
+        "commits": 57,
+        "hits": [],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/dependabot/pip/pip-fec1d00dd4",
+            "sha": "a21bb4c60ac0d7ae393423543757691979317a9d"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "bd48acba11deb32e08a62963aaec52cf78d66650"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "81ed7760aac02b6bf186e5d9682cba7d94cd41f9"
+          },
+          {
+            "ref": "refs/pull/10/head",
+            "sha": "3b538a60aca89d40bd7afca0d9faf830971b4794"
+          },
+          {
+            "ref": "refs/pull/11/head",
+            "sha": "5371d487c552db63cc6a28e10e13d115f6816886"
+          },
+          {
+            "ref": "refs/pull/12/head",
+            "sha": "295d09a69bf5796d6e3590868261643af22ee82f"
+          },
+          {
+            "ref": "refs/pull/13/head",
+            "sha": "a21bb4c60ac0d7ae393423543757691979317a9d"
+          },
+          {
+            "ref": "refs/pull/13/merge",
+            "sha": "c55058915abc6e4f0c319b5f60faf9b0f46c6d95"
+          },
+          {
+            "ref": "refs/pull/3/head",
+            "sha": "709fd56cf42e098d780102a80bb79b9aef1285ad"
+          },
+          {
+            "ref": "refs/pull/4/head",
+            "sha": "54253ad93d6e77935f61585b127c33b3371a26b0"
+          },
+          {
+            "ref": "refs/pull/5/head",
+            "sha": "4e7704f3ae757e02531958df3ea74c661cb6669e"
+          },
+          {
+            "ref": "refs/pull/6/head",
+            "sha": "8a4d8812b720e670e155194d720d1a5993a0967a"
+          },
+          {
+            "ref": "refs/pull/7/head",
+            "sha": "b66b6ad34b38fc21b4214c2ba75e23410df4230a"
+          },
+          {
+            "ref": "refs/pull/8/head",
+            "sha": "19596ca23dbd774d53c69d90001cab2ec6d9876e"
+          },
+          {
+            "ref": "refs/pull/9/head",
+            "sha": "bca23379d62ece8ff77272db6b17c3c84dafe009"
+          }
+        ],
+        "repository": "larsbx/math-vizops"
+      },
+      {
+        "blobs_scanned": 528,
+        "candidate_paths": [
+          {
+            "path": "data/n2/h3-conditioned-certificates-v1.json.gz",
+            "sha": "6e29dabbc9cef852cc4e0e44530e80fa728b61ba"
+          }
+        ],
+        "commits": 100,
+        "hits": [],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/claude/novelty-lab-kernel-vendor-69cjqu",
+            "sha": "c218c2c9e983479dc29cf3aa7756f51a7c04bf36"
+          },
+          {
+            "ref": "refs/heads/codex/h3-conditioned-shell-20261004",
+            "sha": "970888d188c923306e4339400eb7021d72345a57"
+          },
+          {
+            "ref": "refs/heads/fix/claim-provenance-reconciliation",
+            "sha": "3d56d3fb00935c653172d4744699a58bfda2b16e"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "c218c2c9e983479dc29cf3aa7756f51a7c04bf36"
+          },
+          {
+            "ref": "refs/heads/research/f3-composition-certificate",
+            "sha": "a82b3cb9ba64625b04514e29d5f6d1054ea1bdf9"
+          },
+          {
+            "ref": "refs/heads/research/f3-lean-oracle-replay",
+            "sha": "69cceaa28c7a7772492d69e44c110b2dc72e26f0"
+          },
+          {
+            "ref": "refs/heads/research/n5-nielsen-multiset-budgets",
+            "sha": "b8ffbde6ed741563d5e97366eb2704a6503e0d8f"
+          },
+          {
+            "ref": "refs/heads/research/n6-f7-orbit-comparison",
+            "sha": "6112ed2b6eadf4268589a3a20830502d336e9115"
+          },
+          {
+            "ref": "refs/heads/research/pentagon-lean-oracle",
+            "sha": "69cceaa28c7a7772492d69e44c110b2dc72e26f0"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "e52f9e6fdb519fb0fecabab3fd5481311178f267"
+          },
+          {
+            "ref": "refs/pull/10/head",
+            "sha": "3d56d3fb00935c653172d4744699a58bfda2b16e"
+          },
+          {
+            "ref": "refs/pull/11/head",
+            "sha": "6b1d6dbec4ead7dfd72a5eb59dd76b46914c43bb"
+          },
+          {
+            "ref": "refs/pull/12/head",
+            "sha": "2437ee495a1ecf967a84727b89801ebc106e0f1b"
+          },
+          {
+            "ref": "refs/pull/13/head",
+            "sha": "38f33e9e7a28c33f28841e8c50a8b3ab7cd8e1bc"
+          },
+          {
+            "ref": "refs/pull/14/head",
+            "sha": "89d0d5744a3dbd05e97cd428aa273a69b86b3960"
+          },
+          {
+            "ref": "refs/pull/15/head",
+            "sha": "c6cf9cc52639c599cb90f5f1fc905f001b37b519"
+          },
+          {
+            "ref": "refs/pull/16/head",
+            "sha": "41ebdef64caee64bebc5492ff6ccb0ef6fba41ed"
+          },
+          {
+            "ref": "refs/pull/17/head",
+            "sha": "3990b76501a6ff85ba53b5f65f412f96a9b5526c"
+          },
+          {
+            "ref": "refs/pull/18/head",
+            "sha": "783301d6a1d5035f8e1da3efdeb8f6aedd9c454c"
+          },
+          {
+            "ref": "refs/pull/19/head",
+            "sha": "ce6e7c8c67d6892473e2365d91bac87afbcda842"
+          },
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "6876ede7641d8ea16ff9f2ed6cbca5b29f20e3c7"
+          },
+          {
+            "ref": "refs/pull/20/head",
+            "sha": "b8ffbde6ed741563d5e97366eb2704a6503e0d8f"
+          },
+          {
+            "ref": "refs/pull/21/head",
+            "sha": "72808b2333e9432b40d157d27fd61b565d376cfc"
+          },
+          {
+            "ref": "refs/pull/22/head",
+            "sha": "29d2ce67fe8222933739c39df000fd31912e41a3"
+          },
+          {
+            "ref": "refs/pull/23/head",
+            "sha": "d8109a42cfbb9b2b0c8e109f105b08577e7d3ee5"
+          },
+          {
+            "ref": "refs/pull/24/head",
+            "sha": "ab864ad53b717dbb1fa2b2f94fc6a76a124c970d"
+          },
+          {
+            "ref": "refs/pull/25/head",
+            "sha": "970888d188c923306e4339400eb7021d72345a57"
+          },
+          {
+            "ref": "refs/pull/26/head",
+            "sha": "31abf8aa65458ccc8c81c360789776dccbbdb497"
+          },
+          {
+            "ref": "refs/pull/27/head",
+            "sha": "045db43a5e773760bf89d981757a036ff4933860"
+          },
+          {
+            "ref": "refs/pull/28/head",
+            "sha": "6ea188906592e21ff8ecb4a815e1b2d6e2c8ff98"
+          },
+          {
+            "ref": "refs/pull/3/head",
+            "sha": "7d8b5ee19014c8261c959aeeae1a4f096ae411cf"
+          },
+          {
+            "ref": "refs/pull/4/head",
+            "sha": "645b9dea2ff8153dfd497d3571aa06b3d79b3a15"
+          },
+          {
+            "ref": "refs/pull/5/head",
+            "sha": "69cceaa28c7a7772492d69e44c110b2dc72e26f0"
+          },
+          {
+            "ref": "refs/pull/6/head",
+            "sha": "a82b3cb9ba64625b04514e29d5f6d1054ea1bdf9"
+          },
+          {
+            "ref": "refs/pull/7/head",
+            "sha": "fae439140d9413a1939ed3d9194460dc0425d80c"
+          },
+          {
+            "ref": "refs/pull/8/head",
+            "sha": "6112ed2b6eadf4268589a3a20830502d336e9115"
+          },
+          {
+            "ref": "refs/pull/9/head",
+            "sha": "c35e4b81cf28d9d1c68eecb1d9b0f20f4fa25a9e"
+          }
+        ],
+        "repository": "larsbx/novelty-lab"
+      },
+      {
+        "blobs_scanned": 3377,
+        "candidate_paths": [
+          {
+            "path": "archive/2026-10-02/separation-radius-total-length/evidence.zip",
+            "sha": "fbb16b53a7288bdf397afa8786d6d166b6a99f70"
+          },
+          {
+            "path": "archive/2026-10-04/session-probes/evidence.zip",
+            "sha": "a2b9101e719831ae70e34f819942be185590ec86"
+          },
+          {
+            "path": "evidence/catch-up-hits-2026-10-04/len4-first1000-failures.jsonl.gz",
+            "sha": "42829ef1e1d8e58890f678596f4454f91fe7957a"
+          },
+          {
+            "path": "evidence/catch-up-hits-2026-10-04/replay-total.txt.gz",
+            "sha": "90f883d4ad03d24912d877006ff2a541d991c60c"
+          },
+          {
+            "path": "evidence/catch-up-hits-2026-10-04/standing-failures.jsonl.gz",
+            "sha": "3c6e84f60ce780183ba944a6d6f702cbf9115990"
+          },
+          {
+            "path": "evidence/catch-up-hits-2026-10-04/total8-first1000-failures.jsonl.gz",
+            "sha": "375e175ddb15e97308c9c72b02a6aea9c3530e51"
+          }
+        ],
+        "commits": 1276,
+        "hits": [],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/audit/2026-09-11-two-gate-ledger",
+            "sha": "ea8dfa4978049df0be7a95f2ed236fc405a0cd57"
+          },
+          {
+            "ref": "refs/heads/audit/2026-09-11-two-gate-ledger-v2",
+            "sha": "3b96773240b98328e87665d3e59a493c45142c2d"
+          },
+          {
+            "ref": "refs/heads/audit/amend-2026-09-10",
+            "sha": "feee00a97f8fa8d4f7a983aa93e6b3c5b7b111f1"
+          },
+          {
+            "ref": "refs/heads/bolt-optimize-apply-substitution-15443844877474330349",
+            "sha": "630bfc9598b9e171f29f838526623c2ddd9eb6eb"
+          },
+          {
+            "ref": "refs/heads/bolt-optimize-bpa-4756037042725811008",
+            "sha": "faf7e1f6515ee8c557d1debc838854af69903184"
+          },
+          {
+            "ref": "refs/heads/bolt-optimize-fraction-horner-9428150084346799872",
+            "sha": "4ab35841afd67050bf250134f4a1a7fad9af5f7d"
+          },
+          {
+            "ref": "refs/heads/bolt-optimize-math-vectors-2897939576812045973",
+            "sha": "83eef72bb1a5736ce68d7c23a37db9780e2ca291"
+          },
+          {
+            "ref": "refs/heads/bolt-optimize-poly-rem-15002501581826378046",
+            "sha": "ef092fee77227f5e2d000d8280ba975575a58b26"
+          },
+          {
+            "ref": "refs/heads/bolt-pisot-screen-fraction-opt-1702388902447990673",
+            "sha": "9bb725328b66802418ba754354fcb840cff404d0"
+          },
+          {
+            "ref": "refs/heads/bolt-poly-rem-opt-3810929869388194556",
+            "sha": "00c2b37a8c5032a683a3a08524bb55efbbceac3a"
+          },
+          {
+            "ref": "refs/heads/bolt/optimize-polynomial-calc-15329607840590263642",
+            "sha": "2c2068f3d1e134e1a85c50f2f74e3f7785392c82"
+          },
+          {
+            "ref": "refs/heads/bolt/optimize-remainder-1585823136319947045",
+            "sha": "0e5661667d613178a91328a1ce4141fd71336f5b"
+          },
+          {
+            "ref": "refs/heads/bolt/optimize-swap-discrepancy-13556442188838183691",
+            "sha": "5c05c2dd05786598800e94663c5edc6df643d5b8"
+          },
+          {
+            "ref": "refs/heads/claude/audit-state-math-progress-krusro",
+            "sha": "c642f50922ffc2e30a7bf81035b709612d243f96"
+          },
+          {
+            "ref": "refs/heads/claude/depth-support-saturation-pzqx3m",
+            "sha": "89f0f7977e1149c717f8a2cb2d6c3a8d1cb135e0"
+          },
+          {
+            "ref": "refs/heads/claude/estate-templates-documents-nmcjdp",
+            "sha": "f52d088f5e7ffa9a95eda2ad7af8388a6f23cb29"
+          },
+          {
+            "ref": "refs/heads/claude/extract-psc-nlap-packages-v5l1zl",
+            "sha": "643399a4654957801a58184ae2a76c8ca4c7d08f"
+          },
+          {
+            "ref": "refs/heads/claude/fibre-relation-return-vectors-w25u51",
+            "sha": "9a3fc8137cefcd4e9378aab84ed4d21308a345b0"
+          },
+          {
+            "ref": "refs/heads/claude/isomorphisms-gaps-analysis-jkvo3f",
+            "sha": "ac6ccccbb11f8ef3b80b421cb2c50d167f2ed279"
+          },
+          {
+            "ref": "refs/heads/claude/langlands-lab-structure-r8inbv",
+            "sha": "85e405dd627eaae859abec562f9e5fbcf7e4505a"
+          },
+          {
+            "ref": "refs/heads/claude/library-extraction-candidates-d9lp6i",
+            "sha": "6d8e6a07b45b8b920718295c936074343dc45c1f"
+          },
+          {
+            "ref": "refs/heads/claude/literature-gate-diagnostic-acw8d5",
+            "sha": "1a938a0d7a182f00a10310cdca8bd71198d21797"
+          },
+          {
+            "ref": "refs/heads/claude/manuscript-recent-changes-14dycf",
+            "sha": "e3a199024ce1d4fc4e0bf25e248d4f7cd918d89a"
+          },
+          {
+            "ref": "refs/heads/claude/meta-text-exemptions-context-s852x7",
+            "sha": "2d90b2b6233310e651a219bcaeb6c94e9e6fe1a1"
+          },
+          {
+            "ref": "refs/heads/claude/mojo-census-catalogue-optimization-x5sfc1",
+            "sha": "3e29df0d227fdad3b11db64d33457e5670a59514"
+          },
+          {
+            "ref": "refs/heads/claude/mojo-finite-proof-records-zrimg2",
+            "sha": "fd918f71d26b8012a5c163e807b0042655533a48"
+          },
+          {
+            "ref": "refs/heads/claude/mojo-max-audit-oelod9",
+            "sha": "4ecb5fd2c318879fb715e4977a33b006d144e8ef"
+          },
+          {
+            "ref": "refs/heads/claude/mojo-tla-lean4-verification-7fqagk",
+            "sha": "fc7f7cbcd4802efda55ccbde1d3ba6b0e9cc568b"
+          },
+          {
+            "ref": "refs/heads/claude/nlapjt-remaining-tasks-g6p7w7",
+            "sha": "c8b959c44fee1ba63d009bb47211a4a525684b76"
+          },
+          {
+            "ref": "refs/heads/claude/parikh-exemption-matching-alofab",
+            "sha": "ae3a61a663012b4d75dc219c05fa61794bcb3a9e"
+          },
+          {
+            "ref": "refs/heads/claude/pisot-bpa-component-proof-mgj7w6",
+            "sha": "f8afbfac8b8c2e2c914d891ae4e67bb089595984"
+          },
+          {
+            "ref": "refs/heads/claude/pisot-conjecture-manuscript-ax4m51",
+            "sha": "6e53a4c75e624b62527e76d0d433ae129a352607"
+          },
+          {
+            "ref": "refs/heads/claude/rational-interval-arithmetic-nekgk6",
+            "sha": "381c09faabc465d1f39f1aefc702475a09d37ed3"
+          },
+          {
+            "ref": "refs/heads/claude/repo-audit-8ehalr",
+            "sha": "3cb9c08edec80f8cec15974573f4931d455eb5fb"
+          },
+          {
+            "ref": "refs/heads/claude/shortest-path-goal-1m9gwl",
+            "sha": "ae3266904e528b3d88028231685e0059de30d4cd"
+          },
+          {
+            "ref": "refs/heads/claude/unimodular-route-exploration-c8ml1g",
+            "sha": "3d78f3776aca18588a164d14a4d8000bdd261b87"
+          },
+          {
+            "ref": "refs/heads/claude/vendor-finite-math-kernels-umyo7r",
+            "sha": "f856ad4d5ad444080c534550355e8412b9d17564"
+          },
+          {
+            "ref": "refs/heads/codex/catch-up-witness-evidence",
+            "sha": "79568d7d48c586f3ec63e571636a3a22fc12f692"
+          },
+          {
+            "ref": "refs/heads/codex/close-overlap-bridge-audit",
+            "sha": "e4970aef7c74c62d44cd4479721db3ea946eb864"
+          },
+          {
+            "ref": "refs/heads/codex/coaccessible-coincidence-bound",
+            "sha": "a955f96095a6445babb9eb3c20931be3f2eabf10"
+          },
+          {
+            "ref": "refs/heads/codex/daily-growing-pip-corpus",
+            "sha": "2a1daa8f99742b78beabb15fc2f0f3d5cd24c1b7"
+          },
+          {
+            "ref": "refs/heads/codex/fix-prefix-normal-form-gate",
+            "sha": "78133a0c37f9d8d924c86f18cc8400264c3593ed"
+          },
+          {
+            "ref": "refs/heads/codex/issue-84-seed-growth-bridge",
+            "sha": "56cb6f6876815eb9b4f8e542b5d3deddf311f037"
+          },
+          {
+            "ref": "refs/heads/codex/max-parallel-bpa-census",
+            "sha": "2c8571ec383e5408bd350298fc251bf77943b463"
+          },
+          {
+            "ref": "refs/heads/codex/mojo-authority-object-catalogue",
+            "sha": "1501d61ea49bc657c2c0beb0035bb351c38c245b"
+          },
+          {
+            "ref": "refs/heads/codex/pr197-audit-2026-10-04",
+            "sha": "52fddafbdb4237ae9e5b3fc9e3e06836afc3229a"
+          },
+          {
+            "ref": "refs/heads/codex/prefix-translation-normal-form",
+            "sha": "3c2368616a997314bb1377dc6fa3787327f446e9"
+          },
+          {
+            "ref": "refs/heads/codex/uniform-coincidence-bound",
+            "sha": "19b3689baa93830b611569bf134a840c9b84f9cc"
+          },
+          {
+            "ref": "refs/heads/corpus/daily-growth",
+            "sha": "aa2a208577a810bbbb38031fda8e49ad367859d2"
+          },
+          {
+            "ref": "refs/heads/docs/completion-ledger-2026-09-28",
+            "sha": "cfa4513768ca2318d848ed459faeba4a1766c71e"
+          },
+          {
+            "ref": "refs/heads/docs/minimal-bad-scc-parallel-track",
+            "sha": "2db7b1708f525969152884f8dccb74b7e6b90332"
+          },
+          {
+            "ref": "refs/heads/docs/pr73-review-followup",
+            "sha": "3e6ff7ea3b2f0d7d24e4e5f3a91ec60263e82b46"
+          },
+          {
+            "ref": "refs/heads/docs/psc-completion-ledger-2026-09-14",
+            "sha": "002c265e9e41a22a248b1e76dd4be0c16371ae46"
+          },
+          {
+            "ref": "refs/heads/docs/psc-motivation-2026-10-02",
+            "sha": "03a9e57dcf34846dfbc293f123c34a948ff2d8d1"
+          },
+          {
+            "ref": "refs/heads/docs/representation-control-bpa-overlap-2026-10-02",
+            "sha": "e0d80505d4abd84dadaa2a26d87acde37b4166bb"
+          },
+          {
+            "ref": "refs/heads/docs/research-roadmap-2026-09-21",
+            "sha": "4fa85b57f560dba657cf48e0d6435316e1bef520"
+          },
+          {
+            "ref": "refs/heads/docs/roadmap-weekly-audit-2026-10-05",
+            "sha": "bf798c4ef651e905fbc90e55b34e81ab9968f1d7"
+          },
+          {
+            "ref": "refs/heads/docs/subtractive-stewardship-skill",
+            "sha": "67ec9fd03e8b926dd89f38ea9d49e268d7728666"
+          },
+          {
+            "ref": "refs/heads/docs/sync-c4-record",
+            "sha": "a30344db09cb4e36e5873b39b9fdc14240257222"
+          },
+          {
+            "ref": "refs/heads/docs/sync-issue-139-baseline",
+            "sha": "6a029b43b5c35f884cac13c1be694b1c908371b8"
+          },
+          {
+            "ref": "refs/heads/docs/v9-extraction-audit-2026-09-23",
+            "sha": "07474edf9e0eabbd557c6e47d73aa92eb627e5aa"
+          },
+          {
+            "ref": "refs/heads/evidence/separation-radius-results",
+            "sha": "ff96136ae3338af9e679b328900171c051688482"
+          },
+          {
+            "ref": "refs/heads/finite-signing-parity-mojo",
+            "sha": "792b7b9b50e4d9b64fa7ef65a6e5e81e88a1a9ff"
+          },
+          {
+            "ref": "refs/heads/fix/c3-lineage-invariant-abort",
+            "sha": "acbf30af4c3f4a13a3a1b8ff6e23ccd2bd21c9e4"
+          },
+          {
+            "ref": "refs/heads/fix/issue-168-markdown-controls",
+            "sha": "ab6005552ab66f712e3b852bc26233800a8a50cc"
+          },
+          {
+            "ref": "refs/heads/fix/issue-45-provenance-followup",
+            "sha": "e444cf752833d01afb44bd5da1d0d0ec0cec96b6"
+          },
+          {
+            "ref": "refs/heads/fix/manuscript-audit-stale-targets",
+            "sha": "f6cca6bb93cc9e9095e0e7eb38c490e56b13fa3a"
+          },
+          {
+            "ref": "refs/heads/fix/p1b-empty-residue-validation",
+            "sha": "8a9f0ec58a0f0388236953e45b7f01dd3ceb930f"
+          },
+          {
+            "ref": "refs/heads/fix/pr177-canonical-polynomials",
+            "sha": "8ffa62c3985e9da1623d46a1f3d2fbc0cc1b3f43"
+          },
+          {
+            "ref": "refs/heads/infra/mojo-first-default",
+            "sha": "fb0f5dda8482c17b512bbf774c1a005024054efe"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "8fc95f65b50d26b235200dc8d8c322c43f180f2f"
+          },
+          {
+            "ref": "refs/heads/maintenance/oct1-status-integrity",
+            "sha": "ac94a5a13b26d19fae9038d724bb8880af399451"
+          },
+          {
+            "ref": "refs/heads/optimize-poly-rem-15760588044278384049",
+            "sha": "be758795a1561c194bbf18f12bc1212f0cb579f8"
+          },
+          {
+            "ref": "refs/heads/polyglot/migration-v1",
+            "sha": "e88d4acc7b20373b19cdedbaa46e8992c914c8f4"
+          },
+          {
+            "ref": "refs/heads/research/c3-exception-audit",
+            "sha": "f75ae7f535da23e78bf7f0646d6c786d527aea01"
+          },
+          {
+            "ref": "refs/heads/research/c3-mojo-census",
+            "sha": "9d94ef43203a9d00c3f1e62fec2bee2c7f10ba24"
+          },
+          {
+            "ref": "refs/heads/research/c3-newborn-boundaries",
+            "sha": "0afcda2679d6b8f973e5e36d832ec6aeb3d310fc"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-actual",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-clean",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-clean2",
+            "sha": "bb0ef27e0222e0ac317d1f8939389c817c4020dc"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-final",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-final2",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-final3",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-final4",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-pr",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-real",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-v2",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-v3",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-bd-endpoint-eliminator-work",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-birth-event-transducer",
+            "sha": "09f0729c1f692cdee4d910eaf7c5db28ebf6e6d5"
+          },
+          {
+            "ref": "refs/heads/research/c4-closed-scc-types",
+            "sha": "1ae2b679648655f6572271318e006cc91a5cc0a5"
+          },
+          {
+            "ref": "refs/heads/research/c4-defect-degree-census",
+            "sha": "c57964c9cb96434719bb8b389e73685ddce93543"
+          },
+          {
+            "ref": "refs/heads/research/c4-defect-intertwiner",
+            "sha": "7530d4d2eaa7fe690413f0aba6f9ba586fae6e4e"
+          },
+          {
+            "ref": "refs/heads/research/c4-defect-intertwiner-clean",
+            "sha": "5dafa9f7c5a91e9ba5a176b56dd95f8542eaf9ea"
+          },
+          {
+            "ref": "refs/heads/research/c4-degree2-lattice-cramer",
+            "sha": "fca695c6d59926af3a74b7825fb52e3c6ae13541"
+          },
+          {
+            "ref": "refs/heads/research/c4-degree2-meanarea-integrality",
+            "sha": "e58817c2329bed2caedc95a79d8e5d699e38b39c"
+          },
+          {
+            "ref": "refs/heads/research/c4-degree2-meanarea-lift",
+            "sha": "ab732a32ed05258ec9450d6323329504432a9a66"
+          },
+          {
+            "ref": "refs/heads/research/c4-degree2-midarea",
+            "sha": "0eee98d9a213f6628131b8d9109a3aab3632f1de"
+          },
+          {
+            "ref": "refs/heads/research/c4-degree2-midarea-clean",
+            "sha": "61543007a326246d0179c8a8f7aa5e074c4d95fc"
+          },
+          {
+            "ref": "refs/heads/research/c4-degree2-parity",
+            "sha": "7eb3677d07510257465adfa33eceda04f3465817"
+          },
+          {
+            "ref": "refs/heads/research/c4-degree2-synthetic-realizability",
+            "sha": "87367a2daefe91b98226412ea9027033fa0550dd"
+          },
+          {
+            "ref": "refs/heads/research/c4-degree2-three-state-traces",
+            "sha": "ba01dd2cd246f7d87029328d392e70e3224194db"
+          },
+          {
+            "ref": "refs/heads/research/c4-degree4",
+            "sha": "d00bd559f9f128e7109670c018619c27983bef3a"
+          },
+          {
+            "ref": "refs/heads/research/c4-derived-cut-address",
+            "sha": "37c02c8347e86bdfa6bf102530a0e1ec7368e361"
+          },
+          {
+            "ref": "refs/heads/research/c4-derived-recognizability",
+            "sha": "6eee0e5b058efb68f758430f2dd84af76e9bf6a7"
+          },
+          {
+            "ref": "refs/heads/research/c4-endpoint-cores",
+            "sha": "3b0f43bed113a343e35087ab9b0ed93c5f573539"
+          },
+          {
+            "ref": "refs/heads/research/c4-first-child-hub-phase",
+            "sha": "0f14285e86a123458243332290cb9bdf5a87f19b"
+          },
+          {
+            "ref": "refs/heads/research/c4-good-edge-system-bridge",
+            "sha": "bef00ba7b0383c2a7ac3898e7fab2d3e18b176bf"
+          },
+          {
+            "ref": "refs/heads/research/c4-good-edge-system-bridge-clean",
+            "sha": "6221917a8a022788597c2b918a278e65678c79be"
+          },
+          {
+            "ref": "refs/heads/research/c4-hub-side-cocycle",
+            "sha": "d754dd88c957f965d1c542eb278038acb1b1492e"
+          },
+          {
+            "ref": "refs/heads/research/c4-hub-side-cocycle-clean",
+            "sha": "cf8b7aa97d14f30aad786fd9543469fd322f186d"
+          },
+          {
+            "ref": "refs/heads/research/c4-hub-word-dynamics",
+            "sha": "a41274045560a7ad9d20da82a8000d1206691255"
+          },
+          {
+            "ref": "refs/heads/research/c4-legal-ancestry-towers",
+            "sha": "4b01c1e866d498d1042d8cd84c8819fc86476152"
+          },
+          {
+            "ref": "refs/heads/research/c4-multidegree-sieve",
+            "sha": "8c2b39548a8ad6522600055b8ffbdf9af5336d94"
+          },
+          {
+            "ref": "refs/heads/research/c4-orientation-clean",
+            "sha": "1df80282ad0e6a4ff5734381eafa6a2aa7d1b437"
+          },
+          {
+            "ref": "refs/heads/research/c4-orientation-monodromy",
+            "sha": "1df80282ad0e6a4ff5734381eafa6a2aa7d1b437"
+          },
+          {
+            "ref": "refs/heads/research/c4-orientation-spectrum",
+            "sha": "f60e3a66a893112a001c372d1fd6ba79a16cba69"
+          },
+          {
+            "ref": "refs/heads/research/c4-orientation-spectrum-clean",
+            "sha": "f60e3a66a893112a001c372d1fd6ba79a16cba69"
+          },
+          {
+            "ref": "refs/heads/research/c4-parikh-intertwiner",
+            "sha": "44f10548f4d3fc63488d0b2bd0878543f93ed5cc"
+          },
+          {
+            "ref": "refs/heads/research/c4-pisot-ancestry-finiteness",
+            "sha": "96d872817cbac6f156decbbf8891d39b08d59d28"
+          },
+          {
+            "ref": "refs/heads/research/c4-prefix-difference-inflation",
+            "sha": "a88669a11594dde947c824f1cad019f1f851bf78"
+          },
+          {
+            "ref": "refs/heads/research/c4-recognizable-cut-germs",
+            "sha": "9d8926e93b5fe08ff075099ec8d1923d72af5b89"
+          },
+          {
+            "ref": "refs/heads/research/c4-recognizable-offset-cycle",
+            "sha": "8b2c998c2351e0ceec151b14139f4e0f90f132a0"
+          },
+          {
+            "ref": "refs/heads/research/c4-relative-hierarchy-offset",
+            "sha": "671ae1270bb0feb3165146012baa410fd3c16f3c"
+          },
+          {
+            "ref": "refs/heads/research/c4-relative-hierarchy-offset-mojo",
+            "sha": "0e6078d03d40b9f44fc2d673eb0057c472b8f04c"
+          },
+          {
+            "ref": "refs/heads/research/issue-139-adelic-cylinder",
+            "sha": "e8275571b344e8e615e21f3e603deae05865b736"
+          },
+          {
+            "ref": "refs/heads/research/issue-139-literature-baseline",
+            "sha": "c1ad42838134709558df0d747e63093759fc4140"
+          },
+          {
+            "ref": "refs/heads/research/level3-recurrent-trim",
+            "sha": "6f48eb020becf11c14980adc886b3b7a82904069"
+          },
+          {
+            "ref": "refs/heads/research/overlap-trim-bridge",
+            "sha": "26fe93cb264c04718a656def8fb9c3287063bc57"
+          },
+          {
+            "ref": "refs/heads/research/p1-overlap-affine-pump",
+            "sha": "43718cee8749d658544a21c9c6ab0c33435e7d8c"
+          },
+          {
+            "ref": "refs/heads/research/p1-overlap-context-equality",
+            "sha": "48a64918490992375668b8f12fa637ac8a15743c"
+          },
+          {
+            "ref": "refs/heads/research/p1-overlap-minimal-obstruction",
+            "sha": "c9266e8db8d0044683116be5ea7073f253b85133"
+          },
+          {
+            "ref": "refs/heads/research/p1-overlap-ordered-zipper",
+            "sha": "3922d87125da7e30df5165116d377bf9ea8e1ad4"
+          },
+          {
+            "ref": "refs/heads/research/p1-two-route-milestone",
+            "sha": "39b5ae8e019430dad4a8cb2270d691d89e1c40ec"
+          },
+          {
+            "ref": "refs/heads/research/p1a-concentration-aux-b",
+            "sha": "1297174db56e9d3aa5d0334e25783c58323b5794"
+          },
+          {
+            "ref": "refs/heads/research/p1a-degree2-wedge-productivity",
+            "sha": "e846ece7292076d4832e26d6dab544b31ecddc9d"
+          },
+          {
+            "ref": "refs/heads/research/p1a-degree3-partial-main",
+            "sha": "3d9e19736a6b4f1fc6975bb12f11260c2d2e0cc5"
+          },
+          {
+            "ref": "refs/heads/research/p1b-affine-renewal-trace",
+            "sha": "a9198f107ac364313b29bec56a5955aabbd8b70d"
+          },
+          {
+            "ref": "refs/heads/research/p1b-affine-trace",
+            "sha": "436a6b40bd0df4e9c52c71d3da1449510bd2fa42"
+          },
+          {
+            "ref": "refs/heads/research/p1b-finite-cokernel-address",
+            "sha": "cb8f8c20741f831cf22ea17495ba9b40183a9561"
+          },
+          {
+            "ref": "refs/heads/research/p1b-joint-local-census",
+            "sha": "5cf14d54791fcfc8008c3e976904166f61b3ca7c"
+          },
+          {
+            "ref": "refs/heads/research/p1b-joint-local-types",
+            "sha": "6eea323f9035b82da83c4ea3a015f35c78942975"
+          },
+          {
+            "ref": "refs/heads/research/p1b-labelled-renewal",
+            "sha": "de0693bd3da159660b4b66a6d985da554ffff587"
+          },
+          {
+            "ref": "refs/heads/research/p1b-overlap-realization-bridge",
+            "sha": "4185ceb0251aa315a6e3814b816f88df01d4ad7c"
+          },
+          {
+            "ref": "refs/heads/research/p1b-proper-affine-splice",
+            "sha": "b6b6d3fcbabb2847afbb806754be49353471739d"
+          },
+          {
+            "ref": "refs/heads/research/p1b-rational-interval-margin-audit",
+            "sha": "175406cfcbee82aee269a29e5f594d6f6f6722aa"
+          },
+          {
+            "ref": "refs/heads/research/p1b-renewal-address",
+            "sha": "f715b2ae4b60dc39737bab4a66e4191d9b725c77"
+          },
+          {
+            "ref": "refs/heads/research/penrose-2d-bridge",
+            "sha": "b9e6c6c2f4b1a3fdff44ba7bfaf92282177f40ae"
+          },
+          {
+            "ref": "refs/heads/research/post-proof-padovan-plastic-a",
+            "sha": "a0b2523913b7e3bf302974d88c9bb51ddc7bf1bc"
+          },
+          {
+            "ref": "refs/heads/research/remediate-ci-boundary-sync-2026-10-02",
+            "sha": "0fcac4e1cc788d3c69a5ab12edfef904e5ac661d"
+          },
+          {
+            "ref": "refs/heads/research/target-aware-bpa",
+            "sha": "7553017b969cce431007d40d5f4a9581bbe7a796"
+          },
+          {
+            "ref": "refs/heads/research/tier2-bridge-salvage",
+            "sha": "8a4c57bdc3e16c33a4ed190c9380d215411f89e4"
+          },
+          {
+            "ref": "refs/heads/research/tier2-bridge-salvage-ci-fix",
+            "sha": "d4d49b88800c7f82b9db10ac390dca98dcdd781b"
+          },
+          {
+            "ref": "refs/pull/10/head",
+            "sha": "3b0f43bed113a343e35087ab9b0ed93c5f573539"
+          },
+          {
+            "ref": "refs/pull/100/head",
+            "sha": "0d249d9fa2b630ea5d77e526155b822148dbce3e"
+          },
+          {
+            "ref": "refs/pull/101/head",
+            "sha": "6e53a4c75e624b62527e76d0d433ae129a352607"
+          },
+          {
+            "ref": "refs/pull/102/head",
+            "sha": "c8b959c44fee1ba63d009bb47211a4a525684b76"
+          },
+          {
+            "ref": "refs/pull/103/head",
+            "sha": "37a532df531ba76a79dd1ea6effa6e2bfecf9f74"
+          },
+          {
+            "ref": "refs/pull/104/head",
+            "sha": "a03e457f4311ec1b5fa0fbce109a7e91e5046475"
+          },
+          {
+            "ref": "refs/pull/105/head",
+            "sha": "65b00c6ef698e5208bc11f150c5ef8b0a98a4ec8"
+          },
+          {
+            "ref": "refs/pull/106/head",
+            "sha": "ae80312ce4d86d91ddd2c6c731073a25cbdfff28"
+          },
+          {
+            "ref": "refs/pull/107/head",
+            "sha": "426838ffcc840028677a05cb8faffcfed431ce2b"
+          },
+          {
+            "ref": "refs/pull/108/head",
+            "sha": "848c7e81dbf382b3b91aa51751437053ba7a6042"
+          },
+          {
+            "ref": "refs/pull/109/head",
+            "sha": "cff04bc9a53b23013c908db9e053fbc02777cd1d"
+          },
+          {
+            "ref": "refs/pull/11/head",
+            "sha": "1ae2b679648655f6572271318e006cc91a5cc0a5"
+          },
+          {
+            "ref": "refs/pull/110/head",
+            "sha": "1501d61ea49bc657c2c0beb0035bb351c38c245b"
+          },
+          {
+            "ref": "refs/pull/111/head",
+            "sha": "af1a8a0838f14590cee412cc28ad341c81696d7a"
+          },
+          {
+            "ref": "refs/pull/112/head",
+            "sha": "c286d2fef56b7f253d5f6fabf0af62995ad3ff42"
+          },
+          {
+            "ref": "refs/pull/113/head",
+            "sha": "ac6ccccbb11f8ef3b80b421cb2c50d167f2ed279"
+          },
+          {
+            "ref": "refs/pull/114/head",
+            "sha": "108f5aba085b2f44adaecd7137fd3573fdab291a"
+          },
+          {
+            "ref": "refs/pull/115/head",
+            "sha": "56cb6f6876815eb9b4f8e542b5d3deddf311f037"
+          },
+          {
+            "ref": "refs/pull/116/head",
+            "sha": "eabb3d2a4c06abef6ae74f09f1eacbe62c3bb5d4"
+          },
+          {
+            "ref": "refs/pull/117/head",
+            "sha": "9bb725328b66802418ba754354fcb840cff404d0"
+          },
+          {
+            "ref": "refs/pull/118/head",
+            "sha": "45fb6d97464b9c26d98f8fd882a2cd469ed90bc5"
+          },
+          {
+            "ref": "refs/pull/119/head",
+            "sha": "fe2e23dd68b75b864e54940359bda11e327349e0"
+          },
+          {
+            "ref": "refs/pull/12/head",
+            "sha": "44f10548f4d3fc63488d0b2bd0878543f93ed5cc"
+          },
+          {
+            "ref": "refs/pull/120/head",
+            "sha": "c699df95ff245b03885b55e1c8db64b45e7ef36c"
+          },
+          {
+            "ref": "refs/pull/121/head",
+            "sha": "51c3297e5573ca5a945766af6780dc9b0e00e0b5"
+          },
+          {
+            "ref": "refs/pull/122/head",
+            "sha": "a156fa093e7e1528375cbcd43c34716836481c44"
+          },
+          {
+            "ref": "refs/pull/123/head",
+            "sha": "2743fde5d4e6177fadc3393388ed6397b7f17b55"
+          },
+          {
+            "ref": "refs/pull/124/head",
+            "sha": "06b4e8fc17104b9e016198ed3ff17d43eb5e51a4"
+          },
+          {
+            "ref": "refs/pull/125/head",
+            "sha": "19b3689baa93830b611569bf134a840c9b84f9cc"
+          },
+          {
+            "ref": "refs/pull/126/head",
+            "sha": "faf7e1f6515ee8c557d1debc838854af69903184"
+          },
+          {
+            "ref": "refs/pull/127/head",
+            "sha": "a955f96095a6445babb9eb3c20931be3f2eabf10"
+          },
+          {
+            "ref": "refs/pull/128/head",
+            "sha": "939abe7ecbd020692bbe351e4fbdf3ea6ec4fbcc"
+          },
+          {
+            "ref": "refs/pull/129/head",
+            "sha": "7d7b6cab0f5064e1781f17ba97c041fbc0af9a57"
+          },
+          {
+            "ref": "refs/pull/13/head",
+            "sha": "1df80282ad0e6a4ff5734381eafa6a2aa7d1b437"
+          },
+          {
+            "ref": "refs/pull/130/head",
+            "sha": "745f2f90bbb473551a7a51eddff7247e0be46a9b"
+          },
+          {
+            "ref": "refs/pull/131/head",
+            "sha": "3d78f3776aca18588a164d14a4d8000bdd261b87"
+          },
+          {
+            "ref": "refs/pull/132/head",
+            "sha": "ac6ccf4676907c08004498f6faf5f0da71a8c12f"
+          },
+          {
+            "ref": "refs/pull/133/head",
+            "sha": "3c2368616a997314bb1377dc6fa3787327f446e9"
+          },
+          {
+            "ref": "refs/pull/134/head",
+            "sha": "67ec9fd03e8b926dd89f38ea9d49e268d7728666"
+          },
+          {
+            "ref": "refs/pull/135/head",
+            "sha": "78133a0c37f9d8d924c86f18cc8400264c3593ed"
+          },
+          {
+            "ref": "refs/pull/136/head",
+            "sha": "af332207828df69c196d31a61157afbc69f4ac52"
+          },
+          {
+            "ref": "refs/pull/137/head",
+            "sha": "e88d4acc7b20373b19cdedbaa46e8992c914c8f4"
+          },
+          {
+            "ref": "refs/pull/14/head",
+            "sha": "f60e3a66a893112a001c372d1fd6ba79a16cba69"
+          },
+          {
+            "ref": "refs/pull/140/head",
+            "sha": "6b487cb261c6e5a007c6a3e8198d1e2c4e9824c0"
+          },
+          {
+            "ref": "refs/pull/141/head",
+            "sha": "c1ad42838134709558df0d747e63093759fc4140"
+          },
+          {
+            "ref": "refs/pull/142/head",
+            "sha": "be105418e2564e5230e08090e93441d6d74ea455"
+          },
+          {
+            "ref": "refs/pull/143/head",
+            "sha": "b3112fcf3c117aa32388158478a02cdaf05be29c"
+          },
+          {
+            "ref": "refs/pull/144/head",
+            "sha": "63aa2354064e938d5e3ac7cc88b3ef8346a2577f"
+          },
+          {
+            "ref": "refs/pull/145/head",
+            "sha": "e8275571b344e8e615e21f3e603deae05865b736"
+          },
+          {
+            "ref": "refs/pull/146/head",
+            "sha": "630bfc9598b9e171f29f838526623c2ddd9eb6eb"
+          },
+          {
+            "ref": "refs/pull/147/head",
+            "sha": "4ecb5fd2c318879fb715e4977a33b006d144e8ef"
+          },
+          {
+            "ref": "refs/pull/148/head",
+            "sha": "2c8571ec383e5408bd350298fc251bf77943b463"
+          },
+          {
+            "ref": "refs/pull/149/head",
+            "sha": "2fc3b6d789a89e857eeb703e9a87635935862f7e"
+          },
+          {
+            "ref": "refs/pull/15/head",
+            "sha": "7530d4d2eaa7fe690413f0aba6f9ba586fae6e4e"
+          },
+          {
+            "ref": "refs/pull/150/head",
+            "sha": "2a1daa8f99742b78beabb15fc2f0f3d5cd24c1b7"
+          },
+          {
+            "ref": "refs/pull/152/head",
+            "sha": "4fe5fad6a4a8372473e81f08a00f515b9fdcad03"
+          },
+          {
+            "ref": "refs/pull/154/head",
+            "sha": "b9e6c6c2f4b1a3fdff44ba7bfaf92282177f40ae"
+          },
+          {
+            "ref": "refs/pull/155/head",
+            "sha": "07474edf9e0eabbd557c6e47d73aa92eb627e5aa"
+          },
+          {
+            "ref": "refs/pull/156/head",
+            "sha": "8a4c57bdc3e16c33a4ed190c9380d215411f89e4"
+          },
+          {
+            "ref": "refs/pull/157/head",
+            "sha": "a0b2523913b7e3bf302974d88c9bb51ddc7bf1bc"
+          },
+          {
+            "ref": "refs/pull/158/head",
+            "sha": "d4d49b88800c7f82b9db10ac390dca98dcdd781b"
+          },
+          {
+            "ref": "refs/pull/159/head",
+            "sha": "0e5661667d613178a91328a1ce4141fd71336f5b"
+          },
+          {
+            "ref": "refs/pull/16/head",
+            "sha": "d00bd559f9f128e7109670c018619c27983bef3a"
+          },
+          {
+            "ref": "refs/pull/160/head",
+            "sha": "ef092fee77227f5e2d000d8280ba975575a58b26"
+          },
+          {
+            "ref": "refs/pull/161/head",
+            "sha": "6f48eb020becf11c14980adc886b3b7a82904069"
+          },
+          {
+            "ref": "refs/pull/162/head",
+            "sha": "26fe93cb264c04718a656def8fb9c3287063bc57"
+          },
+          {
+            "ref": "refs/pull/163/head",
+            "sha": "f6cca6bb93cc9e9095e0e7eb38c490e56b13fa3a"
+          },
+          {
+            "ref": "refs/pull/164/head",
+            "sha": "83eef72bb1a5736ce68d7c23a37db9780e2ca291"
+          },
+          {
+            "ref": "refs/pull/165/head",
+            "sha": "be758795a1561c194bbf18f12bc1212f0cb579f8"
+          },
+          {
+            "ref": "refs/pull/166/head",
+            "sha": "fdb728d5880e412173db6202834904685b8b2848"
+          },
+          {
+            "ref": "refs/pull/167/head",
+            "sha": "9b663e62559ec733483ef9c2f9c7cadedb8a760b"
+          },
+          {
+            "ref": "refs/pull/169/head",
+            "sha": "00c2b37a8c5032a683a3a08524bb55efbbceac3a"
+          },
+          {
+            "ref": "refs/pull/17/head",
+            "sha": "8c2b39548a8ad6522600055b8ffbdf9af5336d94"
+          },
+          {
+            "ref": "refs/pull/170/head",
+            "sha": "cfa4513768ca2318d848ed459faeba4a1766c71e"
+          },
+          {
+            "ref": "refs/pull/171/head",
+            "sha": "ab6005552ab66f712e3b852bc26233800a8a50cc"
+          },
+          {
+            "ref": "refs/pull/172/head",
+            "sha": "3e282e5a14e64e18f9e0dd58625cfe202766c598"
+          },
+          {
+            "ref": "refs/pull/173/head",
+            "sha": "32db090b61ea70b9902b7b2bc251812b41f9e43a"
+          },
+          {
+            "ref": "refs/pull/174/head",
+            "sha": "1a938a0d7a182f00a10310cdca8bd71198d21797"
+          },
+          {
+            "ref": "refs/pull/175/head",
+            "sha": "5c05c2dd05786598800e94663c5edc6df643d5b8"
+          },
+          {
+            "ref": "refs/pull/176/head",
+            "sha": "4ab35841afd67050bf250134f4a1a7fad9af5f7d"
+          },
+          {
+            "ref": "refs/pull/177/head",
+            "sha": "2c2068f3d1e134e1a85c50f2f74e3f7785392c82"
+          },
+          {
+            "ref": "refs/pull/178/head",
+            "sha": "8ffa62c3985e9da1623d46a1f3d2fbc0cc1b3f43"
+          },
+          {
+            "ref": "refs/pull/179/head",
+            "sha": "dab8d9296588fa1f7206f39ca98dce8777efe1a8"
+          },
+          {
+            "ref": "refs/pull/18/head",
+            "sha": "c57964c9cb96434719bb8b389e73685ddce93543"
+          },
+          {
+            "ref": "refs/pull/180/head",
+            "sha": "ac94a5a13b26d19fae9038d724bb8880af399451"
+          },
+          {
+            "ref": "refs/pull/181/head",
+            "sha": "39b5ae8e019430dad4a8cb2270d691d89e1c40ec"
+          },
+          {
+            "ref": "refs/pull/182/head",
+            "sha": "e3b348f513c34d0c14ea65468f56585afded2ff3"
+          },
+          {
+            "ref": "refs/pull/183/head",
+            "sha": "c3c917c9223c44b35785bb4cf2bfbaf0edceaa37"
+          },
+          {
+            "ref": "refs/pull/184/head",
+            "sha": "9a59dcd4a8fe22958ab2d36cfa8ab8c9c5ce7aab"
+          },
+          {
+            "ref": "refs/pull/185/head",
+            "sha": "34658a301dfceecb0f3226b58503c653b857938b"
+          },
+          {
+            "ref": "refs/pull/186/head",
+            "sha": "ff96136ae3338af9e679b328900171c051688482"
+          },
+          {
+            "ref": "refs/pull/187/head",
+            "sha": "4d167da40eac1ed1d5d4c6f249519c252856f8d0"
+          },
+          {
+            "ref": "refs/pull/188/head",
+            "sha": "142f3b63b2801ada711bfa32c60f2eafcf414b60"
+          },
+          {
+            "ref": "refs/pull/189/head",
+            "sha": "1e0920d7478a234d94655983ba0a06a23f0f2a6d"
+          },
+          {
+            "ref": "refs/pull/19/head",
+            "sha": "acbf30af4c3f4a13a3a1b8ff6e23ccd2bd21c9e4"
+          },
+          {
+            "ref": "refs/pull/190/head",
+            "sha": "03a9e57dcf34846dfbc293f123c34a948ff2d8d1"
+          },
+          {
+            "ref": "refs/pull/191/head",
+            "sha": "0fcac4e1cc788d3c69a5ab12edfef904e5ac661d"
+          },
+          {
+            "ref": "refs/pull/192/head",
+            "sha": "e0d80505d4abd84dadaa2a26d87acde37b4166bb"
+          },
+          {
+            "ref": "refs/pull/193/head",
+            "sha": "07435562c9c7e6c6d87d743bc4c0159039ef34ed"
+          },
+          {
+            "ref": "refs/pull/194/head",
+            "sha": "7553017b969cce431007d40d5f4a9581bbe7a796"
+          },
+          {
+            "ref": "refs/pull/195/head",
+            "sha": "2db7b1708f525969152884f8dccb74b7e6b90332"
+          },
+          {
+            "ref": "refs/pull/196/head",
+            "sha": "9a3fc8137cefcd4e9378aab84ed4d21308a345b0"
+          },
+          {
+            "ref": "refs/pull/197/head",
+            "sha": "347c0d9fb20cd3a7339c053f02ce1db4c386cf48"
+          },
+          {
+            "ref": "refs/pull/198/head",
+            "sha": "3522e8f23ff982447d39eda19520ea6161654a1d"
+          },
+          {
+            "ref": "refs/pull/199/head",
+            "sha": "68da7be8cbab80405c82ec51fbd527698560a902"
+          },
+          {
+            "ref": "refs/pull/20/head",
+            "sha": "7eb3677d07510257465adfa33eceda04f3465817"
+          },
+          {
+            "ref": "refs/pull/200/head",
+            "sha": "f846c51d156a7e2b1e94bc34ed7486e565009730"
+          },
+          {
+            "ref": "refs/pull/201/head",
+            "sha": "0b6d0a079990fc3b32952b67f572f6e840215cf4"
+          },
+          {
+            "ref": "refs/pull/202/head",
+            "sha": "252e168a4d1bc63a973e68c82a6449a716152ed0"
+          },
+          {
+            "ref": "refs/pull/203/head",
+            "sha": "52fddafbdb4237ae9e5b3fc9e3e06836afc3229a"
+          },
+          {
+            "ref": "refs/pull/204/head",
+            "sha": "bde1bf4f40b3909512af77f8b85713a782982ca2"
+          },
+          {
+            "ref": "refs/pull/205/head",
+            "sha": "79568d7d48c586f3ec63e571636a3a22fc12f692"
+          },
+          {
+            "ref": "refs/pull/206/head",
+            "sha": "dcd9535810ae59c0e9aa0bf6df045803a15c7d0a"
+          },
+          {
+            "ref": "refs/pull/207/head",
+            "sha": "e3a199024ce1d4fc4e0bf25e248d4f7cd918d89a"
+          },
+          {
+            "ref": "refs/pull/208/head",
+            "sha": "33691a5e3656fd2fc1c2c395bd55c806aa45891c"
+          },
+          {
+            "ref": "refs/pull/209/head",
+            "sha": "7af9299fc304f602e5f5087992a38e76282bc59d"
+          },
+          {
+            "ref": "refs/pull/21/head",
+            "sha": "ba01dd2cd246f7d87029328d392e70e3224194db"
+          },
+          {
+            "ref": "refs/pull/210/head",
+            "sha": "f3b41c64c8572776329aa29ea2819c2db6d5dfb1"
+          },
+          {
+            "ref": "refs/pull/211/head",
+            "sha": "f8afbfac8b8c2e2c914d891ae4e67bb089595984"
+          },
+          {
+            "ref": "refs/pull/212/head",
+            "sha": "85e405dd627eaae859abec562f9e5fbcf7e4505a"
+          },
+          {
+            "ref": "refs/pull/213/head",
+            "sha": "56b56b27d185ee714bd7b875695e52b056a1dc5d"
+          },
+          {
+            "ref": "refs/pull/214/head",
+            "sha": "97d6e6e04a80daf32b24f3b930c34979d24ce26c"
+          },
+          {
+            "ref": "refs/pull/215/head",
+            "sha": "51e1f720ec364ddcdc8fab6ec546ff83735b3ed7"
+          },
+          {
+            "ref": "refs/pull/216/head",
+            "sha": "bf798c4ef651e905fbc90e55b34e81ab9968f1d7"
+          },
+          {
+            "ref": "refs/pull/217/head",
+            "sha": "f856ad4d5ad444080c534550355e8412b9d17564"
+          },
+          {
+            "ref": "refs/pull/22/head",
+            "sha": "87367a2daefe91b98226412ea9027033fa0550dd"
+          },
+          {
+            "ref": "refs/pull/23/head",
+            "sha": "0eee98d9a213f6628131b8d9109a3aab3632f1de"
+          },
+          {
+            "ref": "refs/pull/24/head",
+            "sha": "ab732a32ed05258ec9450d6323329504432a9a66"
+          },
+          {
+            "ref": "refs/pull/25/head",
+            "sha": "fca695c6d59926af3a74b7825fb52e3c6ae13541"
+          },
+          {
+            "ref": "refs/pull/26/head",
+            "sha": "2e7ccb965512fe3e878280b1b3be1a9971ddf331"
+          },
+          {
+            "ref": "refs/pull/27/head",
+            "sha": "feee00a97f8fa8d4f7a983aa93e6b3c5b7b111f1"
+          },
+          {
+            "ref": "refs/pull/28/head",
+            "sha": "a30344db09cb4e36e5873b39b9fdc14240257222"
+          },
+          {
+            "ref": "refs/pull/29/head",
+            "sha": "a88669a11594dde947c824f1cad019f1f851bf78"
+          },
+          {
+            "ref": "refs/pull/30/head",
+            "sha": "96d872817cbac6f156decbbf8891d39b08d59d28"
+          },
+          {
+            "ref": "refs/pull/31/head",
+            "sha": "9d8926e93b5fe08ff075099ec8d1923d72af5b89"
+          },
+          {
+            "ref": "refs/pull/32/head",
+            "sha": "37c02c8347e86bdfa6bf102530a0e1ec7368e361"
+          },
+          {
+            "ref": "refs/pull/33/head",
+            "sha": "6eee0e5b058efb68f758430f2dd84af76e9bf6a7"
+          },
+          {
+            "ref": "refs/pull/34/head",
+            "sha": "09f0729c1f692cdee4d910eaf7c5db28ebf6e6d5"
+          },
+          {
+            "ref": "refs/pull/35/head",
+            "sha": "4b01c1e866d498d1042d8cd84c8819fc86476152"
+          },
+          {
+            "ref": "refs/pull/36/head",
+            "sha": "fb0f5dda8482c17b512bbf774c1a005024054efe"
+          },
+          {
+            "ref": "refs/pull/37/head",
+            "sha": "0e6078d03d40b9f44fc2d673eb0057c472b8f04c"
+          },
+          {
+            "ref": "refs/pull/38/head",
+            "sha": "792b7b9b50e4d9b64fa7ef65a6e5e81e88a1a9ff"
+          },
+          {
+            "ref": "refs/pull/39/head",
+            "sha": "bb0ef27e0222e0ac317d1f8939389c817c4020dc"
+          },
+          {
+            "ref": "refs/pull/4/head",
+            "sha": "fc7f7cbcd4802efda55ccbde1d3ba6b0e9cc568b"
+          },
+          {
+            "ref": "refs/pull/40/head",
+            "sha": "cf8b7aa97d14f30aad786fd9543469fd322f186d"
+          },
+          {
+            "ref": "refs/pull/41/head",
+            "sha": "0f14285e86a123458243332290cb9bdf5a87f19b"
+          },
+          {
+            "ref": "refs/pull/42/head",
+            "sha": "6221917a8a022788597c2b918a278e65678c79be"
+          },
+          {
+            "ref": "refs/pull/47/head",
+            "sha": "3b96773240b98328e87665d3e59a493c45142c2d"
+          },
+          {
+            "ref": "refs/pull/48/head",
+            "sha": "de0693bd3da159660b4b66a6d985da554ffff587"
+          },
+          {
+            "ref": "refs/pull/49/head",
+            "sha": "f715b2ae4b60dc39737bab4a66e4191d9b725c77"
+          },
+          {
+            "ref": "refs/pull/5/head",
+            "sha": "0afcda2679d6b8f973e5e36d832ec6aeb3d310fc"
+          },
+          {
+            "ref": "refs/pull/50/head",
+            "sha": "1009dccba6bd802c80e989ace1508572c06bfdda"
+          },
+          {
+            "ref": "refs/pull/51/head",
+            "sha": "6eea323f9035b82da83c4ea3a015f35c78942975"
+          },
+          {
+            "ref": "refs/pull/52/head",
+            "sha": "5cf14d54791fcfc8008c3e976904166f61b3ca7c"
+          },
+          {
+            "ref": "refs/pull/53/head",
+            "sha": "9bc9b06ed389e1deb971af43f98feb6a020848ec"
+          },
+          {
+            "ref": "refs/pull/54/head",
+            "sha": "480d1b7efcdabfd442c8ebb4165d444af2958e0a"
+          },
+          {
+            "ref": "refs/pull/55/head",
+            "sha": "8a9f0ec58a0f0388236953e45b7f01dd3ceb930f"
+          },
+          {
+            "ref": "refs/pull/56/head",
+            "sha": "cb8f8c20741f831cf22ea17495ba9b40183a9561"
+          },
+          {
+            "ref": "refs/pull/57/head",
+            "sha": "e444cf752833d01afb44bd5da1d0d0ec0cec96b6"
+          },
+          {
+            "ref": "refs/pull/58/head",
+            "sha": "436a6b40bd0df4e9c52c71d3da1449510bd2fa42"
+          },
+          {
+            "ref": "refs/pull/59/head",
+            "sha": "a9198f107ac364313b29bec56a5955aabbd8b70d"
+          },
+          {
+            "ref": "refs/pull/60/head",
+            "sha": "0787f496147b33ce57a1fcb7e7609e6122f112e4"
+          },
+          {
+            "ref": "refs/pull/61/head",
+            "sha": "b6b6d3fcbabb2847afbb806754be49353471739d"
+          },
+          {
+            "ref": "refs/pull/62/head",
+            "sha": "49232e9f24047b5cd5e2fe04be2e44b1a6abde10"
+          },
+          {
+            "ref": "refs/pull/63/head",
+            "sha": "4185ceb0251aa315a6e3814b816f88df01d4ad7c"
+          },
+          {
+            "ref": "refs/pull/64/head",
+            "sha": "175406cfcbee82aee269a29e5f594d6f6f6722aa"
+          },
+          {
+            "ref": "refs/pull/65/head",
+            "sha": "700e8247fc511e822f2c23452887963a4e0e5b97"
+          },
+          {
+            "ref": "refs/pull/66/head",
+            "sha": "1f73d8ac7b60fbce3a686d0f787163031d02e799"
+          },
+          {
+            "ref": "refs/pull/67/head",
+            "sha": "3d9e19736a6b4f1fc6975bb12f11260c2d2e0cc5"
+          },
+          {
+            "ref": "refs/pull/68/head",
+            "sha": "01650ce456f537c3f32bf1e00f8313a873792be3"
+          },
+          {
+            "ref": "refs/pull/69/head",
+            "sha": "8a5b5969a5354e34718c4302d4f741693b874253"
+          },
+          {
+            "ref": "refs/pull/7/head",
+            "sha": "9d94ef43203a9d00c3f1e62fec2bee2c7f10ba24"
+          },
+          {
+            "ref": "refs/pull/70/head",
+            "sha": "fbc26c33cb56108b6512ad0f526fefebedcc4aa2"
+          },
+          {
+            "ref": "refs/pull/71/head",
+            "sha": "e846ece7292076d4832e26d6dab544b31ecddc9d"
+          },
+          {
+            "ref": "refs/pull/72/head",
+            "sha": "d4a19fe83de1e74495c17368e279a9fb4201ad34"
+          },
+          {
+            "ref": "refs/pull/73/head",
+            "sha": "30b7c6e5bca0bfe834ed02e4edcdf6b198fbe039"
+          },
+          {
+            "ref": "refs/pull/74/head",
+            "sha": "3e6ff7ea3b2f0d7d24e4e5f3a91ec60263e82b46"
+          },
+          {
+            "ref": "refs/pull/75/head",
+            "sha": "e4970aef7c74c62d44cd4479721db3ea946eb864"
+          },
+          {
+            "ref": "refs/pull/76/head",
+            "sha": "08cac3d2e323a7c82f632296eeaa6d13cee3ea35"
+          },
+          {
+            "ref": "refs/pull/77/head",
+            "sha": "b0f90294daae2a7e0a8a1558678c788a575f4a92"
+          },
+          {
+            "ref": "refs/pull/78/head",
+            "sha": "c503a7825adc6f583b80dbbbf418f1d8b837694e"
+          },
+          {
+            "ref": "refs/pull/79/head",
+            "sha": "a7c37224fe6cb4097c5138d6ac86d81053695cfa"
+          },
+          {
+            "ref": "refs/pull/8/head",
+            "sha": "f75ae7f535da23e78bf7f0646d6c786d527aea01"
+          },
+          {
+            "ref": "refs/pull/80/head",
+            "sha": "e06bbdcae08279d8ab90bf8dbaeeb67b13576e81"
+          },
+          {
+            "ref": "refs/pull/81/head",
+            "sha": "cdc6b8466514781bb4d8b010c86fab23a8f421ce"
+          },
+          {
+            "ref": "refs/pull/82/head",
+            "sha": "8c6befc7d3ff34e58193f2f0cbb712e23afcacba"
+          },
+          {
+            "ref": "refs/pull/83/head",
+            "sha": "6d8e6a07b45b8b920718295c936074343dc45c1f"
+          },
+          {
+            "ref": "refs/pull/86/head",
+            "sha": "002c265e9e41a22a248b1e76dd4be0c16371ae46"
+          },
+          {
+            "ref": "refs/pull/87/head",
+            "sha": "0bedd667954c6b4a3fc55d3dde92e58cffae2be2"
+          },
+          {
+            "ref": "refs/pull/88/head",
+            "sha": "c9266e8db8d0044683116be5ea7073f253b85133"
+          },
+          {
+            "ref": "refs/pull/89/head",
+            "sha": "3922d87125da7e30df5165116d377bf9ea8e1ad4"
+          },
+          {
+            "ref": "refs/pull/90/head",
+            "sha": "941016e69de265eea09b52bd33afbee4d9fe5112"
+          },
+          {
+            "ref": "refs/pull/91/head",
+            "sha": "43718cee8749d658544a21c9c6ab0c33435e7d8c"
+          },
+          {
+            "ref": "refs/pull/92/head",
+            "sha": "d2adbb9b97f0cdfad963afe39fb671258d78a349"
+          },
+          {
+            "ref": "refs/pull/93/head",
+            "sha": "48a64918490992375668b8f12fa637ac8a15743c"
+          },
+          {
+            "ref": "refs/pull/94/head",
+            "sha": "0a275235218cb163f1f33e8f846e7de1d5b5280a"
+          },
+          {
+            "ref": "refs/pull/95/head",
+            "sha": "f0efd6a48510e1649c01a9eb4cac3c4c6bba9fd3"
+          },
+          {
+            "ref": "refs/pull/96/head",
+            "sha": "87e86418d018c3fe07d0b33f931e4bd09c4b8f92"
+          },
+          {
+            "ref": "refs/pull/97/head",
+            "sha": "fd918f71d26b8012a5c163e807b0042655533a48"
+          },
+          {
+            "ref": "refs/pull/98/head",
+            "sha": "6d269b67c6c255e9ed346f9cb266d6d130b411d9"
+          },
+          {
+            "ref": "refs/pull/99/head",
+            "sha": "673e6f9e483cce8c4b111c80fc7aa01089767d58"
+          }
+        ],
+        "repository": "larsbx/pisot-substitution-conjecture-research"
+      },
+      {
+        "blobs_scanned": 177,
+        "candidate_paths": [],
+        "commits": 52,
+        "hits": [
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "dist-newstyle/build/x86_64-linux/ghc-9.12.4/jev-alias-spike-0.1.0.0/setup-config",
+            "sha": "7ae6ba4e94b2e2d9cccf2f0f96c11b130ed0b425",
+            "sha256": "68f65039e4432995bd7ebcb8491fb925ed1a926cebafdcb7c695742c957dc929",
+            "size": 403165
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "dist-newstyle/build/x86_64-linux/ghc-9.12.4/jev-alias-spike-0.1.0.0/t/jev-alias-laws/setup-config",
+            "sha": "97c865180a66e41ed845993219ebafd3089a6b88",
+            "sha256": "461b9a1ad1a6a3b847342db574a41eb45554fb13fcfb4cc71c319b143b26e31b",
+            "size": 407417
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "dist-newstyle/build/x86_64-linux/ghc-9.12.4/jev-alias-spike-0.1.0.0/x/jev-alias-spike/build/jev-alias-spike/jev-alias-spike",
+            "sha": "65e7a8f55c190570afc9fd38b3d342d2973a1b5a",
+            "sha256": "19e3c7c04052ef3908a847ae1158e71b694179091e41f401a510787248f3a9cb",
+            "size": 40806848
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "dist-newstyle/build/x86_64-linux/ghc-9.12.4/jev-alias-spike-0.1.0.0/x/jev-alias-spike/setup-config",
+            "sha": "575d3c00ca542621f837c2ce25f526f65b64c717",
+            "sha256": "545bc949f84e2a27da81765911f020c6c04d481d07a89855d8758159b67d09ac",
+            "size": 691770
+          }
+        ],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/claude/hanbal-usul-formalization-rq7547",
+            "sha": "cd265a2224159cfb879473912696d42aed5f3b5c"
+          },
+          {
+            "ref": "refs/heads/claude/jev-haskell-spike-mateyz",
+            "sha": "be2eebcf0db6a7001caa402ff1703b49e7a232eb"
+          },
+          {
+            "ref": "refs/heads/claude/kernel-cross-repo-insights-todvvu",
+            "sha": "bc30bef1e0943e789788de39a97d3533cff10490"
+          },
+          {
+            "ref": "refs/heads/contract/finite-proof-graph-normalization-v1",
+            "sha": "5c4dda135025ebc395adebc4c41aa0f47306a583"
+          },
+          {
+            "ref": "refs/heads/inventory/polyglot-extraction-candidates-v1",
+            "sha": "bd05757526e5ba5d8c8edd967fc97a3649f3d3ad"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "f13be2b261880482b1e4f3a8a61c1755ec53f001"
+          },
+          {
+            "ref": "refs/heads/spike/sprucegoose-deployment-transition-v1",
+            "sha": "5e11cf7660563f18dbd4f407e1c2c8d79bfe2d12"
+          },
+          {
+            "ref": "refs/heads/tier2/growth-bridge-contracts",
+            "sha": "ab1ebae5c2c10c49f872a6e033bae90c661e126e"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "edc4776d25218707331e396ccf688d7b1c1c8ddd"
+          },
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "4f484fe99596ed466a035d4aabdf3b03b161bbf7"
+          },
+          {
+            "ref": "refs/pull/3/head",
+            "sha": "5e11cf7660563f18dbd4f407e1c2c8d79bfe2d12"
+          },
+          {
+            "ref": "refs/pull/3/merge",
+            "sha": "8925f42bf42915f7fb0329e8be927dd1dedc42bf"
+          },
+          {
+            "ref": "refs/pull/4/head",
+            "sha": "5c4dda135025ebc395adebc4c41aa0f47306a583"
+          },
+          {
+            "ref": "refs/pull/5/head",
+            "sha": "e0ebc5c16fc1057900eb7a6505452629fa3fbbf2"
+          },
+          {
+            "ref": "refs/pull/7/head",
+            "sha": "ab1ebae5c2c10c49f872a6e033bae90c661e126e"
+          }
+        ],
+        "repository": "larsbx/semantic-categorical-oracle"
+      },
+      {
+        "blobs_scanned": 17,
+        "candidate_paths": [],
+        "commits": 19,
+        "hits": [],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/main",
+            "sha": "3e508a1864352c0ea610560d498a4c894466a995"
+          },
+          {
+            "ref": "refs/heads/penrose/2d-pilot",
+            "sha": "51bb7eeb68668587abedaac8f7e4e7ca915cc330"
+          },
+          {
+            "ref": "refs/heads/research/post-psc-overlap-program-v1",
+            "sha": "17386ac6ef13eeea6d6469d0ee7fbb4d12d647ee"
+          },
+          {
+            "ref": "refs/pull/6/head",
+            "sha": "17386ac6ef13eeea6d6469d0ee7fbb4d12d647ee"
+          },
+          {
+            "ref": "refs/pull/6/merge",
+            "sha": "f020edfb6655b7236c5fb483fadde8fda2b24003"
+          },
+          {
+            "ref": "refs/pull/7/head",
+            "sha": "51bb7eeb68668587abedaac8f7e4e7ca915cc330"
+          },
+          {
+            "ref": "refs/pull/7/merge",
+            "sha": "f56cf32123349ffc6322916098bcc9203c6f2497"
+          }
+        ],
+        "repository": "larsbx/tiling-theory-research"
+      },
+      {
+        "blobs_scanned": 13,
+        "candidate_paths": [],
+        "commits": 14,
+        "hits": [
+          {
+            "matched_patterns": [
+              "vizing",
+              "graph6"
+            ],
+            "path": "ARCHITECTURE.md",
+            "sha": "e7a8def46bd067d5f9560390dee126b3042f3033",
+            "sha256": "0b95ed52788c60a5ca1aecc927733aee522cbf42b0f82c45d0a47edc0da7b2bd",
+            "size": 3133
+          },
+          {
+            "matched_patterns": [
+              "vizing"
+            ],
+            "path": "ESTATE.toml",
+            "sha": "def55f973cc93d55da41da28a477e2093f4f6ef8",
+            "sha256": "53e11f375ef8b1ee475fa3dd8b2d0982b8b7ec63011b3cc29358d4f92c1c77e9",
+            "size": 2049
+          },
+          {
+            "matched_patterns": [
+              "vizing",
+              "census_counts"
+            ],
+            "path": "README.md",
+            "sha": "c694c083709bf01528ea4a24847e1f821b047a82",
+            "sha256": "201e29a83a07b9b5e0255fae3e58ec21ca74971f1915ab46320aa1ced6abef47",
+            "size": 2646
+          },
+          {
+            "matched_patterns": [
+              "graph6"
+            ],
+            "path": "conformance/README.md",
+            "sha": "0e7202ed1eafe9d5f15313def40bd065c029cd18",
+            "sha256": "60fbdbb2dc168ea0966e61126201387a46901d4e8fbe72ff4c415873d99f6c41",
+            "size": 534
+          },
+          {
+            "matched_patterns": [
+              "vizing",
+              "census_counts"
+            ],
+            "path": "docs/audits/thread-audit-2026-10-05.md",
+            "sha": "2330c7ea8a3565dd3e9c4955b801d8e3eed202f5",
+            "sha256": "c104966abf6d8001feb76137c350ef3344f001538eae86bc02b4f5663a399508",
+            "size": 1804
+          },
+          {
+            "matched_patterns": [
+              "graph6",
+              "corpus_pointer",
+              "census_counts"
+            ],
+            "path": "docs/research/roadmap.md",
+            "sha": "16eb3bf03a9bd4b177a410e4220490d0151c757c",
+            "sha256": "0b26f9cede146e279b2991ab6f377322e203900e622891701bec355f74bbe6aa",
+            "size": 3099
+          },
+          {
+            "matched_patterns": [
+              "A_label",
+              "B_label",
+              "vizing",
+              "graph6",
+              "census_counts"
+            ],
+            "path": "docs/research/status-2026-10-05.md",
+            "sha": "24ff19a532decaf49b830621eebd352db0393464",
+            "sha256": "29d3023c531bb4560466cfc43782d8745099e84f37ce32eb6e6f59910a00af9d",
+            "size": 2520
+          },
+          {
+            "matched_patterns": [
+              "census_counts"
+            ],
+            "path": "experiments/README.md",
+            "sha": "3e1cde85a5188212183d67485382f00a6be7fa8b",
+            "sha256": "029f22c3d430ee032530d6c5248043374ff9ca97593d3974ab10f822efbd0669",
+            "size": 647
+          },
+          {
+            "matched_patterns": [
+              "vizing",
+              "graph6",
+              "census_counts"
+            ],
+            "path": "proof/claims.toml",
+            "sha": "dedd419e5cf6592579f540ef300da79333be2ba1",
+            "sha256": "1422c752a9cb1dfeccf305e798d3b3b0ce0372266fc3422676981dd22a7432b0",
+            "size": 3080
+          },
+          {
+            "matched_patterns": [
+              "vizing"
+            ],
+            "path": "README.md",
+            "sha": "557ceb505ba62c35381b92c406f9a83058658d46",
+            "sha256": "a9b13b2df7953cfdfc646b13903ac002d02fbed56c0dd5152ff0999a99631f28",
+            "size": 39
+          }
+        ],
+        "method": "all reachable blobs from mirrored branches, tags and pull refs",
+        "refs": [
+          {
+            "ref": "refs/heads/bootstrap/estate-research-program",
+            "sha": "44990a294dfa39067d54d3915ba7735eba6422fd"
+          },
+          {
+            "ref": "refs/heads/main",
+            "sha": "c6e88d9fd5068832f85fbe708f9cbab6004e5721"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "44990a294dfa39067d54d3915ba7735eba6422fd"
+          },
+          {
+            "ref": "refs/pull/1/merge",
+            "sha": "f175d0a7ef846ec01154a6501b0d9e7d051404dd"
+          }
+        ],
+        "repository": "larsbx/vizing-domination-conjecture-research"
+      }
+    ]
+  },
+  "related_private_release_checks": {
+    "all_empty": true,
+    "repository_count": 4
+  },
+  "related_public_release_counts": [
+    {
+      "count": 0,
+      "repository": "larsbx/finite-math-kernels"
+    },
+    {
+      "count": 0,
+      "repository": "larsbx/julia-oracle-lab"
+    },
+    {
+      "count": 0,
+      "repository": "larsbx/novelty-lab"
+    },
+    {
+      "count": 0,
+      "repository": "larsbx/langlands-lab"
+    },
+    {
+      "count": 0,
+      "repository": "larsbx/semantic-categorical-oracle"
+    },
+    {
+      "count": 0,
+      "repository": "larsbx/pisot-substitution-conjecture-research"
+    },
+    {
+      "count": 0,
+      "repository": "larsbx/math-vizops"
+    },
+    {
+      "count": 0,
+      "repository": "larsbx/finite-dynamics"
+    },
+    {
+      "count": 0,
+      "repository": "larsbx/tiling-theory-research"
+    },
+    {
+      "count": 0,
+      "repository": "larsbx/finite-mandelbrot-research"
+    },
+    {
+      "count": 0,
+      "repository": "larsbx/mandelbrot-bulbs-and-ford-circles-research"
+    },
+    {
+      "count": 0,
+      "repository": "larsbx/d-patch"
+    }
+  ],
+  "retained_artifact_search": {
+    "date_window": {
+      "created_after": "2026-04-24T00:00:00Z",
+      "created_before": "2026-04-30T00:00:00Z"
+    },
+    "item_count": 122,
+    "named_archives_not_located": [
+      "graph_ring_complete_research_bundle_v3.tar",
+      "graph_ring_vizing_research_master_bundle.tar.gz",
+      "vizing_patches_43_to_63_bundle.tar.gz"
+    ],
+    "named_casebase_source_not_located": "aclass_target.json",
+    "next_cursor": null,
+    "unusable_raw_logs": [
+      {
+        "name": "patch92.log",
+        "nul_byte_count": 592,
+        "sha256": "2b73f6b3cd6cd9f97ccbbedc2fa1904331b916b2ace865882f72ddd083c79b04",
+        "size_bytes": 592
+      },
+      {
+        "name": "patch93.log",
+        "nul_byte_count": 515,
+        "sha256": "2d53280efef72c9a1709991796fb72f34fe683ad4ca58b82eeb7de3c7fc6af88",
+        "size_bytes": 515
+      }
+    ]
+  },
+  "target_issue_2_comments": [],
+  "target_pr_1_comments": [],
+  "target_releases": [],
+  "target_repository": "larsbx/vizing-domination-conjecture-research",
+  "target_workflow_runs": {
+    "total_count": 0,
+    "workflow_runs": []
+  },
+  "unavailable_endpoint": {
+    "error": {
+      "error": "HTTPError: 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint. (Response: None)",
+      "error_code": "INVALID_ARGUMENT"
+    },
+    "url": "https://api.github.com/repos/larsbx/vizing-domination-conjecture-research/actions/artifacts?per_page=100"
+  }
+}
