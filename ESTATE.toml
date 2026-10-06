@@ -8,18 +8,20 @@ class = "research"
 layer = 3
 band = "EXPLORE"
 stage = "candidate"
-inv = ["VDC"]
+inv = ["INV-VDC"]
 default_branch = "main"
 
 [origin]
 decided_by = "proposed"
-chats = ["2026-10-05 ChatGPT working thread: Vizing domination conjecture research bootstrap"]
+# Origin: 2026-10-05 ChatGPT working thread, Vizing research bootstrap.
+# No durable chat URL was recorded.
+chats = []
 artifacts = []
 
 [[dep]]
 id = "estate-governance"
 rev = "5ea47dec8086eab6a1dad6fd239688d20ea89891"
-pin = "sha256:TODO-run-tools-pin-estate"
+pin = "sha256:412a64dea58d709aae21e5a0315b8e7e96488c310a9d999267927ba3d8146a30"
 
 [exports]
 names = []
@@ -80,7 +82,7 @@ current = ["docs"]
 [[plane]]
 id = "paper"
 target = "paper"
-authority = "publication_draft"
+authority = "publication"
 required = false
 
 [[language]]
@@ -93,7 +95,6 @@ acceptance_authority = false
 mode = "boundary_first"
 mass_move = false
 next = [
-  "Replace TODO estate pin using tools/pin_estate.py.",
   "Import or regenerate the 470-isomorphism-class census with provenance.",
   "Promote one executable row-CSP checker to canonical kernel authority only after cross-checking."
 ]
