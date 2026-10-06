@@ -1,1 +1,67 @@
-# vizing-domination-conjecture-research
+# Vizing domination conjecture research
+
+This repository organizes a research program around **Vizing's domination conjecture** for Cartesian graph products:
+
+\[
+\gamma(G \square H) \geq \gamma(G)\gamma(H).
+\]
+
+The active computational and structural focus is the diagonal \(\gamma=4\) case, especially the observed strict square-surplus phenomenon
+
+\[
+s(G) := \gamma(G \square G)-\gamma(G)^2 > 0.
+\]
+
+## Current program state
+
+This repository starts from the October 2026 working thread and should be treated as a **candidate research repository** until the computations and proofs are reproduced from checked-in artifacts.
+
+Established in the working record, pending repository reproduction:
+
+- row-state CSP formulation for domination in \(G\square H\);
+- three-mechanism audit architecture:
+  \[
+  \lambda\text{-bound} \to \text{structural lemmas} \to \text{row-CSP residue};
+  \]
+- verified audits for three base isomorphism classes: graph `A`, one A-class representative, and graph `B`;
+- wing-pair structural lemma as the first proof-safe local obstruction;
+- census correction: the 491-entry \(n=10,\gamma=4\) dataset reportedly collapses to 470 isomorphism classes;
+- negative operator-reachability result for the four simple reverse operators, which are useful as lemma-mining diagnostics but not as a covering descent algebra.
+
+Open until reproduced here:
+
+- canonical dataset ingestion and isomorphism deduplication;
+- executable row-CSP gold audit runner;
+- proof records for structural lemmas;
+- full stratified audit of the 470 isomorphism classes.
+
+The recovered historical case-base labels replay as **16 entries -> 3 exact
+isomorphism classes**, with source checksums and JSON/CSV identity receipts.
+The original `aclass_target.json` now agrees with the historical log in source
+order. The authoritative 491-entry census and its 21 duplicate rows remain
+unavailable, so `VDC-CASEBASE-3` stays `working`. See the
+[provenance recovery record](docs/audits/census-provenance-gap-2026-10-05.md).
+
+## Repository layout
+
+This repository follows the estate `authority -> domain -> language` convention.
+
+```text
+ESTATE.toml                       estate manifest
+ARCHITECTURE.md                   authority and surface map
+proof/claims.toml                 claim registry
+kernel/                           canonical executable validation once promoted
+oracles/                          non-authoritative exploration engines
+experiments/                      disposable experiments and spikes
+docs/research/                    status, roadmap, design notes
+docs/audits/                      audit records and thread imports
+paper/                            publication artifacts when ready
+```
+
+## Main conjectural target
+
+The broad conjecture is Vizing's domination conjecture. The working finite target is:
+
+> For every \(n=10\), \(\gamma(G)=4\) census isomorphism class, verify \(\gamma(G\square G)>16\) by a reproducible gold audit.
+
+That finite target is not a proof of Vizing's conjecture, but it is the current executable route to sharpen the \(\gamma=4\) structural theory.

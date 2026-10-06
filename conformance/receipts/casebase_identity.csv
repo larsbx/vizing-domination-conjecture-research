@@ -1,0 +1,17 @@
+entry_id,source_line,graph6,iso_class_id,canonical_graph6,canonical_permutation,duplicate_of_entry_id,order,gamma
+1,1,I?r@`aii_,degree-ir-graph6-v1:IK??xXLb_,IK??xXLb_,1 3 7 5 8 9 0 2 6 4,,10,4
+2,2,I?r@`_iy_,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,5 3 7 8 0 1 4 2 6 9,,10,4
+3,3,I?r@`biI_,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,5 3 7 9 0 1 4 2 6 8,2,10,4
+4,4,I?r@`aIm_,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,7 1 5 8 2 3 6 0 4 9,2,10,4
+5,5,I?r@`aya_,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,7 1 5 9 2 3 6 0 4 8,2,10,4
+6,6,I?r@`aaj_,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,1 3 7 8 4 5 0 2 6 9,2,10,4
+7,7,I?r@`amg_,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,1 3 7 9 4 5 0 2 6 8,2,10,4
+8,8,I?r@`agio,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,3 1 5 8 6 7 2 0 4 9,2,10,4
+9,9,I?r@`aji?,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,3 1 5 9 6 7 2 0 4 8,2,10,4
+10,10,I?r?`rgIo,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,5 3 6 2 0 1 8 9 7 4,2,10,4
+11,11,I?r@``gYo,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,3 0 5 8 6 7 2 1 4 9,2,10,4
+12,12,I?r@`bhIO,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,5 3 6 9 0 1 4 2 7 8,2,10,4
+13,13,I?r@obgIo,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,5 3 7 2 0 1 8 9 6 4,2,10,4
+14,14,IGR@`bgIo,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,3 0 5 4 6 7 9 1 8 2,2,10,4
+15,15,IOb@`bgIo,degree-ir-graph6-v1:IGa?x`PBw,IGa?x`PBw,3 1 5 4 6 7 9 0 8 2,2,10,4
+16,16,I?r@`bgIo,degree-ir-graph6-v1:IIa?W[pKg,IIa?W[pKg,3 5 0 1 6 7 2 9 4 8,,10,4
