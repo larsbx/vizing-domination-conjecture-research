@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "kind": "historical_casebase_only",
+  "algorithm": "degree-ir-graph6-v1",
+  "promotion_status": "blocked_pending_authoritative_census",
+  "classes": [
+    {
+      "role": "A",
+      "representative_graph6": "I?r@`aii_",
+      "canonical_graph6": "IK??xXLb_",
+      "iso_class_id": "degree-ir-graph6-v1:IK??xXLb_",
+      "entry_ids": [
+        1
+      ]
+    },
+    {
+      "role": "A-class",
+      "representative_graph6": "I?r@`_iy_",
+      "canonical_graph6": "IGa?x`PBw",
+      "iso_class_id": "degree-ir-graph6-v1:IGa?x`PBw",
+      "entry_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "role": "B",
+      "representative_graph6": "I?r@`bgIo",
+      "canonical_graph6": "IIa?W[pKg",
+      "iso_class_id": "degree-ir-graph6-v1:IIa?W[pKg",
+      "entry_ids": [
+        16
+      ]
+    }
+  ]
+}

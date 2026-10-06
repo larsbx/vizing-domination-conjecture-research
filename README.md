@@ -35,6 +35,13 @@ Open until reproduced here:
 - proof records for structural lemmas;
 - full stratified audit of the 470 isomorphism classes.
 
+The recovered historical case-base labels replay as **16 entries -> 3 exact
+isomorphism classes**, with source checksums and JSON/CSV identity receipts.
+The original `aclass_target.json` now agrees with the historical log in source
+order. The authoritative 491-entry census and its 21 duplicate rows remain
+unavailable, so `VDC-CASEBASE-3` stays `working`. See the
+[provenance recovery record](docs/audits/census-provenance-gap-2026-10-05.md).
+
 ## Repository layout
 
 This repository follows the estate `authority -> domain -> language` convention.

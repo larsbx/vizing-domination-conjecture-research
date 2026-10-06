@@ -44,7 +44,7 @@ title = "Corrected case base has three isomorphism classes"
 status = "working"
 statement = "The prior 16 graph6-entry case base collapses to three isomorphism classes: A, one A-class representative, and B."
 authority = "thread_record_pending_reproduction"
-notes = "Requires canonical isomorphism-dedup script and fixture data."
+notes = "The separately recovered historical 16-entry case base now replays as three classes (conformance/receipts/casebase_identity.json). The original aclass_target.json, recovered on 2026-10-06, exactly matches the numbered historical log and decoded structural metadata. Remains working: the authoritative ordered 491-entry census, its 21 duplicate rows, and case-base census membership are still missing; issue #2's promotion gate has not been met. See docs/audits/census-provenance-gap-2026-10-05.md."
 
 [[claim]]
 id = "VDC-OPERATOR-NEGATIVE"
