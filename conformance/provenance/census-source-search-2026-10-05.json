@@ -56,6 +56,14 @@
     "The apparent nine-character graph6 record in generated C was the module name ImageModL.",
     "Target-repository hits contain bootstrap claims, source placeholders and A/B labels, not corpus entries."
   ],
+  "follow_up": {
+    "casebase_claim_status": "working",
+    "census_import_status": "blocked_pending_authoritative_original_source",
+    "date_in_user_timezone": "2026-10-06",
+    "disposition": "recovery_paused_at_documented_provenance_gap",
+    "timezone": "America/New_York",
+    "user_report": "No additional source available"
+  },
   "github_searches": [
     {
       "kind": "commit",

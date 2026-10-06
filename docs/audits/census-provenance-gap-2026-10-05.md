@@ -7,6 +7,11 @@ missing census entry has been generated or inferred from the reported counts.
 [Issue #2](https://github.com/larsbx/vizing-domination-conjecture-research/issues/2)
 remains blocked. `VDC-CASEBASE-3` remains `working`.
 
+Follow-up on 2026-10-06: the user reported that no additional source is
+available. Recovery is paused at this documented provenance gap. The
+historical case-base identity fixtures remain a supported partial result;
+the full-census import and claim promotion remain pending the original source.
+
 ## GitHub recovery scope
 
 The target repository was inspected at:
