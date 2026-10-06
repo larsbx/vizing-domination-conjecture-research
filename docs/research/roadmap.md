@@ -7,8 +7,9 @@ This roadmap turns the working-thread program into repository-local milestones.
 - [x] Add estate-style manifest and architecture.
 - [x] Add conservative claim registry.
 - [x] Add current status and roadmap.
-- [ ] Run official estate pinning and replace the temporary governance pin.
-- [ ] Add CI only after the pin is real and the audit command is known to pass.
+- [x] Run official estate pinning at governance revision `5ea47dec8086eab6a1dad6fd239688d20ea89891` and verify the generated SHA-256 pin.
+- [x] Pass the pinned estate audit, all 12 bootstrap conformance tests, and both historical case-base replay modes from a clean published checkout (2026-10-06).
+- [ ] Add CI for the pinned estate audit and Vizing conformance checks. Prerequisite validation is complete; no workflow is configured yet.
 
 ## Phase 1 — corpus and deduplication
 
