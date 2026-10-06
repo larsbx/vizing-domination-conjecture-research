@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "inspection_date": "2026-10-06",
+  "origin": "Ten user-supplied attachment copies read from the local upload directory. No attachment was modified.",
+  "scope": "All ten files inspected as UTF-8 text or JSON; Python scripts read statically and not executed. The two case-base sources are preserved byte for byte in this repository. The other eight are inventoried here without importing their bytes.",
+  "outcome": {
+    "authoritative_491_entry_source_recovered": false,
+    "aclass_target_json_recovered": true,
+    "casebase_fixture_shape": {
+      "entries": 16,
+      "classes": 3,
+      "collapsed_entries": 13
+    },
+    "full_census_mapping_verified": false,
+    "full_census_duplicate_rows_identified": false,
+    "casebase_census_membership_verified": false,
+    "claim_status": "working"
+  },
+  "files": [
+    {
+      "original_filename": "B17_orbit_reps.json",
+      "size_bytes": 10224,
+      "sha256": "2e3c976b2d7633f879a7a8d5cf3970a9685fa9a2d640de3ec41a0ad64741e369",
+      "nul_byte_count": 0,
+      "imported_path": null,
+      "observations": {
+        "kind": "row-size vectors, not a graph6 corpus",
+        "record_count": 319,
+        "unique_vector_count": 319,
+        "vector_length": 10,
+        "vector_sum": 17,
+        "all_values_nonnegative_integers": true,
+        "orbit_completeness_or_equivalence_verified": false
+      }
+    },
+    {
+      "original_filename": "B_perturb_results.json",
+      "size_bytes": 1100,
+      "sha256": "e911a8e3a808017ffdc68b14c2d8ab5a198499569c0bb19198f74b9f8eb2e60b",
+      "nul_byte_count": 0,
+      "imported_path": null,
+      "observations": {
+        "kind": "perturbation result records",
+        "record_count": 6,
+        "literal_graph6_count": 6,
+        "labels_match_last_six_aclass_records": true,
+        "unverified_fields": [
+          "gamma_g2",
+          "wings",
+          "ww_edges"
+        ]
+      }
+    },
+    {
+      "original_filename": "B_star_4_counterexamples.md",
+      "size_bytes": 4948,
+      "sha256": "995fa433c0ae727bc0cfa9a1b144e8cb85257850cfbba630d93340613aa94c06",
+      "nul_byte_count": 0,
+      "imported_path": "conformance/provenance/casebase/B_star_4_counterexamples.md",
+      "observations": {
+        "kind": "named A/B counterexample note",
+        "literal_named_graph6_count": 2,
+        "labeled_edge_lists_match_decoding": true,
+        "unverified_assertions": "Product values, solver verdicts and remaining mathematical prose are retained historical assertions."
+      }
+    },
+    {
+      "original_filename": "CYCLE_CALIBRATION_FINDINGS.md",
+      "size_bytes": 8655,
+      "sha256": "29c993077459e377d22884e51933b0fd631f5b3207cf4133ef4f63388806f334",
+      "nul_byte_count": 0,
+      "imported_path": null,
+      "observations": {
+        "kind": "cycle-product research note",
+        "census_records_or_generator_pointer_found": false,
+        "mentioned_unprovided_scripts": [
+          "cycle_max_test.py",
+          "falsify_test.py",
+          "exists_AB_broader_test.py"
+        ],
+        "product_claims_replayed": false
+      }
+    },
+    {
+      "original_filename": "aclass_target.json",
+      "size_bytes": 2592,
+      "sha256": "f3b48949e2b02411d9fc926da7a157e21ce7c8538802ce9d921e3d819a5b7d59",
+      "nul_byte_count": 0,
+      "imported_path": "conformance/provenance/casebase/aclass_target.json",
+      "observations": {
+        "kind": "A-class graph6 records",
+        "record_count": 14,
+        "literal_graph6_count": 14,
+        "source_order_matches_patch91": true,
+        "observed_order": 10,
+        "observed_gamma": 4,
+        "observed_edges": 16,
+        "recorded_degrees_match_decoding": true,
+        "observed_iso_class_count": 1,
+        "canonical_graph6": "IGa?x`PBw",
+        "unverified_fields": [
+          "gamma_g2"
+        ]
+      }
+    },
+    {
+      "original_filename": "c4c4_diagnosis.py",
+      "size_bytes": 6520,
+      "sha256": "9b344d22c57c7ea2a980e72e39cda2054f82b6f5f2127989c49b0dd1aef7b128",
+      "nul_byte_count": 0,
+      "imported_path": null,
+      "observations": {
+        "kind": "generated C4 product experiment",
+        "imports": [
+          "networkx",
+          "pulp"
+        ],
+        "external_dataset_reads": false,
+        "executed": false
+      }
+    },
+    {
+      "original_filename": "classB_g4.json",
+      "size_bytes": 886,
+      "sha256": "c2df962832925ae6bb15015afd09fdf639b49704755011e428845b64b40faabc",
+      "nul_byte_count": 0,
+      "imported_path": null,
+      "observations": {
+        "kind": "mixed-order graph sample",
+        "record_count": 30,
+        "literal_graph6_count": 30,
+        "recorded_order_counts": {
+          "10": 6,
+          "11": 10,
+          "12": 14
+        },
+        "observed_n10_gamma": 4,
+        "n10_iso_class_count": 6,
+        "n10_overlap_with_casebase_classes": 0,
+        "unverified_assertions": "Fractional values and records of orders 11 and 12 were not replayed by the order-at-most-ten identity oracle."
+      }
+    },
+    {
+      "original_filename": "cycle_calibration.py",
+      "size_bytes": 8421,
+      "sha256": "12e148a70ca991754a74701bc506b79b19d699b98e4a52cd2b8893ccbd009042",
+      "nul_byte_count": 0,
+      "imported_path": null,
+      "observations": {
+        "kind": "generated cycle-product experiment",
+        "imports": [
+          "networkx",
+          "pulp"
+        ],
+        "external_dataset_reads": false,
+        "executed": false
+      }
+    },
+    {
+      "original_filename": "cycle_exists_test.py",
+      "size_bytes": 6397,
+      "sha256": "7b3723906b76a13345a26fd11e8497316eece0b0176fc50c2fbd7caeb4566dac",
+      "nul_byte_count": 0,
+      "imported_path": null,
+      "observations": {
+        "kind": "generated cycle-product experiment",
+        "imports": [
+          "networkx",
+          "pulp"
+        ],
+        "external_dataset_reads": false,
+        "executed": false
+      }
+    },
+    {
+      "original_filename": "cycle_hypothesis_test.py",
+      "size_bytes": 7295,
+      "sha256": "c5a295c489a58494f47de27c21952fdb6ffeb6bbb54ef4db6a6a73660523d9e7",
+      "nul_byte_count": 0,
+      "imported_path": null,
+      "observations": {
+        "kind": "generated cycle-product experiment",
+        "imports": [
+          "networkx",
+          "pulp"
+        ],
+        "external_dataset_reads": false,
+        "executed": false
+      }
+    }
+  ]
+}

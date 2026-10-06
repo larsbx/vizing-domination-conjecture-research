@@ -7,10 +7,11 @@ missing census entry has been generated or inferred from the reported counts.
 [Issue #2](https://github.com/larsbx/vizing-domination-conjecture-research/issues/2)
 remains blocked. `VDC-CASEBASE-3` remains `working`.
 
-Follow-up on 2026-10-06: the user reported that no additional source is
-available. Recovery is paused at this documented provenance gap. The
-historical case-base identity fixtures remain a supported partial result;
-the full-census import and claim promotion remain pending the original source.
+On 2026-10-06 the user initially reported that no additional source was
+available, and recovery paused. A subsequent ten-file upload recovered
+`aclass_target.json` and the original A/B counterexample note. Those sources
+now strengthen case-base replay; none of the ten files contains the original
+491-entry census. The full-census import and claim promotion remain blocked.
 
 ## GitHub recovery scope
 
@@ -65,7 +66,8 @@ Patches 89-93 synthesis records. Searches did not locate the named archives:
 
 The synthesis mentions a 491-graph master dataset but supplies no full list,
 source checksum or generation command. It also names `aclass_target.json`,
-which was not located. `g4_n10_pairs.csv` contains 21 pairwise result rows over
+which was not located in that inventory and was subsequently supplied in the
+2026-10-06 upload. `g4_n10_pairs.csv` contains 21 pairwise result rows over
 six sample indices, not 491 graph6 entries. `classB_g4.json` is a separate
 30-graph sample across several orders. Neither can substitute for the census.
 
@@ -73,11 +75,45 @@ Usable original bytes, their checksums and their explicit limitations are
 preserved in [`casebase/`](../../conformance/provenance/casebase/README.md).
 Two later logs materialized as NUL-only bytes and were excluded from evidence.
 
+## Supplied artifact inspection — 2026-10-06
+
+All ten supplied files were inspected from their local copies without changing
+the attachments or running their historical scripts. Two original source
+files were imported byte for byte; the other eight are recorded with their
+sizes, SHA-256 checksums, content roles and inspection limits in
+[`artifact-inspection-2026-10-06.json`](../../conformance/provenance/artifact-inspection-2026-10-06.json).
+
+| Artifact | Observed content | Census-source disposition |
+| --- | --- | --- |
+| `aclass_target.json` | Fourteen literal graph6 labels, exactly matching the numbered Patch 91 log and its order | Recovered A-class source; imported and checked |
+| `B_star_4_counterexamples.md` | Named A/B labels and sixteen labeled edges per graph, matching decoding | Corroborating case-base source; imported and checked |
+| `B_perturb_results.json` | Six graph labels equal to the last six A-class JSON rows | Existing subset; no additional census rows |
+| `B17_orbit_reps.json` | 319 distinct length-ten nonnegative integer row-size vectors, each summing to 17 | Size-pattern data; no graph6 corpus |
+| `classB_g4.json` | Thirty graph records: six at order ten, ten at eleven, fourteen at twelve | Separate mixed-order sample, without census membership or original row IDs |
+| `CYCLE_CALIBRATION_FINDINGS.md` | Cycle-product research findings | No census list or generator pointer |
+| `c4c4_diagnosis.py`, `cycle_calibration.py`, `cycle_exists_test.py`, `cycle_hypothesis_test.py` | Generated cycle-product experiments using NetworkX/PuLP | No external dataset reads; inspected statically only |
+
+Every A-class JSON row decodes to `n=10`, sixteen edges, degree sequence
+`[2,2,2,3,3,3,4,4,4,5]` and exact domination number four. All fourteen share
+the existing canonical class pin. The six order-ten records in the separate
+`classB_g4.json` sample also have exact domination number four, form six
+classes and overlap none of the three case-base classes. Their occurrence
+in this sample does not establish occurrence in the missing census.
+Orders eleven and twelve exceed this oracle's supported input order.
+
+The JSON field `gamma_g2=17`, orbit equivalence/completeness, fractional
+values and historical product/audit assertions remain unverified. They
+cannot act as gold receipts. The named A-class source gap is now closed;
+the original ordered census, its scope and case-base membership remain absent.
+
 ## Supported partial result
 
-Patch 43 supplies the literal A/B labels. The Patch 91 log supplies all fourteen
-numbered A-class labels. Extracting those observations gives a **separate
-16-entry historical case-base fixture**, without synthesizing graph entries.
+Patch 43 supplies the literal A/B labels, corroborated by the original
+counterexample note. `aclass_target.json` supplies all fourteen A-class labels,
+and the Patch 91 log confirms their exact order. Extracting those observations
+gives a **separate 16-entry historical case-base fixture**, without synthesizing
+graph entries. The fixture and both identity receipts are byte-identical to
+the earlier log-based extraction.
 
 Exact canonicalization reproduces 16 -> 3 with 13 collapsed entries in that
 fixture. All sixteen recovered graphs have order 10 and exact domination
@@ -107,9 +143,11 @@ python3 oracles/replay_casebase.py
 python3 -m unittest discover -s conformance/tests -v
 ```
 
-The replay checks original bytes, extracted labels, pinned classes, the
-`working` claim gate and all three derived files. To regenerate those files
-after inspecting a mismatch, run `python3 oracles/replay_casebase.py --write`.
+The replay checks original checksums and sizes, agreement between JSON and
+log, JSON edge counts and degree sequences, original A/B labeled edge lists,
+pinned classes, the `working` claim gate and all three derived files. To
+regenerate those files after inspecting a mismatch, run
+`python3 oracles/replay_casebase.py --write`.
 
 The exact oracle starts with ordered degree cells, performs ordered equitable
 refinement, recursively individualizes vertices and minimizes the resulting
@@ -127,7 +165,9 @@ labeled simple graphs through order five, all ordered pairs of the sixteen
 case-base entries, and 400 seeded relabelings of the recovered order-ten
 graphs agree. Tests also distinguish regular graphs with the same initial
 refinement, validate the independently recorded A edge list, reject provenance
-and pin tampering, and reject the case base when 491/470/21 are requested.
+and pin tampering, source-order and structural-metadata disagreement, and
+reject the case base when 491/470/21 are requested. All twelve conformance
+tests pass from a clean checkout, and `--write` regenerates identical bytes.
 The code is a named `oracles/` implementation; acceptance authority and the
 estate governance pin are unchanged.
 
@@ -140,11 +180,13 @@ options/seed if applicable, and any aggregation or relabeling before the 491
 rows were counted. Those details cannot be recovered from `n=10`, `gamma=4`
 and the remembered counts alone.
 
-Also missing are the original case-base file, its relationship to census row
-IDs, and the reported original duplicate mapping. The recovered logs close
-the identity portion of the case-base gap, but do not establish census
-membership. A new enumeration with the same counts would not recover the
-original duplicate rows or provenance.
+The named `aclass_target.json` has been recovered with its original bytes and
+checksum. Its generator, any original combined 16-entry case-base file, its
+relationship to census row IDs, and the reported original duplicate mapping
+remain missing. The JSON and corroborating logs close the label-identity
+portion of the case-base gap, but do not establish census membership. A new
+enumeration with the same counts would not recover the original duplicate
+rows or provenance.
 
 Once the source is recovered and recorded, this deterministic path can
 generate the full mapping (the command currently fails because the source is

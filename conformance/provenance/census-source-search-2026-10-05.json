@@ -3717,6 +3717,15 @@
       }
     ]
   },
+  "subsequent_artifact_follow_up": {
+    "authoritative_census_source_recovered": false,
+    "casebase_claim_status": "working",
+    "historical_snapshot_note": "The original retained-artifact inventory absence and earlier no-source pause are historical observations; the subsequent upload recovers the A-class JSON only.",
+    "inspection_date": "2026-10-06",
+    "named_aclass_source_recovered": "conformance/provenance/casebase/aclass_target.json",
+    "record": "conformance/provenance/artifact-inspection-2026-10-06.json",
+    "supersedes_prior_pause_for_this_batch": true
+  },
   "target_issue_2_comments": [],
   "target_pr_1_comments": [],
   "target_releases": [],

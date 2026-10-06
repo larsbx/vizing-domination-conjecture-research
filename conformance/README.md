@@ -18,7 +18,8 @@ A result becomes repository evidence only when its fixture or receipt is stored 
 
 `fixtures/casebase_graph6.txt` is a literal historical case-base extraction,
 not the missing census. `provenance/casebase/` preserves the usable source
-records and their checksums. Replay its pinned 16 -> 3 identity result with
+records and their checksums, including the original `aclass_target.json`
+recovered in the 2026-10-06 upload. Replay its pinned 16 -> 3 identity result with
 `python3 oracles/replay_casebase.py`. The JSON/CSV identity receipts do not
 certify historical product values or the reported 491 -> 470 census result.
 

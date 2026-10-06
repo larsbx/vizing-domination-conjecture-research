@@ -26,6 +26,24 @@
       "size_bytes": 5851,
       "sha256": "3e9a28891ffba0b534fac40f535b1cd34406a86561c28ddf791a20a3275a35d4",
       "origin": "Retained user research artifact; original generator/commit not available."
+    },
+    {
+      "path": "conformance/provenance/casebase/aclass_target.json",
+      "original_filename": "aclass_target.json",
+      "role": "aclass_json",
+      "size_bytes": 2592,
+      "sha256": "f3b48949e2b02411d9fc926da7a157e21ce7c8538802ce9d921e3d819a5b7d59",
+      "recovered_on": "2026-10-06",
+      "origin": "Original user-supplied attachment bytes. The original generating command, repository commit and master archive remain unavailable."
+    },
+    {
+      "path": "conformance/provenance/casebase/B_star_4_counterexamples.md",
+      "original_filename": "B_star_4_counterexamples.md",
+      "role": "named_graphs_original",
+      "size_bytes": 4948,
+      "sha256": "995fa433c0ae727bc0cfa9a1b144e8cb85257850cfbba630d93340613aa94c06",
+      "recovered_on": "2026-10-06",
+      "origin": "Original user-supplied attachment bytes. The original generating command, repository commit and master archive remain unavailable."
     }
   ],
   "named_labels": {
@@ -33,14 +51,15 @@
     "B": "I?r@`bgIo"
   },
   "extraction_order": [
-    "A heading from Patch 43",
-    "14 literal graph6 labels from numbered Patch 91 log rows, in order",
-    "B heading from Patch 43"
+    "A heading from Patch 43, corroborated by the original counterexample note",
+    "14 literal graph6 labels from aclass_target.json in source order, cross-checked against the numbered Patch 91 log",
+    "B heading from Patch 43, corroborated by the original counterexample note"
   ],
   "limitations": [
     "No authoritative 491-entry corpus recovered.",
-    "Original case-base source file and generator metadata have not been recovered.",
+    "The named A-class source JSON has been recovered; its generator metadata, relationship to census rows and any combined original 16-entry case-base file remain unavailable.",
     "This is a literal recovery of the reported case-base labels, not an import of the census.",
-    "Historical product/audit claims in these files are not replayed or promoted by the identity checker."
-  ]
+    "The aclass_target.json gamma_g2 values and historical product/audit claims in source notes are not replayed or promoted by the identity checker."
+  ],
+  "last_updated_on": "2026-10-06"
 }

@@ -20,6 +20,10 @@ def extract_casebase(root: Path = ROOT) -> bytes:
         raw = (root / source["path"]).read_bytes()
         if hashlib.sha256(raw).hexdigest() != source["sha256"]:
             raise ValueError(f"source checksum mismatch: {source['path']}")
+        if len(raw) != source["size_bytes"]:
+            raise ValueError(f"source size mismatch: {source['path']}")
+        if source["role"] in sources:
+            raise ValueError(f"duplicate source role: {source['role']}")
         sources[source["role"]] = raw.decode("utf-8")
     labels = provenance["named_labels"]
     headings = re.findall(r"^### `` (I[?-~]{8}) ``", sources["named_graphs"], re.MULTILINE)
@@ -28,7 +32,36 @@ def extract_casebase(root: Path = ROOT) -> bytes:
     members = re.findall(r"^\[(\d+)/14\] (I[?-~]{8})$", sources["aclass_log"], re.MULTILINE)
     if [int(i) for i, _ in members] != list(range(1, 15)):
         raise ValueError("A-class log must contain exactly the ordered 14 source records")
-    codes = [labels["A"], *(code for _, code in members), labels["B"]]
+    records = json.loads(sources["aclass_json"])
+    if (not isinstance(records, list) or len(records) != 14
+            or any(not isinstance(row, dict) for row in records)):
+        raise ValueError("A-class JSON must contain exactly 14 object records")
+    if [row.get("graph6") for row in records] != [code for _, code in members]:
+        raise ValueError("A-class JSON labels must match the numbered log in source order")
+    for index, row in enumerate(records, 1):
+        adj = decode_graph6(row["graph6"])
+        degrees = sorted(mask.bit_count() for mask in adj)
+        if row.get("edges") != sum(degrees) // 2 or row.get("deg_seq") != degrees:
+            raise ValueError(f"A-class JSON structural metadata mismatch at record {index}")
+    # This earlier note corroborates named labels and labeled edges only.
+    # Its product values and other historical assertions are not replayed here.
+    sections = re.findall(r"^## Counterexample [12]: graph6 = `` (I[?-~]{8}) ``\n"
+                          r"(.*?)(?=^## |\Z)", sources["named_graphs_original"],
+                          re.MULTILINE | re.DOTALL)
+    if len(sections) != 2 or {code for code, _ in sections} != set(labels.values()):
+        raise ValueError("original named-graph headings do not match A/B source labels")
+    for code, body in sections:
+        paragraph = re.search(r"\*\*Edges\*\*:\s*\$\$(.*?)\$\$", body, re.DOTALL)
+        if paragraph is None:
+            raise ValueError(f"original named-graph edge list missing: {code}")
+        edges = [tuple(map(int, pair)) for pair in
+                 re.findall(r"\((\d+),(\d+)\)", paragraph.group(1))]
+        adj = decode_graph6(code)
+        expected = [(u, v) for u in range(len(adj)) for v in range(u + 1, len(adj))
+                    if adj[u] & (1 << v)]
+        if sorted(edges) != expected:
+            raise ValueError(f"original named-graph edge list mismatch: {code}")
+    codes = [labels["A"], *(row["graph6"] for row in records), labels["B"]]
     return ("\n".join(codes) + "\n").encode("ascii")
 
 

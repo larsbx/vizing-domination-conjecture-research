@@ -1,5 +1,6 @@
 """Independent isomorphism cross-checks, provenance checks and fail-closed tests."""
 
+import hashlib
 import itertools
 import json
 from pathlib import Path
@@ -155,6 +156,59 @@ class ReplayTests(unittest.TestCase):
         self.assertEqual((report["entry_count"], report["iso_class_count"]), (16, 3))
         self.assertFalse((ROOT / "conformance/corpus/g4_n10_graph6.txt").exists())
 
+    def test_recovered_json_requires_log_order_and_decoded_metadata(self):
+        cases = [
+            ("row count", lambda rows: rows.pop(), "14 object records"),
+            ("source order", lambda rows: rows.reverse(), "source order"),
+            ("edge count", lambda rows: rows[0].update(edges=15), "structural metadata"),
+            ("degrees", lambda rows: rows[0].update(deg_seq=[3] * 10), "structural metadata"),
+        ]
+        for label, change, error in cases:
+            with self.subTest(label=label), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                shutil.copytree(ROOT / "conformance", root / "conformance")
+                shutil.copytree(ROOT / "proof", root / "proof")
+                source = root / "conformance/provenance/casebase/aclass_target.json"
+                rows = json.loads(source.read_bytes())
+                change(rows)
+                source.write_text(json.dumps(rows))
+                # Repin deliberately: exercise source consistency beyond byte integrity.
+                self.repin_source(root, source)
+                outputs = self.derived_bytes(root)
+                with self.assertRaisesRegex(ValueError, error):
+                    replay(root, write=True)
+                self.assertEqual(self.derived_bytes(root), outputs)
+
+    def test_original_named_edge_list_must_match_graph6(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            shutil.copytree(ROOT / "conformance", root / "conformance")
+            shutil.copytree(ROOT / "proof", root / "proof")
+            source = root / "conformance/provenance/casebase/B_star_4_counterexamples.md"
+            source.write_text(source.read_text().replace("(0,4)", "(0,3)", 1))
+            self.repin_source(root, source)
+            outputs = self.derived_bytes(root)
+            with self.assertRaisesRegex(ValueError, "edge list mismatch"):
+                replay(root, write=True)
+            self.assertEqual(self.derived_bytes(root), outputs)
+
+    @staticmethod
+    def derived_bytes(root):
+        return {path: (root / path).read_bytes() for path in (
+            "conformance/fixtures/casebase_graph6.txt",
+            "conformance/receipts/casebase_identity.json",
+            "conformance/receipts/casebase_identity.csv",
+        )}
+
+    @staticmethod
+    def repin_source(root, source):
+        path = root / "conformance/provenance/casebase/provenance.json"
+        provenance = json.loads(path.read_bytes())
+        record = next(s for s in provenance["sources"] if root / s["path"] == source)
+        record["sha256"] = hashlib.sha256(source.read_bytes()).hexdigest()
+        record["size_bytes"] = source.stat().st_size
+        path.write_text(json.dumps(provenance))
+
     def test_tampered_source_and_pin_fail_before_writes(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -162,12 +216,13 @@ class ReplayTests(unittest.TestCase):
             shutil.copytree(ROOT / "proof", root / "proof")
             target = root / "conformance/fixtures/casebase_graph6.txt"
             original = target.read_bytes()
-            source = root / "conformance/provenance/casebase/patch91_full-1.log"
-            source.write_bytes(source.read_bytes() + b"tampered\n")
-            with self.assertRaisesRegex(ValueError, "checksum"):
-                replay(root, write=True)
-            self.assertEqual(target.read_bytes(), original)
-            shutil.copyfile(ROOT / "conformance/provenance/casebase/patch91_full-1.log", source)
+            for name in ("patch91_full-1.log", "aclass_target.json", "B_star_4_counterexamples.md"):
+                source = root / "conformance/provenance/casebase" / name
+                source.write_bytes(source.read_bytes() + b"tampered\n")
+                with self.subTest(source=name), self.assertRaisesRegex(ValueError, "checksum"):
+                    replay(root, write=True)
+                self.assertEqual(target.read_bytes(), original)
+                shutil.copyfile(ROOT / "conformance/provenance/casebase" / name, source)
             pin = root / "conformance/fixtures/casebase_classes.json"
             contents = json.loads(pin.read_text())
             contents["classes"][0]["canonical_graph6"] = "I????????"
