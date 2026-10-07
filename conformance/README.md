@@ -25,3 +25,22 @@ certify historical product values or the reported 491 -> 470 census result.
 
 The full source gap and bounded search scope are recorded in
 [`census-provenance-gap-2026-10-05.md`](../docs/audits/census-provenance-gap-2026-10-05.md).
+
+## Corpus-independent wing-pair checks
+
+`tests/test_wing_pair_examples.py` checks the examples in
+[`proof/wing-pair.md`](../proof/wing-pair.md). Its independent domination
+oracle builds Cartesian-product neighborhoods directly and enumerates
+selected vertex sets, without using a row-CSP solver. The exhaustive small
+comparison covers all labeled horizontal graphs of orders one through three
+with a four-vertex path or a triangle as the row factor. It checks both the
+original necessary inequalities and the shared-outer-row union condition.
+
+```sh
+python3 -B -m unittest discover -s conformance/tests -p 'test_wing_pair_examples.py' -v
+```
+
+These checks have no executable acceptance authority. They are not corpus
+fixtures, do not reproduce historical gold audits, and do not satisfy issue
+#5's pending regression against the canonical row-CSP runner. No claim is
+promoted by passing them.

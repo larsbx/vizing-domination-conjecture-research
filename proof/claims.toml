@@ -32,11 +32,12 @@ notes = "This is the core finite CSP representation used by the audit framework.
 
 [[claim]]
 id = "VDC-WING-PAIR"
-title = "Wing-pair structural lemma"
+title = "Wing-pair residual-capacity lemma"
 status = "working"
-statement = "Adjacent degree-2 wing rows impose local residual-capacity inequalities that can certify size-pattern infeasibility."
-authority = "thread_record_pending_repository_proof"
-notes = "Patch 90 in the working thread identified this as the first proof-safe structural obstruction. Needs proof note and regression tests."
+statement = "For finite simple graphs G,H and distinct row vertices w1,w2 satisfying N_H(w1)={w2,o1}, N_H(w2)={w1,o2}, with o1,o2 outside {w1,w2}, every dominating set in G square H satisfies |R_G(S_w1) minus S_w2| <= a_o1 and |R_G(S_w2) minus S_w1| <= a_o2, where R_G(S)=V(G) minus N_G[S] and a_h=|S_h|. If no pair of wing states of the prescribed sizes satisfies both inequalities, that exact size pattern is infeasible. Survival does not certify global feasibility."
+authority = "repository_proof_draft_pending_review_and_regression"
+proof_record = "proof/wing-pair.md"
+notes = "Corpus-independent proof and applicability/failure examples are recorded. Outer rows may coincide; the proof record also derives the shared-row union-capacity condition. Small direct-product conformance checks are non-authoritative. Status remains working: proof review, authoritative census provenance (#2), canonical row-CSP runner (#4), and replayable regression against that runner are pending. Issue #5 remains partially delivered; no census or strict-surplus claim is promoted."
 
 [[claim]]
 id = "VDC-CASEBASE-3"

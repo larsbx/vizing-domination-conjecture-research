@@ -63,16 +63,27 @@ Promotion target:
 ## Phase 4 — wing-pair lemma promotion
 
 Goal: move Patch 90 from thread artifact to repository proof.
+The statement and mathematical proof can be recorded independently of
+Phases 1–3; executable regression and promotion retain those dependencies.
 
 Deliverables:
 
-- proof note in `proof/wing-pair.md`;
-- regression cases showing agreement with M1;
-- explicit assumptions and non-applicability cases.
+- [x] [Proof draft](../../proof/wing-pair.md) with exact hypotheses and a
+  proof from product domination.
+- [x] Applicability and failure examples, including shared outer capacity
+  and the distinction between local survival and global feasibility.
+- [x] Small non-authoritative checks against direct product domination in
+  `conformance/tests/test_wing_pair_examples.py`.
+- [ ] Independent review of the proof record.
+- [ ] Authoritative census provenance and canonical row-CSP runner.
+- [ ] Replayable regression showing agreement with M1 where both apply.
 
 Promotion target:
 
-- `VDC-WING-PAIR`: `working` -> `proved` or `computed+proved` depending on final form.
+- `VDC-WING-PAIR` remains `working` pending review and the executable
+  regression gate. A later reviewed change may promote it to `proved`;
+  executable audit results require their own code, data, and receipts.
+  `computed+proved` is not a registry status.
 
 ## Phase 5 — stratified 470-class audit
 
