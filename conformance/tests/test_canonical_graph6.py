@@ -1,5 +1,6 @@
 """Independent isomorphism cross-checks, provenance checks and fail-closed tests."""
 
+import csv
 import hashlib
 import itertools
 import json
@@ -118,6 +119,40 @@ class CanonicalTests(unittest.TestCase):
                 decode_graph6(code)
         self.assertEqual(decode_graph6(">>graph6<<I?r@`aii_"), adjacency(10, expected))
 
+    def test_graph6_spec_example_and_permutation_direction(self):
+        # McKay's specification encodes these labeled edges as bytes 68,81,99.
+        graph = adjacency(5, [(0, 2), (0, 4), (1, 3), (3, 4)])
+        self.assertEqual(decode_graph6("DQc"), graph)
+        self.assertEqual(encode_graph6(graph), "DQc")
+        # This permutation differs from its inverse, exposing reversed maps.
+        order = (2, 4, 1, 0, 3)
+        expected = adjacency(5, [(0, 3), (1, 3), (1, 4), (2, 4)])
+        self.assertEqual(decode_graph6(encode_graph6(graph, order)), expected)
+        inverse = tuple(order.index(v) for v in range(5))
+        self.assertNotEqual(decode_graph6(encode_graph6(graph, inverse)), expected)
+
+    def test_true_and_false_twin_transpositions_at_supported_maximum(self):
+        true_twins = (0, 1, 2)
+        false_twins = (3, 4, 5)
+        edges = [*itertools.combinations(true_twins, 2),
+                 *((v, w) for v in (*true_twins, *false_twins) for w in (6, 7)),
+                 (6, 7), (7, 8), (8, 9)]
+        graph = adjacency(10, edges)
+        key, _ = canonical_graph6(graph)
+        for group in (true_twins, false_twins):
+            for u, v in itertools.combinations(group, 2):
+                order = list(range(10))
+                order[u], order[v] = order[v], order[u]
+                self.assertEqual(relabel(graph, order), graph)
+        rng = random.Random(20261006)
+        for _ in range(40):
+            order = list(range(10))
+            rng.shuffle(order)
+            changed = relabel(graph, order)
+            actual, witness = canonical_graph6(changed)
+            self.assertEqual(actual, key)
+            self.assertEqual(decode_graph6(actual), relabel(changed, witness))
+
     def test_domination_input_checks(self):
         self.assertEqual(domination_number(()), 0)
         self.assertEqual(domination_number((0,) * 4), 4)
@@ -134,6 +169,11 @@ class CanonicalTests(unittest.TestCase):
         self.assertEqual(result["duplicate_entry_count"], 2)
         self.assertEqual([e["source_line"] for e in result["entries"]], [3, 4, 5])
         self.assertEqual([e["duplicate_of_entry_id"] for e in result["entries"]], [None, 1, 1])
+
+    def test_non_newline_control_bytes_are_not_source_separators(self):
+        for separator in (b"\t", b"\x0b", b"\x0c", b"\x1c", b"\x1d", b"\x1e"):
+            with self.subTest(separator=separator), self.assertRaisesRegex(ValueError, "control character"):
+                deduplicate(b"I?r@`aii_" + separator + b"I?r@`bgIo\n")
 
     def test_census_gate_rejects_casebase_and_writes_no_report(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -155,6 +195,23 @@ class ReplayTests(unittest.TestCase):
         report = replay()
         self.assertEqual((report["entry_count"], report["iso_class_count"]), (16, 3))
         self.assertFalse((ROOT / "conformance/corpus/g4_n10_graph6.txt").exists())
+
+    def test_receipt_witnesses_and_source_order_independently(self):
+        report = json.loads((ROOT / "conformance/receipts/casebase_identity.json").read_bytes())
+        source = extract_casebase().decode("ascii").splitlines()
+        with (ROOT / "conformance/receipts/casebase_identity.csv").open(newline="") as handle:
+            csv_rows = list(csv.DictReader(handle))
+        self.assertEqual([entry["graph6"] for entry in report["entries"]], source)
+        self.assertEqual([entry["source_line"] for entry in report["entries"]], list(range(1, 17)))
+        self.assertEqual(len(csv_rows), 16)
+        for entry, row in zip(report["entries"], csv_rows):
+            witness = entry["canonical_permutation"]
+            self.assertEqual(sorted(witness), list(range(10)))
+            original = decode_graph6(entry["graph6"])
+            self.assertEqual(decode_graph6(entry["canonical_graph6"]), relabel(original, witness))
+            self.assertEqual(row["graph6"], entry["graph6"])
+            self.assertEqual(row["iso_class_id"], entry["iso_class_id"])
+            self.assertEqual(row["canonical_permutation"], " ".join(map(str, witness)))
 
     def test_recovered_json_requires_log_order_and_decoded_metadata(self):
         cases = [
@@ -230,6 +287,67 @@ class ReplayTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "canonical class mismatch"):
                 replay(root, write=True)
             self.assertEqual(target.read_bytes(), original)
+
+    def test_declared_pin_identity_and_scope_fail_before_writes(self):
+        cases = [
+            ("class ID", lambda p: p["classes"][0].update(iso_class_id="wrong-id"), "versioned class ID"),
+            ("missing ID", lambda p: p["classes"][0].pop("iso_class_id"), "versioned class ID"),
+            ("duplicated role", lambda p: p["classes"][0].update(role="B"), "exactly once"),
+            ("extra class", lambda p: p["classes"].append(dict(p["classes"][0])), "exactly once"),
+            ("source representative", lambda p: p["classes"][1].update(representative_graph6="I?r@`biI_"), "source representative"),
+            ("scope", lambda p: p.update(kind="authoritative_census"), "historical evidence"),
+            ("promotion", lambda p: p.update(promotion_status="computed"), "blocked pending"),
+            ("schema", lambda p: p.update(schema_version=2), "schema-1"),
+            ("boolean schema", lambda p: p.update(schema_version=True), "schema-1"),
+            ("floating schema", lambda p: p.update(schema_version=1.0), "schema-1"),
+        ]
+        for label, change, error in cases:
+            with self.subTest(label=label), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                for folder in ("conformance", "proof"):
+                    shutil.copytree(ROOT / folder, root / folder)
+                path = root / "conformance/fixtures/casebase_classes.json"
+                pins = json.loads(path.read_bytes())
+                change(pins)
+                path.write_text(json.dumps(pins))
+                outputs = self.derived_bytes(root)
+                with self.assertRaisesRegex(ValueError, error):
+                    replay(root, write=True)
+                self.assertEqual(self.derived_bytes(root), outputs)
+
+    def test_provenance_scope_and_schema_fail_before_writes(self):
+        for field, value in (("kind", "authoritative_census"), ("schema_version", 2),
+                             ("schema_version", True), ("schema_version", 1.0)):
+            with self.subTest(field=field, value=value), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                for folder in ("conformance", "proof"):
+                    shutil.copytree(ROOT / folder, root / folder)
+                path = root / "conformance/provenance/casebase/provenance.json"
+                provenance = json.loads(path.read_bytes())
+                provenance[field] = value
+                path.write_text(json.dumps(provenance))
+                outputs = self.derived_bytes(root)
+                with self.assertRaisesRegex(ValueError, "historical case-base evidence"):
+                    replay(root, write=True)
+                self.assertEqual(self.derived_bytes(root), outputs)
+
+    def test_missing_or_duplicate_casebase_claim_fails_before_writes(self):
+        for duplicate in (False, True):
+            with self.subTest(duplicate=duplicate), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                for folder in ("conformance", "proof"):
+                    shutil.copytree(ROOT / folder, root / folder)
+                path = root / "proof/claims.toml"
+                text = path.read_text()
+                if duplicate:
+                    text += '\n[[claim]]\nid = "VDC-CASEBASE-3"\nstatus = "computed"\n'
+                else:
+                    text = text.replace('id = "VDC-CASEBASE-3"', 'id = "VDC-CASEBASE-ABSENT"')
+                path.write_text(text)
+                outputs = self.derived_bytes(root)
+                with self.assertRaisesRegex(ValueError, "VDC-CASEBASE-3 exactly once"):
+                    replay(root, write=True)
+                self.assertEqual(self.derived_bytes(root), outputs)
 
     def test_claim_promotion_is_blocked_without_census(self):
         with tempfile.TemporaryDirectory() as directory:

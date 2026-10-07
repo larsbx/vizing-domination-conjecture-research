@@ -11,10 +11,15 @@ import re
 from canonical_graph6 import ALGORITHM, canonical_graph6, csv_bytes, decode_graph6, deduplicate, json_bytes
 
 ROOT = Path(__file__).resolve().parents[1]
+HISTORICAL_KIND = "historical_casebase_only"
 
 
 def extract_casebase(root: Path = ROOT) -> bytes:
     provenance = json.loads((root / "conformance/provenance/casebase/provenance.json").read_text())
+    if (not isinstance(provenance, dict) or type(provenance.get("schema_version")) is not int
+            or provenance["schema_version"] != 1
+            or provenance.get("kind") != HISTORICAL_KIND):
+        raise ValueError("provenance must identify schema-1 historical case-base evidence")
     sources = {}
     for source in provenance["sources"]:
         raw = (root / source["path"]).read_bytes()
@@ -26,6 +31,8 @@ def extract_casebase(root: Path = ROOT) -> bytes:
             raise ValueError(f"duplicate source role: {source['role']}")
         sources[source["role"]] = raw.decode("utf-8")
     labels = provenance["named_labels"]
+    if not isinstance(labels, dict) or set(labels) != {"A", "B"}:
+        raise ValueError("named labels must identify exactly A and B")
     headings = re.findall(r"^### `` (I[?-~]{8}) ``", sources["named_graphs"], re.MULTILINE)
     if set(headings) != {labels["A"], labels["B"]} or len(headings) != 2:
         raise ValueError("named-graph headings do not match the two source labels")
@@ -71,21 +78,41 @@ def replay(root: Path = ROOT, *, write: bool = False) -> dict:
     if (report["entry_count"], report["iso_class_count"], report["duplicate_entry_count"]) != (16, 3, 13):
         raise ValueError("recovered case base does not have the pinned 16 -> 3 shape")
     pins = json.loads((root / "conformance/fixtures/casebase_classes.json").read_text())
-    if pins["algorithm"] != ALGORITHM:
+    if (not isinstance(pins, dict) or type(pins.get("schema_version")) is not int
+            or pins["schema_version"] != 1
+            or pins.get("kind") != HISTORICAL_KIND
+            or pins.get("promotion_status") != "blocked_pending_authoritative_census"):
+        raise ValueError("class pins must remain schema-1 historical evidence blocked pending the census")
+    if pins.get("algorithm") != ALGORITHM:
         raise ValueError("case-base canonicalization version mismatch")
-    for pin in pins["classes"]:
+    codes = raw.decode("ascii").splitlines()
+    representatives = {"A": codes[0], "A-class": codes[1], "B": codes[-1]}
+    class_pins = pins.get("classes")
+    if (not isinstance(class_pins, list) or len(class_pins) != 3
+            or any(not isinstance(pin, dict) or not isinstance(pin.get("role"), str)
+                   for pin in class_pins)
+            or {pin["role"] for pin in class_pins} != set(representatives)):
+        raise ValueError("class pins must identify A, A-class and B exactly once")
+    for pin in class_pins:
+        if pin.get("representative_graph6") != representatives[pin["role"]]:
+            raise ValueError(f"source representative mismatch for {pin['role']}")
         canonical, _ = canonical_graph6(decode_graph6(pin["representative_graph6"]))
-        if canonical != pin["canonical_graph6"]:
+        if canonical != pin.get("canonical_graph6"):
             raise ValueError(f"canonical class mismatch for {pin['role']}")
+        if pin.get("iso_class_id") != f"{ALGORITHM}:{canonical}":
+            raise ValueError(f"versioned class ID mismatch for {pin['role']}")
         actual = [e["entry_id"] for e in report["entries"] if e["canonical_graph6"] == canonical]
         if actual != pin["entry_ids"]:
             raise ValueError(f"source membership mismatch for {pin['role']}")
-    if {p["canonical_graph6"] for p in pins["classes"]} != {c["canonical_graph6"] for c in report["classes"]}:
+    if {p["canonical_graph6"] for p in class_pins} != {c["canonical_graph6"] for c in report["classes"]}:
         raise ValueError("pins must cover all three distinct classes")
     claims_text = (root / "proof/claims.toml").read_text()
     import tomllib
     claims = tomllib.loads(claims_text)
-    claim = next(c for c in claims["claim"] if c["id"] == "VDC-CASEBASE-3")
+    casebase_claims = [c for c in claims["claim"] if c["id"] == "VDC-CASEBASE-3"]
+    if len(casebase_claims) != 1:
+        raise ValueError("claim registry must identify VDC-CASEBASE-3 exactly once")
+    claim = casebase_claims[0]
     if claim["status"] != "working":
         raise ValueError("case-base claim must remain working while the census is missing")
     products = {

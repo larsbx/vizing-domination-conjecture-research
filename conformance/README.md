@@ -26,6 +26,11 @@ certify historical product values or the reported 491 -> 470 census result.
 The full source gap and bounded search scope are recorded in
 [`census-provenance-gap-2026-10-05.md`](../docs/audits/census-provenance-gap-2026-10-05.md).
 
+The independent [identity and provenance audit](../docs/audits/casebase-identity-review-2026-10-06.md)
+records the twin-pruning justification, permutation direction, original-byte
+comparison and additional fail-closed identity/scope checks. Run the current
+suite with `python3 -m unittest discover -s conformance/tests -v`.
+
 ## Corpus-independent wing-pair checks
 
 `tests/test_wing_pair_examples.py` checks the examples in
