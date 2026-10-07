@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scope": "historical_casebase_only",
+  "targets": {"A": 16, "A-class": 16, "B": 17},
+  "budgets": {
+    "enumeration_limit": 250000,
+    "automorphism_limit": 100000,
+    "orbit_limit": 8,
+    "m1_work_limit": 1000000,
+    "m1_seconds": null
+  }
+}

@@ -1,0 +1,667 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:vdc:row-csp-receipt:v1",
+  "title": "Bounded non-authoritative row-CSP receipts v1",
+  "description": "UNSAT requires complete enumeration and exhausted searches. TIMEOUT and pending enumeration never support a negative claim. Cross-field accounting and witness checks are enforced by replay.",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "acceptance_authority",
+        "claim_promotion",
+        "source_sha256",
+        "outcome_counts",
+        "kind",
+        "scope",
+        "graph_id",
+        "role",
+        "graph6",
+        "product",
+        "horizontal_order",
+        "row_order",
+        "runtime_requirement",
+        "target",
+        "target_semantics",
+        "versions",
+        "budgets",
+        "filters_applied",
+        "structural_lemmas_applied",
+        "wing_pair_use",
+        "pattern_counts",
+        "orbits",
+        "automorphism_count",
+        "status",
+        "exhaustive",
+        "enumeration_complete",
+        "enumeration_work_used",
+        "pipeline_timeout",
+        "orbit_count"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1,
+          "type": "integer"
+        },
+        "acceptance_authority": {
+          "const": false
+        },
+        "claim_promotion": {
+          "const": false
+        },
+        "source_sha256": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "outcome_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SAT",
+            "UNSAT",
+            "TIMEOUT"
+          ],
+          "properties": {
+            "SAT": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "UNSAT": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "TIMEOUT": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "kind": {
+          "const": "row_csp_audit"
+        },
+        "scope": {
+          "const": "historical_casebase_only"
+        },
+        "graph_id": {
+          "type": "string",
+          "pattern": "^degree-ir-graph6-v1:"
+        },
+        "role": {
+          "enum": [
+            "A",
+            "A-class",
+            "B"
+          ]
+        },
+        "graph6": {
+          "type": "string"
+        },
+        "product": {
+          "const": "square"
+        },
+        "horizontal_order": {
+          "const": 10
+        },
+        "row_order": {
+          "const": 10
+        },
+        "runtime_requirement": {
+          "type": "string"
+        },
+        "target": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "target_semantics": {
+          "const": "exact_total_selected_vertices"
+        },
+        "versions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "core",
+            "scalar",
+            "lambda",
+            "orbits",
+            "m1"
+          ],
+          "properties": {
+            "core": {
+              "type": "string"
+            },
+            "scalar": {
+              "type": "string"
+            },
+            "lambda": {
+              "type": "string"
+            },
+            "orbits": {
+              "type": "string"
+            },
+            "m1": {
+              "type": "string"
+            }
+          }
+        },
+        "budgets": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enumeration_work",
+            "automorphism_work",
+            "searched_orbits",
+            "m1_work_per_orbit",
+            "m1_seconds_per_orbit"
+          ],
+          "properties": {
+            "enumeration_work": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "automorphism_work": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "searched_orbits": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "m1_work_per_orbit": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "m1_seconds_per_orbit": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            }
+          }
+        },
+        "filters_applied": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "string"
+          }
+        },
+        "structural_lemmas_applied": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "wing_pair_use": {
+          "const": "regression_only"
+        },
+        "pattern_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "raw_patterns",
+            "scalar_rejected",
+            "scalar_survivors",
+            "lambda_rejected",
+            "pending_enumeration"
+          ],
+          "properties": {
+            "raw_patterns": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "scalar_rejected": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "scalar_survivors": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "lambda_rejected": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "pending_enumeration": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "orbits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "sizes",
+              "observed_multiplicity",
+              "status",
+              "reason",
+              "work_used",
+              "witness"
+            ],
+            "properties": {
+              "sizes": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 10,
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 10
+                }
+              },
+              "observed_multiplicity": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "status": {
+                "enum": [
+                  "SAT",
+                  "UNSAT",
+                  "TIMEOUT"
+                ]
+              },
+              "reason": {
+                "enum": [
+                  "checked_witness",
+                  "search_exhausted",
+                  "work_limit",
+                  "wall_clock_limit",
+                  "orbit_limit"
+                ]
+              },
+              "work_used": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "witness": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 10,
+                    "items": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 1023
+                    }
+                  }
+                ]
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "SAT"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "reason": {
+                      "const": "checked_witness"
+                    },
+                    "witness": {
+                      "type": "array"
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "UNSAT"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "reason": {
+                      "const": "search_exhausted"
+                    },
+                    "witness": {
+                      "type": "null"
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "TIMEOUT"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "reason": {
+                      "enum": [
+                        "work_limit",
+                        "wall_clock_limit",
+                        "orbit_limit"
+                      ]
+                    },
+                    "witness": {
+                      "type": "null"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "automorphism_count": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "integer",
+              "minimum": 1
+            }
+          ]
+        },
+        "status": {
+          "enum": [
+            "SAT",
+            "UNSAT",
+            "TIMEOUT"
+          ]
+        },
+        "exhaustive": {
+          "type": "boolean"
+        },
+        "enumeration_complete": {
+          "type": "boolean"
+        },
+        "enumeration_work_used": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pipeline_timeout": {
+          "enum": [
+            null,
+            "automorphism_work_limit",
+            "enumeration_work_limit"
+          ]
+        },
+        "orbit_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "UNSAT"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "exhaustive": {
+                "const": true
+              },
+              "enumeration_complete": {
+                "const": true
+              },
+              "pipeline_timeout": {
+                "type": "null"
+              },
+              "outcome_counts": {
+                "properties": {
+                  "TIMEOUT": {
+                    "const": 0
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "enumeration_complete": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "pattern_counts": {
+                "properties": {
+                  "pending_enumeration": {
+                    "const": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "acceptance_authority",
+        "claim_promotion",
+        "source_sha256",
+        "outcome_counts",
+        "kind",
+        "scope",
+        "core_version",
+        "examples"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1,
+          "type": "integer"
+        },
+        "acceptance_authority": {
+          "const": false
+        },
+        "claim_promotion": {
+          "const": false
+        },
+        "source_sha256": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "outcome_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SAT",
+            "UNSAT",
+            "TIMEOUT"
+          ],
+          "properties": {
+            "SAT": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "UNSAT": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "TIMEOUT": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "kind": {
+          "const": "row_csp_regression"
+        },
+        "scope": {
+          "const": "mathematical_examples_only"
+        },
+        "core_version": {
+          "type": "string"
+        },
+        "examples": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "status",
+              "reason",
+              "work_used",
+              "witness"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "SAT",
+                  "UNSAT",
+                  "TIMEOUT"
+                ]
+              },
+              "reason": {
+                "enum": [
+                  "checked_witness",
+                  "search_exhausted",
+                  "work_limit",
+                  "wall_clock_limit",
+                  "orbit_limit"
+                ]
+              },
+              "work_used": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "witness": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 10,
+                    "items": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 1023
+                    }
+                  }
+                ]
+              },
+              "scalar_pass": {
+                "type": "boolean"
+              },
+              "lambda_pass": {
+                "type": "boolean"
+              },
+              "wing_pairs": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "shared_capacity_pairs": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "direct_oracle_status": {
+                "enum": [
+                  "SAT",
+                  "UNSAT"
+                ]
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "SAT"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "reason": {
+                      "const": "checked_witness"
+                    },
+                    "witness": {
+                      "type": "array"
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "UNSAT"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "reason": {
+                      "const": "search_exhausted"
+                    },
+                    "witness": {
+                      "type": "null"
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "TIMEOUT"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "reason": {
+                      "enum": [
+                        "work_limit",
+                        "wall_clock_limit",
+                        "orbit_limit"
+                      ]
+                    },
+                    "witness": {
+                      "type": "null"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

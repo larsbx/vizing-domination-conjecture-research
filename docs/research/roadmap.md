@@ -46,6 +46,11 @@ Promotion targets:
 
 Goal: implement the three-mechanism audit in a replayable form.
 
+The [v1 bounded candidate core](row-csp-core-v1.md) and historical sample
+receipts are implemented. Canonical acceptance promotion and complete
+historical/census audit closure remain pending; the wing-pair proof is used
+only as a regression input. No claim is promoted by these samples.
+
 Deliverables:
 
 - row-state representation;

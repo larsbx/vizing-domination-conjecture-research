@@ -31,7 +31,7 @@ Established in the working record, pending repository reproduction:
 Open until reproduced here:
 
 - canonical dataset ingestion and isomorphism deduplication;
-- executable row-CSP gold audit runner;
+- canonical acceptance promotion and full row-CSP gold audit closure;
 - proof records for structural lemmas;
 - full stratified audit of the 470 isomorphism classes.
 
@@ -50,6 +50,14 @@ failure examples checked against direct product domination on small graphs.
 regression, and promotion are pending. See the
 [October 6 progress record](docs/research/status-2026-10-06-wing-pair.md) and
 [October 7 restack record](docs/research/status-2026-10-07-wing-pair-restack.md).
+
+The [bounded row-CSP candidate core](docs/research/row-csp-core-v1.md) now
+replays the checked-in historical A/A-class/B representatives. Its samples
+search eight residue orbits each and explicitly time out the remaining
+orbits. Separate versioned receipts regress the wing-pair examples against
+M1 and direct product domination. These samples do not reproduce historical
+product values or census claims; all claim states and acceptance authority
+remain unchanged.
 
 ## Repository layout
 

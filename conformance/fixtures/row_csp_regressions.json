@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "scope": "mathematical_examples_only",
+  "examples": [
+    {
+      "id": "scalar-survival-wing-rejection",
+      "horizontal": [2, 5, 10, 4],
+      "rows": [34, 5, 10, 20, 40, 17],
+      "sizes": [0, 1, 1, 0, 4, 4],
+      "wings": [1, 2],
+      "expected": "UNSAT"
+    },
+    {
+      "id": "feasible-wing-witness",
+      "horizontal": [2, 5, 10, 4],
+      "rows": [2, 5, 10, 4],
+      "sizes": [1, 1, 1, 1],
+      "wings": [1, 2],
+      "expected": "SAT"
+    },
+    {
+      "id": "local-survival-global-failure",
+      "horizontal": [0],
+      "rows": [2, 5, 10, 20, 40, 16],
+      "sizes": [0, 0, 1, 1, 0, 0],
+      "wings": [2, 3],
+      "expected": "UNSAT"
+    },
+    {
+      "id": "distinct-outer-rows",
+      "horizontal": [6, 1, 1],
+      "rows": [2, 5, 10, 4],
+      "sizes": [1, 1, 0, 2],
+      "wings": [1, 2],
+      "expected": "SAT"
+    },
+    {
+      "id": "shared-outer-fixed-pair",
+      "horizontal": [2, 5, 10, 4],
+      "rows": [6, 5, 3],
+      "sizes": [1, 1, 1],
+      "wings": [1, 2],
+      "fixed": {"1": 2, "2": 4},
+      "expected": "UNSAT"
+    }
+  ]
+}

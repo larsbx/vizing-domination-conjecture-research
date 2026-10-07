@@ -2,7 +2,16 @@
 
 Canonical executable validation will live here once promoted.
 
-Bootstrap status: no kernel code is authoritative yet.
+Candidate status: no kernel code is authoritative yet.
+
+`row_csp.py` now supplies a bounded candidate core: row/residual masks,
+complete size-pattern enumeration, scalar and a versioned finite lambda
+filter, exact row-factor automorphism orbits, and deterministic M1 search.
+It emits explicit search exhaustion, checked witnesses and budget timeouts.
+The historical replay entry point and source-pinned receipts are described
+in [the v1 core record](../docs/research/row-csp-core-v1.md). The wing-pair
+proof is used only in separate regressions. No acceptance or claim status
+is changed by this implementation.
 
 Candidate responsibilities:
 
