@@ -44,7 +44,11 @@ def outer_rows(rows, wings):
 
 
 def admissible_pairs(horizontal, rows, sizes, wings, shared_capacity=False):
-    """Evaluate the finite lemma definition, not global row-CSP feasibility."""
+    """Evaluate local necessary conditions, not global row-CSP feasibility.
+
+    shared_capacity enables the union bound only when the outer rows coincide;
+    for distinct outer rows it leaves the ordinary pair set unchanged.
+    """
     n = len(horizontal)
     if len(sizes) != len(rows) or any(
         not isinstance(a, int) or not 0 <= a <= n for a in sizes
@@ -172,6 +176,26 @@ class WingPairExamples(unittest.TestCase):
             coverage = covered_mask(closed, selected_mask((outer_state, *pair), 4))
             self.assertNotEqual(coverage & required_wings, required_wings)
 
+    def test_distinct_outer_rows_do_not_share_capacity(self):
+        horizontal, rows = graph(3, [(0, 1), (0, 2)]), path(4)
+        sizes = (1, 1, 0, 2)
+        witness = (frozenset({0}), frozenset({0}), frozenset(), frozenset({1, 2}))
+        pair = witness[1:3]
+        self.assertEqual(tuple(map(len, witness)), sizes)
+        self.assertEqual(outer_rows(rows, (1, 2)), (0, 3))
+        self.assertTrue(dominates(horizontal, rows, witness))
+        f1 = residual(horizontal, pair[0]) - pair[1]
+        f2 = residual(horizontal, pair[1]) - pair[0]
+        self.assertEqual(f1, set())
+        self.assertEqual(f2, {1, 2})
+        self.assertGreater(len(f1 | f2), sizes[0])
+        ordinary = admissible_pairs(horizontal, rows, sizes, (1, 2))
+        self.assertIn(pair, ordinary)
+        self.assertEqual(admissible_pairs(horizontal, rows, sizes, (1, 2), True),
+                         ordinary)
+        self.assertIn(pair[::-1],
+                      admissible_pairs(horizontal, rows, sizes, (2, 1), True))
+
     def test_extra_neighbor_cannot_be_ignored(self):
         horizontal = path(1)
         rows = graph(5, [(0, 1), (1, 2), (2, 3), (1, 4), (0, 4)])
@@ -201,10 +225,14 @@ class WingPairExamples(unittest.TestCase):
                     factor_pairs += 1
                     selected_sets += 1 << (n * len(rows))
                     feasible = direct_feasible_patterns(horizontal, rows)
+                    o1, o2 = outer_rows(rows, (1, 2))
                     for sizes in product(range(n + 1), repeat=len(rows)):
-                        for shared_capacity in (False, True):
-                            if not admissible_pairs(horizontal, rows, sizes, (1, 2),
-                                                    shared_capacity):
+                        ordinary = admissible_pairs(horizontal, rows, sizes, (1, 2))
+                        shared = admissible_pairs(horizontal, rows, sizes, (1, 2), True)
+                        if o1 != o2:
+                            self.assertEqual(shared, ordinary, (horizontal, rows, sizes))
+                        for shared_capacity, pairs in ((False, ordinary), (True, shared)):
+                            if not pairs:
                                 self.assertNotIn(sizes, feasible,
                                                  (horizontal, rows, sizes, shared_capacity))
         self.assertEqual(factor_pairs, 22)

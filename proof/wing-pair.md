@@ -259,6 +259,25 @@ adjacent vertices of a four-cycle do satisfy (H), even though their
 outer neighbors also have degree two. The phrase "non-wing neighbor"
 in the historical note must not be read as an additional degree assumption.
 
+### 4.6 Distinct outer rows have separate capacities
+
+Let $G$ have vertices $x_0,x_1,x_2$ and edges $x_0x_1,x_0x_2$.
+Let $H$ be the path $o_1-w_1-w_2-o_2$, with size pattern
+$(1,1,0,2)$. The states
+
+$$
+S_{o_1}=\{x_0\},\quad X=S_{w_1}=\{x_0\},\quad
+Y=S_{w_2}=\varnothing,\quad S_{o_2}=\{x_1,x_2\}
+$$
+
+dominate the product. The first two row residuals are empty; the third
+residual $U$ is covered by $X\cup S_{o_2}=U$; and the last
+residual is empty. Here $F_1=\varnothing$ and
+$F_2=\{x_1,x_2\}$, so (3) passes with capacities one and two.
+Comparing $|F_1\cup F_2|=2$ with $a_{o_1}=1$ would falsely
+reject the pattern. Equation (4) applies only when $o_1=o_2$;
+this example has distinct outer rows.
+
 ## 5. Evidence, provenance, and pending promotion
 
 The intended two inequalities and universal rejection criterion were
@@ -284,11 +303,16 @@ labeled horizontal graphs of orders one through three, using a path
 and a triangle as the row factors. These are non-authoritative sanity
 checks. They neither implement the canonical row-CSP runner nor replace
 the missing census regression.
+The distinct-row witness in Section 4.6 is an explicit regression, and
+the exhaustive comparison also checks that enabling the shared-row
+condition leaves every distinct-row pair set unchanged. A separate
+[mathematical audit](../docs/audits/wing-pair-review-2026-10-06.md)
+records the proof checks without promoting the claim or granting approval.
 
 Run them with:
 
 ```sh
-python3 -B -m unittest discover -s conformance/tests -p 'test_wing_pair_examples.py' -v
+python3 -B -m unittest discover -s conformance/tests -p 'test_*.py' -v
 ```
 
 The following remain pending for issue #5 and `VDC-WING-PAIR` promotion:

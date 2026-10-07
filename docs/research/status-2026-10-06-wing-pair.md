@@ -20,14 +20,34 @@ advance corpus-dependent claims or declare issue #5 complete.
   `n=10`, and `gamma=4` are not required.
 - Examples cover rejection after every scalar bound passes, a feasible
   witness, local survival without global feasibility, shared outer capacity,
-  and failure when an extra neighbor is ignored.
+  failure when an extra neighbor is ignored, and a feasible distinct-outer
+  witness that would be rejected by an unguarded union-capacity check.
 - `conformance/tests/test_wing_pair_examples.py` checks those examples and
   compares the necessary tests with a direct product-domination oracle on
   all labeled horizontal factors through order three and two row factors.
-This is an independent small check, not the canonical row-CSP runner.
+  This is an independent small check, not the canonical row-CSP runner.
 
-Validation: all eight conformance tests pass. The exhaustive direct-product
-comparison examines 37,528 selected vertex sets across 22 factor pairs.
+Validation: the complete conformance suite passes all nine tests. The
+explicit regression uses horizontal edges `0-1, 0-2`, row factor `P4`,
+wings `(1, 2)`, and sizes `(1, 1, 0, 2)`. Its dominating witness
+`({0}, {0}, empty, {1, 2})` survives both helper modes. The exhaustive
+comparison also checks equality of both pair sets for distinct outer rows.
+The exhaustive direct-product comparison examines 37,528 selected vertex
+sets across 22 factor pairs.
+
+A separate [mathematical audit](../audits/wing-pair-review-2026-10-06.md)
+found no defect in the stated proof. Exact-head inspection at `350a286`
+also confirmed that `o1 == o2` was already present in the helper and that
+the original eight tests passed. An in-memory negative control removing
+that guard rejects the feasible regression, confirming the need for the
+guard. The audit supplies evidence but does not grant independent PR
+approval or satisfy the outstanding promotion gate. No CI result is claimed.
+
+Replay the complete local suite with:
+
+```sh
+python3 -B -m unittest discover -s conformance/tests -p 'test_*.py' -v
+```
 
 The retained source `PATCH_90_wing_pair_lemma-1.md` supplied the intended
 Lemma M statement. Its historical audit counts, runtime assertions, and
