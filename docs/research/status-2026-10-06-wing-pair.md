@@ -3,6 +3,10 @@
 Scope: the corpus-independent portion of
 [issue #5](https://github.com/larsbx/vizing-domination-conjecture-research/issues/5).
 
+This page records the October 6 snapshot. The
+[October 7 follow-up](status-2026-10-07-wing-pair-restack.md) records the
+merged bootstrap and restack onto `main`.
+
 The authoritative ordered 491-entry `n=10, gamma=4` corpus has not been
 recovered, and the user reports no additional source. Issue #2's acceptance
 criteria remain unmet. This change supplies no census entries and does not

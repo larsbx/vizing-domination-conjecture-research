@@ -48,7 +48,8 @@ exact hypotheses, a proof from product domination, and applicability and
 failure examples checked against direct product domination on small graphs.
 `VDC-WING-PAIR` remains `working`; independent review, canonical row-CSP
 regression, and promotion are pending. See the
-[October 6 progress record](docs/research/status-2026-10-06-wing-pair.md).
+[October 6 progress record](docs/research/status-2026-10-06-wing-pair.md) and
+[October 7 restack record](docs/research/status-2026-10-07-wing-pair-restack.md).
 
 ## Repository layout
 
