@@ -50,6 +50,7 @@ def decode_graph6(code: str) -> tuple[int, ...]:
 
 
 def encode_graph6(adj: tuple[int, ...], order: tuple[int, ...] | None = None) -> str:
+    """Encode with order[new_vertex] = original_vertex, not its inverse."""
     n = len(adj)
     if n > MAX_ORDER:
         raise ValueError("unsupported graph order")
@@ -86,7 +87,9 @@ def canonical_graph6(adj: tuple[int, ...]) -> tuple[str, tuple[int, ...]]:
     Conversely, equal output strings encode identical relabeled graphs, so
     they cannot merge nonisomorphic inputs. The key is versioned: it is not
     promised to equal nauty's canonical labeling or the minimum over ALL n!
-    labelings. The returned permutation witnesses each relabeling directly.
+    labelings. The returned permutation p maps canonical vertices to original
+    vertices: canonical edge (i, j) is original edge (p[i], p[j]). Its inverse
+    is the original-to-canonical map.
     """
     encode_graph6(adj)  # Validate adjacency before searching.
     degree_cells: dict[int, list[int]] = {}
@@ -147,6 +150,10 @@ def domination_number(adj: tuple[int, ...]) -> int:
 def deduplicate(raw: bytes, *, required_order: int | None = None,
                 required_gamma: int | None = None) -> dict:
     text = raw.decode("ascii")
+    # splitlines() also recognizes VT, FF and ASCII record separators. Those
+    # are invalid graph6 bytes, not source line endings to silently discard.
+    if any(ord(c) < 32 and c not in "\r\n" for c in text):
+        raise ValueError("invalid graph6 file control character")
     entries = []
     classes: dict[str, list[int]] = {}
     for line_number, line in enumerate(text.splitlines(), 1):
