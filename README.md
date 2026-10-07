@@ -42,6 +42,15 @@ order. The authoritative 491-entry census and its 21 duplicate rows remain
 unavailable, so `VDC-CASEBASE-3` stays `working`. See the
 [provenance recovery record](docs/audits/census-provenance-gap-2026-10-05.md).
 
+The [wing-pair proof draft](proof/wing-pair.md) now records the local
+residual-capacity lemma independently of the missing census. It includes
+exact hypotheses, a proof from product domination, and applicability and
+failure examples checked against direct product domination on small graphs.
+`VDC-WING-PAIR` remains `working`; independent review, canonical row-CSP
+regression, and promotion are pending. See the
+[October 6 progress record](docs/research/status-2026-10-06-wing-pair.md) and
+[October 7 restack record](docs/research/status-2026-10-07-wing-pair-restack.md).
+
 ## Repository layout
 
 This repository follows the estate `authority -> domain -> language` convention.
@@ -50,6 +59,7 @@ This repository follows the estate `authority -> domain -> language` convention.
 ESTATE.toml                       estate manifest
 ARCHITECTURE.md                   authority and surface map
 proof/claims.toml                 claim registry
+proof/wing-pair.md                corpus-independent proof draft
 kernel/                           canonical executable validation once promoted
 oracles/                          non-authoritative exploration engines
 experiments/                      disposable experiments and spikes

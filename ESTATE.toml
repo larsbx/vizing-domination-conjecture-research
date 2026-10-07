@@ -49,7 +49,7 @@ id = "proof"
 target = "proof"
 authority = "claim_state"
 required = true
-current = ["proof/claims.toml"]
+current = ["proof/claims.toml", "proof/wing-pair.md"]
 
 [[plane]]
 id = "kernel"
