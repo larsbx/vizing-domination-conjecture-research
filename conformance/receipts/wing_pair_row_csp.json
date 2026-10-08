@@ -1,0 +1,110 @@
+{
+  "acceptance_authority": false,
+  "claim_promotion": false,
+  "core_version": "row-csp-core-v1",
+  "examples": [
+    {
+      "direct_oracle_status": "UNSAT",
+      "id": "scalar-survival-wing-rejection",
+      "lambda_pass": false,
+      "reason": "search_exhausted",
+      "scalar_pass": true,
+      "shared_capacity_pairs": 0,
+      "status": "UNSAT",
+      "wing_pairs": 0,
+      "witness": null,
+      "work_used": 36
+    },
+    {
+      "direct_oracle_status": "SAT",
+      "id": "feasible-wing-witness",
+      "lambda_pass": true,
+      "reason": "checked_witness",
+      "scalar_pass": true,
+      "shared_capacity_pairs": 10,
+      "status": "SAT",
+      "wing_pairs": 10,
+      "witness": [
+        2,
+        8,
+        1,
+        4
+      ],
+      "work_used": 97
+    },
+    {
+      "direct_oracle_status": "UNSAT",
+      "id": "local-survival-global-failure",
+      "lambda_pass": false,
+      "reason": "search_exhausted",
+      "scalar_pass": false,
+      "shared_capacity_pairs": 1,
+      "status": "UNSAT",
+      "wing_pairs": 1,
+      "witness": null,
+      "work_used": 7
+    },
+    {
+      "direct_oracle_status": "SAT",
+      "id": "distinct-outer-rows",
+      "lambda_pass": true,
+      "reason": "checked_witness",
+      "scalar_pass": true,
+      "shared_capacity_pairs": 3,
+      "status": "SAT",
+      "wing_pairs": 3,
+      "witness": [
+        1,
+        1,
+        0,
+        6
+      ],
+      "work_used": 48
+    },
+    {
+      "direct_oracle_status": "UNSAT",
+      "id": "shared-outer-fixed-pair",
+      "lambda_pass": true,
+      "reason": "search_exhausted",
+      "scalar_pass": true,
+      "shared_capacity_pairs": 0,
+      "status": "UNSAT",
+      "wing_pairs": 1,
+      "witness": null,
+      "work_used": 10
+    },
+    {
+      "id": "zero-work-timeout",
+      "reason": "work_limit",
+      "status": "TIMEOUT",
+      "witness": null,
+      "work_used": 0
+    }
+  ],
+  "kind": "row_csp_regression",
+  "outcome_counts": {
+    "SAT": 2,
+    "TIMEOUT": 1,
+    "UNSAT": 3
+  },
+  "schema_version": 1,
+  "scope": "mathematical_examples_only",
+  "source_sha256": {
+    "conformance/fixtures/casebase_classes.json": "d5e5b85e4502c50cd31faf47df339cd6145a17b1d6af650ba2a38533de3415d3",
+    "conformance/fixtures/casebase_graph6.txt": "07a78d3344c09fa11c3c012811b935772ccecb9ce28eae958be50348781b1b53",
+    "conformance/fixtures/row_csp_profile.json": "2866a0ce99f503da71f7e553c5eca1c7b8c85dcdc2b176f2baee59946a8cefaa",
+    "conformance/fixtures/row_csp_regressions.json": "56cdaef9883fba6faf6539b512c080fbc9c4356bb6bfa7dd5d9484c725d7f067",
+    "conformance/provenance/casebase/B_star_4_counterexamples.md": "995fa433c0ae727bc0cfa9a1b144e8cb85257850cfbba630d93340613aa94c06",
+    "conformance/provenance/casebase/PATCH_43_B_star_4_falsified.md": "b7406113c5677af72b33005dd052cd232c2e8275e24c7f8eea1771489b241866",
+    "conformance/provenance/casebase/STRATEGIC_SYNTHESIS_89_93-1.md": "3e9a28891ffba0b534fac40f535b1cd34406a86561c28ddf791a20a3275a35d4",
+    "conformance/provenance/casebase/aclass_target.json": "f3b48949e2b02411d9fc926da7a157e21ce7c8538802ce9d921e3d819a5b7d59",
+    "conformance/provenance/casebase/patch91_full-1.log": "fbab712a12dd27ab1a5ff6461f242e419dc46f2cf124dc981c4e0201c68bcfd7",
+    "conformance/provenance/casebase/provenance.json": "23ac0cfd48ee00f8201b32890c3da8f661582a8b62674f3a2aa1d7a776f896cb",
+    "conformance/schemas/row_csp_receipt.schema.json": "b99c8206b793b2804de871226b74f169cd21d60c5b95a153ac1549e0517c8df7",
+    "kernel/row_csp.py": "2853339bb39ddedfc4c91f5b05140e4bab1947328ae61788cab0deb4ac50fc3f",
+    "oracles/canonical_graph6.py": "55b882129686b04c446c1265ca80b1f2b2f4c1970ddcaa7b05751da1f2d4543d",
+    "oracles/replay_casebase.py": "6124b4f222b39bf4595197f8198b28fe8706b87e3ee7d4ee6381868322486ed5",
+    "oracles/replay_row_csp.py": "e6aa23599696d6a9186b4d0cf8a07fe144fb2e2050b3cda56e1235e719e5a896",
+    "proof/wing-pair.md": "6d08fd82615239f975270a4682674fa91b03e5620d30dc92f0c84f2be1c2102b"
+  }
+}

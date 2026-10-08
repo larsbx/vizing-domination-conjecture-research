@@ -54,3 +54,19 @@ These checks have no executable acceptance authority. They are not corpus
 fixtures, do not reproduce historical gold audits, and do not satisfy issue
 #5's pending regression against the canonical row-CSP runner. No claim is
 promoted by passing them.
+
+## Bounded row-CSP receipts
+
+`oracles/replay_row_csp.py` replays three historical sample receipts and the
+separate wing-pair/M1 regression receipt. The exact profile, JSON Schema,
+source hashes, search budgets, timeout semantics and independent small-factor
+tests are documented in [the v1 core record](../docs/research/row-csp-core-v1.md).
+
+```sh
+python3 -B oracles/replay_row_csp.py
+```
+
+The historical sample aggregates are TIMEOUT: unsearched orbits remain
+unresolved. The proof is regression input; the candidate core has no
+acceptance authority. These receipts do not close the historical product,
+authoritative census or claim-promotion gates.

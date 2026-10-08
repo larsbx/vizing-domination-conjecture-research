@@ -36,7 +36,11 @@ The proof plane records claim states. A claim may be:
 
 ### Kernel plane: `kernel/`
 
-The kernel plane will eventually contain the canonical executable checker. At bootstrap, the repository declares no acceptance authority. No kernel code is yet authoritative.
+The kernel plane contains the bounded candidate row-CSP core described in
+[the v1 implementation record](docs/research/row-csp-core-v1.md). The
+repository declares no acceptance authority. No kernel code is yet
+authoritative; this implementation and its historical samples do not
+satisfy the promotion conditions below.
 
 Candidate future kernel responsibilities:
 
