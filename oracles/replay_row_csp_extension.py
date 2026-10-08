@@ -90,7 +90,7 @@ def verified_status(graph, sizes, baseline, primary, independent):
     if len(resolved) > 1:
         raise ValueError("engines disagree; refuse derived evidence")
     # A witness can be checked without independent search exhaustion.
-    if primary["status"] == "SAT":
+    if "SAT" in resolved:
         return "SAT"
     if primary["status"] == independent["status"] == "UNSAT":
         return "UNSAT"
@@ -155,7 +155,8 @@ def receipt_products(root=ROOT):
                   "orbits": records, "selected_orbit_count": len(records),
                   "new_outcome_counts": counts, "unsearched_pending_orbits": unsearched,
                   "remaining_unresolved_orbits": remaining, "exhaustive": exhaustive,
-                  "status": "SAT" if counts["SAT"] else "UNSAT" if exhaustive else "TIMEOUT"}
+                  "status": "SAT" if counts["SAT"] or receipt["outcome_counts"]["SAT"]
+                            else "UNSAT" if exhaustive else "TIMEOUT"}
         products[f"conformance/receipts/row_csp_extension_{receipt['role'].replace('-', '_')}.json"] = receipt_bytes(output)
     return products
 

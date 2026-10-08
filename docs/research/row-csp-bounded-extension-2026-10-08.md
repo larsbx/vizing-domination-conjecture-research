@@ -75,8 +75,9 @@ branch choice. Exhaustion and interruptions have separate outcomes.
 The replay entry point additionally checks every SAT witness with the
 existing literal Cartesian-neighbor scan. Engine disagreements reject all
 output generation. An additional orbit is recorded as UNSAT only when both
-the pair candidate and independent checker exhaust. A primary SAT witness
-can be checked directly even if independent search times out. In this
+the pair candidate and independent checker exhaust. A SAT witness from any
+engine is checked directly even if another search times out. An existing
+SAT in the replayed v1 directory also remains SAT in the aggregate. In this
 profile there are no historical-target SAT witnesses; the small-factor
 conformance tests exercise independently checked positive cases.
 
@@ -163,7 +164,7 @@ duplicates, disagreement rejection, and fail-before-write scope/authority
 controls. The balanced B index-249 regression requires independent UNSAT
 exhaustion and the baseline TIMEOUT at the same recorded budget.
 
-All **51 conformance tests pass**. Both identity replay modes, original v1
+All **52 conformance tests pass**. Both identity replay modes, original v1
 byte replay and extension byte replay pass. The estate pin check and audit
 pass at the manifest's pinned governance revision
 `5ea47dec8086eab6a1dad6fd239688d20ea89891`. An independent local structural

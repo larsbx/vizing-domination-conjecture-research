@@ -15,7 +15,7 @@ from row_csp_pair import solve_m1_pair
 from product_cover import solve_product_cover
 from replay_row_csp import direct_product_dominates
 from replay_row_csp_extension import (load_profile, replay, select_orbits,
-                                      verified_status)
+                                      receipt_products, verified_status)
 from canonical_graph6 import decode_graph6
 from test_row_csp import all_graphs, graph, path
 
@@ -176,12 +176,29 @@ class ExtensionReceiptTests(unittest.TestCase):
         unsat = {'status': 'UNSAT', 'reason': 'search_exhausted', 'work_used': 1, 'witness': None}
         timeout = {'status': 'TIMEOUT', 'reason': 'work_limit', 'work_used': 0, 'witness': None}
         self.assertEqual(verified_status((0,), (1,), timeout, sat, timeout), 'SAT')
+        self.assertEqual(verified_status((0,), (1,), timeout, timeout, sat), 'SAT')
+        self.assertEqual(verified_status((0,), (1,), sat, timeout, timeout), 'SAT')
         with self.assertRaisesRegex(ValueError, 'engines disagree'):
             verified_status((0,), (1,), timeout, sat, unsat)
         for bad in ({**sat, 'witness': [0]}, {**sat, 'witness': [3]},
                     {**unsat, 'witness': [1]}, {**timeout, 'reason': 'search_exhausted'}):
             with self.assertRaises(ValueError):
                 verified_status((0,), (1,), timeout, bad, timeout)
+
+    def test_previously_checked_sat_cannot_become_aggregate_unsat(self):
+        # Mathematical positive control for aggregation; not a historical fixture.
+        control = {'kind': 'row_csp_audit', 'graph6': '@', 'horizontal_order': 1,
+                   'role': 'A', 'graph_id': 'mathematical-control-only', 'target': 1,
+                   'target_semantics': 'exact_total_selected_vertices', 'orbit_count': 1,
+                   'enumeration_complete': True, 'outcome_counts': {'SAT': 1, 'UNSAT': 0, 'TIMEOUT': 0},
+                   'orbits': [{'sizes': [1], 'status': 'SAT', 'witness': [1],
+                               'reason': 'checked_witness', 'observed_multiplicity': 1}]}
+        with patch('replay_row_csp_extension.replay_v1', return_value={'control.json': control}), \
+             patch('replay_row_csp_extension.source_metadata', return_value={}):
+            products = receipt_products()
+        receipt = json.loads(next(iter(products.values())))
+        self.assertEqual(receipt['selected_orbit_count'], 0)
+        self.assertEqual(receipt['status'], 'SAT')
 
     def test_bad_scope_authority_profile_and_original_receipt_fail_before_writes(self):
         mutations = (

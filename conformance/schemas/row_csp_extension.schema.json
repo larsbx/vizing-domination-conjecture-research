@@ -470,15 +470,41 @@
             }
           },
           "then": {
-            "properties": {
-              "primary": {
+            "anyOf": [
+              {
                 "properties": {
-                  "status": {
-                    "const": "SAT"
+                  "baseline": {
+                    "properties": {
+                      "status": {
+                        "const": "SAT"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "primary": {
+                    "properties": {
+                      "status": {
+                        "const": "SAT"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "independent": {
+                    "properties": {
+                      "status": {
+                        "const": "SAT"
+                      }
+                    }
                   }
                 }
               }
-            }
+            ]
           }
         }
       ]
