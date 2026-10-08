@@ -1,91 +1,111 @@
 # Vizing domination conjecture research
 
-This repository organizes a research program around **Vizing's domination conjecture** for Cartesian graph products:
+A candidate research program for domination in Cartesian graph products:
 
 \[
 \gamma(G \square H) \geq \gamma(G)\gamma(H).
 \]
 
-The active computational and structural focus is the diagonal \(\gamma=4\) case, especially the observed strict square-surplus phenomenon
+The finite target is the reported \(n=10,\gamma(G)=4\) census and its
+strict square-surplus assertion
 
 \[
-s(G) := \gamma(G \square G)-\gamma(G)^2 > 0.
+\gamma(G\square G)>16.
 \]
 
-## Current program state
+Work currently uses the checked-in historical A, A-class and B
+representatives. Their source records reproduce **16 entries → 3 exact
+isomorphism classes**. The authoritative 491-entry census remains
+unavailable; its reported 470 classes and 21 duplicate entries require
+separate provenance and replay.
 
-This repository starts from the October 2026 working thread and should be treated as a **candidate research repository** until the computations and proofs are reproduced from checked-in artifacts.
+## Active roadmap
 
-Established in the working record, pending repository reproduction:
+Each track has a concrete first gate. Registry labels come from
+[`proof/claims.toml`](proof/claims.toml); delivered implementation milestones
+and finite receipts do not automatically promote those labels.
 
-- row-state CSP formulation for domination in \(G\square H\);
-- three-mechanism audit architecture:
-  \[
-  \lambda\text{-bound} \to \text{structural lemmas} \to \text{row-CSP residue};
-  \]
-- verified audits for three base isomorphism classes: graph `A`, one A-class representative, and graph `B`;
-- wing-pair structural lemma as the first proof-safe local obstruction;
-- census correction: the 491-entry \(n=10,\gamma=4\) dataset reportedly collapses to 470 isomorphism classes;
-- negative operator-reachability result for the four simple reverse operators, which are useful as lemma-mining diagnostics but not as a covering descent algebra.
+| Track | Registry label | Current evidence | First gate |
+| --- | --- | --- | --- |
+| Historical corpus and identity — `VDC-CASEBASE-3` | `working` | [Source-pinned 16 → 3 identity replay](conformance/receipts/casebase_identity.json) | Recover the authoritative ordered census; reproduce 491 → 470 and establish case-base membership. |
+| Row-CSP and audit architecture — `VDC-ROW-CSP`, `VDC-GOLD-AUDIT-ARCH` | `working` | [Bounded core](docs/research/row-csp-core-v1.md), [independent extension](docs/research/row-csp-bounded-extension-2026-10-08.md), explicit SAT/UNSAT/TIMEOUT receipts | Resolve the independent-checker backlog and additional historical orbits under versioned budgets; complete canonical acceptance gates. |
+| Wing-pair local obstruction — `VDC-WING-PAIR` | `working` | [Proof draft](proof/wing-pair.md), [mathematical audit](docs/audits/wing-pair-review-2026-10-06.md), [candidate M1 regression](conformance/receipts/wing_pair_row_csp.json) | Record proof approval and satisfy provenance, canonical-runner and regression promotion gates. |
+| Census-wide strict square surplus — `VDC-G4-SQUARE-STRICT-N10` | `working` | Historical searches at exact totals 16/16/17; all three aggregate outcomes remain TIMEOUT | Complete census ingestion, canonical checker validation and a full stratified audit with every required residue exhausted. |
+| Reverse-operator negative control — `VDC-OPERATOR-NEGATIVE` | `working` | [Thread audit](docs/audits/thread-audit-2026-10-05.md); historical negative result awaits executable reproduction | Recover the operator fixtures and independently replay the depth-4 negative control before using it as research evidence. |
 
-Open until reproduced here:
+The [detailed roadmap](docs/research/roadmap.md) records the bootstrap,
+corpus, checker, proof, stratified-audit and theory milestones.
 
-- canonical dataset ingestion and isomorphism deduplication;
-- canonical acceptance promotion and full row-CSP gold audit closure;
-- proof records for structural lemmas;
-- full stratified audit of the 470 isomorphism classes.
+**Unblocked execution order:** independent-checker backlog → additional
+historical orbits → local-lemma reconciliation and mining. Authoritative
+source recovery can proceed in parallel. Census-wide acceptance follows
+source recovery, canonical checker validation and complete audit receipts.
 
-The recovered historical case-base labels replay as **16 entries -> 3 exact
-isomorphism classes**, with source checksums and JSON/CSV identity receipts.
-The original `aclass_target.json` now agrees with the historical log in source
-order. The authoritative 491-entry census and its 21 duplicate rows remain
-unavailable, so `VDC-CASEBASE-3` stays `working`. See the
-[provenance recovery record](docs/audits/census-provenance-gap-2026-10-05.md).
+The next bounded experiments should first revisit the **24 selected
+patterns already exhausted by M1 but pending independent confirmation**:
+six A, three A-class and fifteen B. Two further selected B patterns time
+out in both engines; 450 other residue orbits remain unsearched. Each new
+search order or budget needs a versioned profile and replayable outcomes.
 
-The [wing-pair proof draft](proof/wing-pair.md) now records the local
-residual-capacity lemma independently of the missing census. It includes
-exact hypotheses, a proof from product domination, and applicability and
-failure examples checked against direct product domination on small graphs.
-`VDC-WING-PAIR` remains `working`; independent review, canonical row-CSP
-regression, and promotion are pending. See the
-[October 6 progress record](docs/research/status-2026-10-06-wing-pair.md) and
-[October 7 restack record](docs/research/status-2026-10-07-wing-pair-restack.md).
+## Current finite evidence
 
-The [bounded row-CSP candidate core](docs/research/row-csp-core-v1.md) now
-replays the checked-in historical A/A-class/B representatives. Its samples
-search eight residue orbits each and explicitly time out the remaining
-orbits. Separate versioned receipts regress the wing-pair examples against
-M1 and direct product domination. These samples do not reproduce historical
-product values or census claims; all claim states and acceptance authority
-remain unchanged.
+The original profile exhausts eight orbits per representative. The
+extension searches 102 additional unresolved orbits and independently
+exhausts 76 as UNSAT. The combined accounting is:
 
-The [October 8 bounded extension](docs/research/row-csp-bounded-extension-2026-10-08.md)
-searches 102 additional pending orbits with a pair-capacity candidate and
-an independent literal-product checker. Both exhaust 76 as UNSAT; 476 of
-the original 576 residue orbits remain unresolved in the combined evidence.
-All three aggregate outcomes remain TIMEOUT, with historical-only scope.
+| Historical role | Exact target | Residue orbits | Resolved: original v1 + new independent checks | Remaining unresolved | Aggregate |
+| --- | ---: | ---: | ---: | ---: | --- |
+| A | 16 | 30 | 8 + 16 | 6 | TIMEOUT |
+| A-class | 16 | 227 | 8 + 37 | 182 | TIMEOUT |
+| B | 17 | 319 | 8 + 23 | 288 | TIMEOUT |
+| Total | — | 576 | 24 + 76 | 476 | TIMEOUT |
 
-## Repository layout
+A new extension UNSAT requires exhaustion by both the pair-capacity M1
+candidate and the independent literal-product checker. A checked SAT
+witness suffices; work or clock interruption remains TIMEOUT. Original v1
+results retain their original evidence classification. These exact-target
+samples establish neither historical product values nor census coverage.
 
-This repository follows the estate `authority -> domain -> language` convention.
+## Working here
 
-```text
-ESTATE.toml                       estate manifest
-ARCHITECTURE.md                   authority and surface map
-proof/claims.toml                 claim registry
-proof/wing-pair.md                corpus-independent proof draft
-kernel/                           canonical executable validation once promoted
-oracles/                          non-authoritative exploration engines
-experiments/                      disposable experiments and spikes
-docs/research/                    status, roadmap, design notes
-docs/audits/                      audit records and thread imports
-paper/                            publication artifacts when ready
+[`ESTATE.toml`](ESTATE.toml) and [`ARCHITECTURE.md`](ARCHITECTURE.md) define
+the authority planes and acceptance boundary. Python currently has
+`acceptance_authority = false`; canonical promotion requires the documented
+provenance, independent-engine, receipt, failure-mode and claim-state gates.
+The wing-pair proof supplies regression examples and is not an audit filter.
+
+| Path | Role |
+| --- | --- |
+| [proof/claims.toml](proof/claims.toml), [proof/wing-pair.md](proof/wing-pair.md) | Claim states and proof draft |
+| [kernel/](kernel/) | Candidate executable row-CSP checks |
+| [oracles/](oracles/) | Independent checks and deterministic replay entry points |
+| [conformance/](conformance/) | Historical fixtures, source provenance, schemas, receipts and tests |
+| [experiments/](experiments/) | Non-authoritative search and lemma-mining work |
+| [docs/research/](docs/research/), [docs/audits/](docs/audits/) | Milestones, experiment records and reviews |
+| [paper/](paper/) | Publication artifacts after their evidence gates |
+
+## Reproducible checks
+
+Run from the repository root with Python 3.11 or later:
+
+```sh
+python3 -B oracles/replay_casebase.py
+python3 -B oracles/replay_row_csp.py
+python3 -B oracles/replay_row_csp_extension.py
+python3 -B -m unittest discover -s conformance/tests -p 'test_*.py' -v
 ```
 
-## Main conjectural target
+The current tree passes 52 conformance tests. The
+[extension record](docs/research/row-csp-bounded-extension-2026-10-08.md)
+documents algorithm versions, deterministic work budgets, source hashes,
+regeneration commands and pinned estate validation. CI configuration remains
+a bootstrap milestone; these are local validation results.
 
-The broad conjecture is Vizing's domination conjecture. The working finite target is:
+## Claim and novelty boundary
 
-> For every \(n=10\), \(\gamma(G)=4\) census isomorphism class, verify \(\gamma(G\square G)>16\) by a reproducible gold audit.
-
-That finite target is not a proof of Vizing's conjecture, but it is the current executable route to sharpen the \(\gamma=4\) structural theory.
+`VDC-MAIN` remains `conjectural`; all other registered claims remain
+`working`. Finite search closure, proof approval, canonical acceptance and
+mathematical novelty are separate gates. A novelty claim additionally needs
+a dated literature search, the nearest prior art, an exact contribution
+beyond it and recorded review. The full Vizing conjecture remains the
+long-term mathematical target.
