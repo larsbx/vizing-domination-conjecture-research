@@ -1,0 +1,534 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "kind",
+    "scope",
+    "acceptance_authority",
+    "claim_promotion",
+    "role",
+    "graph6",
+    "graph_id",
+    "target",
+    "target_semantics",
+    "product",
+    "runtime_requirement",
+    "source_sha256",
+    "original_receipt",
+    "original_orbit_count",
+    "original_outcome_counts",
+    "profile_version",
+    "selection",
+    "budgets",
+    "versions",
+    "structural_lemmas_applied",
+    "wing_pair_use",
+    "orbits",
+    "selected_orbit_count",
+    "new_outcome_counts",
+    "unsearched_pending_orbits",
+    "remaining_unresolved_orbits",
+    "exhaustive",
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "kind": {
+      "const": "row_csp_extension"
+    },
+    "scope": {
+      "const": "historical_casebase_only"
+    },
+    "acceptance_authority": {
+      "const": false
+    },
+    "claim_promotion": {
+      "const": false
+    },
+    "role": {
+      "enum": [
+        "A",
+        "A-class",
+        "B"
+      ]
+    },
+    "graph6": {
+      "type": "string"
+    },
+    "graph_id": {
+      "type": "string"
+    },
+    "target": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "target_semantics": {
+      "const": "exact_total_selected_vertices"
+    },
+    "product": {
+      "const": "square"
+    },
+    "runtime_requirement": {
+      "type": "string"
+    },
+    "source_sha256": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "original_receipt": {
+      "type": "string"
+    },
+    "original_orbit_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "original_outcome_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "SAT",
+        "UNSAT",
+        "TIMEOUT"
+      ],
+      "properties": {
+        "SAT": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "UNSAT": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "TIMEOUT": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "profile_version": {
+      "type": "string"
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "cheap_orbits_per_role",
+        "stress_orbits_per_role"
+      ],
+      "properties": {
+        "version": {
+          "const": "domain-product-extremes-v1"
+        },
+        "cheap_orbits_per_role": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stress_orbits_per_role": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "budgets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "baseline_work_per_orbit",
+        "primary_work_per_orbit",
+        "independent_work_per_orbit",
+        "seconds_per_orbit"
+      ],
+      "properties": {
+        "baseline_work_per_orbit": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "primary_work_per_orbit": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "independent_work_per_orbit": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "seconds_per_orbit": {
+          "type": "null"
+        }
+      }
+    },
+    "versions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "extension",
+        "baseline",
+        "primary",
+        "primary_order",
+        "primary_work",
+        "independent",
+        "independent_work",
+        "aggregation"
+      ],
+      "properties": {
+        "extension": {
+          "const": "historical-row-csp-extension-v1"
+        },
+        "baseline": {
+          "const": "residual-domain-backtrack-v1"
+        },
+        "primary": {
+          "const": "pair-capacity-arc-m1-v1"
+        },
+        "primary_order": {
+          "const": "minimum-domain-active-degree-v1"
+        },
+        "primary_work": {
+          "const": "pair-state-scan-branch-v1"
+        },
+        "independent": {
+          "const": "literal-product-cover-dpll-v1"
+        },
+        "independent_work": {
+          "const": "cardinality-clause-scan-branch-v1"
+        },
+        "aggregation": {
+          "const": "dual-exhaustion-or-checked-witness-v1"
+        }
+      }
+    },
+    "structural_lemmas_applied": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "wing_pair_use": {
+      "const": "regression_only"
+    },
+    "orbits": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    },
+    "selected_orbit_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "new_outcome_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "SAT",
+        "UNSAT",
+        "TIMEOUT"
+      ],
+      "properties": {
+        "SAT": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "UNSAT": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "TIMEOUT": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "unsearched_pending_orbits": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "remaining_unresolved_orbits": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "exhaustive": {
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "SAT",
+        "UNSAT",
+        "TIMEOUT"
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bounded dual-engine historical row-CSP extension",
+  "$defs": {
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "reason",
+        "work_used",
+        "witness"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "SAT",
+            "UNSAT",
+            "TIMEOUT"
+          ]
+        },
+        "reason": {
+          "enum": [
+            "checked_witness",
+            "search_exhausted",
+            "work_limit",
+            "wall_clock_limit"
+          ]
+        },
+        "work_used": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "witness": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 10,
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1023
+              }
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "SAT"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "reason": {
+                "const": "checked_witness"
+              },
+              "witness": {
+                "type": "array"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "UNSAT"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "reason": {
+                "const": "search_exhausted"
+              },
+              "witness": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "TIMEOUT"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "reason": {
+                "enum": [
+                  "work_limit",
+                  "wall_clock_limit"
+                ]
+              },
+              "witness": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "original_orbit_index",
+        "sizes",
+        "observed_multiplicity",
+        "original_reason",
+        "baseline",
+        "primary",
+        "independent",
+        "status"
+      ],
+      "properties": {
+        "original_orbit_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sizes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 10,
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 10
+          }
+        },
+        "observed_multiplicity": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "original_reason": {
+          "enum": [
+            "orbit_limit",
+            "work_limit",
+            "wall_clock_limit"
+          ]
+        },
+        "baseline": {
+          "$ref": "#/$defs/outcome"
+        },
+        "primary": {
+          "$ref": "#/$defs/outcome"
+        },
+        "independent": {
+          "$ref": "#/$defs/outcome"
+        },
+        "status": {
+          "enum": [
+            "SAT",
+            "UNSAT",
+            "TIMEOUT"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "UNSAT"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "primary": {
+                "properties": {
+                  "status": {
+                    "const": "UNSAT"
+                  }
+                }
+              },
+              "independent": {
+                "properties": {
+                  "status": {
+                    "const": "UNSAT"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "SAT"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "primary": {
+                "properties": {
+                  "status": {
+                    "const": "SAT"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "UNSAT"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "exhaustive": {
+            "const": true
+          },
+          "remaining_unresolved_orbits": {
+            "const": 0
+          },
+          "new_outcome_counts": {
+            "properties": {
+              "TIMEOUT": {
+                "const": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "exhaustive": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "remaining_unresolved_orbits": {
+            "const": 0
+          },
+          "unsearched_pending_orbits": {
+            "const": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -59,6 +59,12 @@ M1 and direct product domination. These samples do not reproduce historical
 product values or census claims; all claim states and acceptance authority
 remain unchanged.
 
+The [October 8 bounded extension](docs/research/row-csp-bounded-extension-2026-10-08.md)
+searches 102 additional pending orbits with a pair-capacity candidate and
+an independent literal-product checker. Both exhaust 76 as UNSAT; 476 of
+the original 576 residue orbits remain unresolved in the combined evidence.
+All three aggregate outcomes remain TIMEOUT, with historical-only scope.
+
 ## Repository layout
 
 This repository follows the estate `authority -> domain -> language` convention.

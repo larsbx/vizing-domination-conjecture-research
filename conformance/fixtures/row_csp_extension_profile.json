@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "profile_version": "historical-unresolved-32-cheap-8-stress-v1",
+  "scope": "historical_casebase_only",
+  "selection": {
+    "version": "domain-product-extremes-v1",
+    "cheap_orbits_per_role": 32,
+    "stress_orbits_per_role": 8
+  },
+  "budgets": {
+    "baseline_work_per_orbit": 1000000,
+    "primary_work_per_orbit": 1000000,
+    "independent_work_per_orbit": 2000000,
+    "seconds_per_orbit": null
+  }
+}

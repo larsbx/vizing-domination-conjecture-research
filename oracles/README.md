@@ -18,3 +18,18 @@ Examples:
 - a second row-CSP implementation for differential testing.
 
 Oracle disagreement with the kernel must fail closed. Oracles never promote claims by themselves.
+
+`product_cover.py` supplies an independent Boolean search using literal
+Cartesian-neighborhood clauses and exact row cardinalities. It imports no
+M1 code or residual/filter machinery. `replay_row_csp_extension.py` first
+replays v1, then checks additional unresolved historical orbits with both
+engines. A new UNSAT record requires both to exhaust. Search and checker
+interruptions remain TIMEOUT.
+
+```sh
+python3 -B oracles/replay_row_csp_extension.py
+```
+
+The [October 8 extension record](../docs/research/row-csp-bounded-extension-2026-10-08.md)
+documents the versioned profile, budgets, new receipts and independent
+validation. All claim states and acceptance boundaries remain unchanged.
