@@ -70,3 +70,10 @@ The historical sample aggregates are TIMEOUT: unsearched orbits remain
 unresolved. The proof is regression input; the candidate core has no
 acceptance authority. These receipts do not close the historical product,
 authoritative census or claim-promotion gates.
+
+The [October 8 extension](../docs/research/row-csp-bounded-extension-2026-10-08.md)
+adds three separate, source-pinned receipts for 102 previously unresolved
+orbits. Its stricter evidence status requires dual exhaustion for UNSAT:
+76 new orbits pass, while 476 remain unresolved across the full directory.
+Replay with `python3 -B oracles/replay_row_csp_extension.py`. The original
+profile, source pins and receipts remain unchanged.

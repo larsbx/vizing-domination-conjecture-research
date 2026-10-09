@@ -13,6 +13,12 @@ in [the v1 core record](../docs/research/row-csp-core-v1.md). The wing-pair
 proof is used only in separate regressions. No acceptance or claim status
 is changed by this implementation.
 
+`row_csp_pair.py` adds a separately versioned pair-capacity candidate,
+guaranteed-selection capacity propagation and dynamic row-order tie-breaks.
+The original core and receipts are retained. Additional bounded historical
+searches and independent checks are recorded in the
+[October 8 extension](../docs/research/row-csp-bounded-extension-2026-10-08.md).
+
 Candidate responsibilities:
 
 1. exact domination-number computation;
