@@ -77,9 +77,22 @@ The `ESTATE.toml` canonical language entry therefore sets `acceptance_authority 
 ## Research branch map
 
 - Main branch: stratified gold audit of the \(n=10,\gamma=4\) census.
-- FC-kernel branch: lemma mining from fiber-capture / residual-footprint patterns.
+- S-prime bridge branch: consume proved Cartesian S-prime / mixed-embedding lemmas as external structure for residual-footprint analysis; do not treat fiber-capture as a new graph class or as VDC-owned theory.
 - Operator branch: surplus-monotonicity diagnostics and operator-induced local lemmas.
 - Paper branch: only after claim states are promoted from `working` to `computed` or `proved`.
+
+## Prior-art boundary for the S-prime bridge
+
+The October 2026 N6 literature audit in `larsbx/novelty-lab` identified the manuscript's unrestricted **fiber-captured** property with the existing Cartesian **S-prime** notion. The unrestricted characterization and recognition-complexity questions therefore belong to prior Cartesian-product literature, not to this repository as new open problems.
+
+This repository may import exact S-prime theorems or restricted consequences when they sharpen domination arguments, but every import must:
+
+1. name the external theorem/source or a pinned standalone research-repository theorem;
+2. state the graph/subgraph/embedding conventions used;
+3. distinguish the imported theorem from any new domination-specific consequence;
+4. avoid claim promotion from exploratory mixed-embedding heuristics alone.
+
+See [the S-prime bridge note](docs/research/cartesian-s-prime-bridge.md).
 
 ## Non-goals at bootstrap
 
