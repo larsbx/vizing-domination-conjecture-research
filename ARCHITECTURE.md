@@ -66,6 +66,12 @@ Docs preserve research status, design notes, audit imports, roadmaps, and handof
 
 Current state: **no repository-local acceptance boundary**.
 
+Estate policy (larsbx/estate-governance) gives every repository with a kernel
+acceptance authority. This repository is a deliberate, owner-confirmed
+exception: its candidate row-CSP kernel stays non-accepting until the
+promotion conditions below are met, and `oracles/replay_row_csp.py` keeps
+enforcing that by refusing to replay under `acceptance_authority = true`.
+
 The `ESTATE.toml` canonical language entry therefore sets `acceptance_authority = false`. A future PR may promote a canonical kernel to acceptance authority only after:
 
 1. dataset provenance is checked in;
