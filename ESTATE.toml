@@ -12,7 +12,8 @@ inv = ["INV-VDC"]
 default_branch = "main"
 
 [origin]
-decided_by = "stated"         # adopted by the owner: larsbx/estate-governance DR-0001
+decided_by = "stated"
+decision = "DR-0001"          # larsbx/estate-governance docs/decisions
 # Origin: 2026-10-05 ChatGPT working thread, Vizing research bootstrap.
 # No durable chat URL was recorded.
 chats = []
