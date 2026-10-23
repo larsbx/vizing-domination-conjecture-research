@@ -1,0 +1,24 @@
+name: Broom Hall regression
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Independent broom-family unittest
+        run: python3 -B -m unittest discover -s conformance/tests -p 'test_broom_hall_examples.py' -v
+      - name: Replay through t = 12
+        run: python3 -B oracles/broom_hall_oracle.py 12 > /dev/null
