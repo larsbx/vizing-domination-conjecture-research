@@ -62,3 +62,13 @@ status = "working"
 statement = "The audit stack lambda-bound -> structural lemmas -> row-CSP residue is the current main executable proof architecture."
 authority = "research_program_design"
 notes = "Needs canonical implementation and explicit receipt format before it can support computed claims."
+
+
+[[claim]]
+id = "VDC-BROOM-UNIT-HALL-OBSTRUCTION"
+title = "Broom-family minimum-D obstruction to unit-block Hall"
+status = "working"
+statement = "For each t>=3, a Vizing-tight P4 square H_t has a minimum dominating set and minimum-factor block partition with t-1 empty blocks whose only occupied witness block is one block."
+authority = "repository_proof_draft_pending_review_and_regression"
+proof_record = "proof/broom-hall-obstruction.md"
+notes = "Explicit 2t-vertex dominating set, endpoint-strip lower bound, and independent finite oracle. This disproves unit-block Hall ratios, not capacitated Hall or Vizing. Preserve acceptance-authority=false; review the proof and replay the tests before claim promotion."
